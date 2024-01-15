@@ -29,7 +29,7 @@ import ExampleComponent from './components/ExampleComponent.vue'
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-
+Vue.component("hello-component",require("./components/HelloComponent.vue").default);
 const app = createApp(App);
 app.use(router);
 app.mount("#app");

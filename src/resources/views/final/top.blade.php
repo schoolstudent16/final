@@ -8,9 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="app">
-        
-    </div>
-    <script src="{{ mix('js/app.js') }}"></script>
+    <h1>Home</h1>
+    <p>ようこそ</p>
+    <button onclick="location.href='/addition'">単語帳作成</button><button onclick="location.href='/show'">登録単語一覧</button>
+    @foreach ($items as $item)
+        {{$item["category_name"]}}
+    @endforeach
+
 </body>
 </html>

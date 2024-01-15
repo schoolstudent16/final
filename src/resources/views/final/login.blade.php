@@ -9,17 +9,14 @@
 <body>
     <div>
         <h2>ログイン</h2>
-        <form action="" method="POST">
+        <form action="/login" method="POST">
             @csrf
-            <p>ユーザー名</p>
-            <p><input type="text" name="user_name"></p>
             <p>メールアドレス</p>
             <p><input type="text" name="mail_address"></p>
-            <p>パスワード</p>
+            <p>パスワード</p>   
             <p><input type="password" name="pass"></p>
-            <a href="/account/1">アカウントを作成</a><button type="submit">ログイン</button>
+            <a href="/account">アカウントを作成</a><button type="submit">ログイン</button>
         </form>
-        
     </div>
 </body>
 </html>

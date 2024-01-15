@@ -21,4 +21,4 @@ Create Table words(
     FOREIGN KEY (user_id) REFERENCES account(user_id),
     FOREIGN KEY words(category_id) REFERENCES category(category_id)
 );
-
+INSERT into words values(1,1,1,CURRENT_DATE(),"test_word","test_content");

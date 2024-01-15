@@ -17,9 +17,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/top',"App\Http\Controllers\WordNoteController@index");
-Route::get('/login',"App\Http\Controllers\WordNoteController@index");
-Route::get('/account/{verify?}',"App\Http\Controllers\WordNoteController@index");
+Route::get('/top',"App\Http\Controllers\WordNoteController@transition");
+//Route::get('/account',function () {return view("final.account");});
+Route::get('/addition',function () {return view("final.word_add");});
+Route::get('/show',"App\Http\Controllers\WordNoteController@sql_select");
+//Route::post('/login',"App\Http\Controllers\WordNoteController@login");
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
