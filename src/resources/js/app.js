@@ -6,8 +6,10 @@
 
 require('./bootstrap');
 import { createApp } from 'vue'
+import App from './vue/App.vue'
+import router from './router'
 import ExampleComponent from './components/ExampleComponent.vue'
-window.Vue = require('vue').default;
+
 
 /**
  * The following block of code may be used to automatically register your
@@ -28,6 +30,6 @@ window.Vue = require('vue').default;
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-createApp({
-    
-}).mount('#app')
+const app = createApp(App);
+app.use(router);
+app.mount("#app");

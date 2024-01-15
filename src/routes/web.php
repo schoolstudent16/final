@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/top',"App\Http\Controllers\WordNoteController@index");
+Route::get('/login',"App\Http\Controllers\WordNoteController@index");
+Route::get('/account/{verify?}',"App\Http\Controllers\WordNoteController@index");
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

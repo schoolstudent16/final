@@ -18,6 +18,7 @@ Create Table words(
     word VARCHAR(100) NOT NULL,
     word_content VARCHAR(300) NOT NULL,
     PRIMARY KEY (word_id,user_id),
-    FOREIGN KEY (user_id) REFERENCES user(user_id)
+    FOREIGN KEY (user_id) REFERENCES account(user_id),
+    FOREIGN KEY words(category_id) REFERENCES category(category_id)
 );
 
