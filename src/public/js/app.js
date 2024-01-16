@@ -22605,7 +22605,6 @@ module.exports = function transformData(data, headers, fns) {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-/* provided dependency */ var process = __webpack_require__(/*! process/browser.js */ "./node_modules/process/browser.js");
 
 
 var utils = __webpack_require__(/*! ./utils */ "./node_modules/axios/lib/utils.js");
@@ -23682,10 +23681,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/HelloComponent.vue?vue&type=script&lang=js":
-/*!********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/HelloComponent.vue?vue&type=script&lang=js ***!
-  \********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/vue/App.vue?vue&type=script&lang=js":
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/vue/App.vue?vue&type=script&lang=js ***!
+  \**************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -23693,70 +23692,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw new Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw new Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  created: function created() {
-    this.hello();
-  },
-  methods: {
-    hello: function hello() {
-      return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-        var res;
-        return _regeneratorRuntime().wrap(function _callee$(_context) {
-          while (1) switch (_context.prev = _context.next) {
-            case 0:
-              _context.next = 2;
-              return axios.get("/api/hello");
-            case 2:
-              res = _context.sent;
-              console.log(res);
-            case 4:
-            case "end":
-              return _context.stop();
-          }
-        }, _callee);
-      }))();
-    }
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/vue/App.vue?vue&type=script&setup=true&lang=js":
-/*!*************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/vue/App.vue?vue&type=script&setup=true&lang=js ***!
-  \*************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  __name: 'App',
-  setup: function setup(__props, _ref) {
-    var __expose = _ref.expose;
-    __expose();
-    var count = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(0);
-    var addCount = function addCount() {
-      count.value++;
+  data: function data() {
+    return {
+      variants: ['elevated', 'flat', 'tonal', 'outlined', 'text', 'plain']
     };
-    var __returned__ = {
-      count: count,
-      addCount: addCount,
-      ref: vue__WEBPACK_IMPORTED_MODULE_0__.ref
-    };
-    Object.defineProperty(__returned__, '__isScriptSetup', {
-      enumerable: false,
-      value: true
-    });
-    return __returned__;
   }
 });
 
@@ -23786,25 +23726,6 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/HelloComponent.vue?vue&type=template&id=6b833df6":
-/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/HelloComponent.vue?vue&type=template&id=6b833df6 ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   render: () => (/* binding */ render)
-/* harmony export */ });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-
-function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div");
-}
-
-/***/ }),
-
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/vue/App.vue?vue&type=template&id=e9db602c":
 /*!******************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/vue/App.vue?vue&type=template&id=e9db602c ***!
@@ -23818,27 +23739,58 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
-  var _component_router_view = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-view");
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-    onClick: $setup.addCount
-  }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.count) + " 回クリックしました！", 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: "/foo"
-  }, {
+  var _component_v_card_title = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("v-card-title");
+  var _component_v_card_subtitle = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("v-card-subtitle");
+  var _component_v_card_text = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("v-card-text");
+  var _component_v_btn = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("v-btn");
+  var _component_v_card_actions = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("v-card-actions");
+  var _component_v_card = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("v-card");
+  var _component_v_container = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("v-container");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_v_container, null, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Go to Foo")];
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_v_card, {
+        "class": "w-50",
+        elevation: "4"
+      }, {
+        "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_v_card_title, null, {
+            "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+              return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("平家物語")];
+            }),
+            _: 1 /* STABLE */
+          }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_v_card_subtitle, null, {
+            "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+              return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("作者不詳")];
+            }),
+            _: 1 /* STABLE */
+          }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_v_card_text, null, {
+            "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+              return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" 祇園精舎の鐘の声、諸行無常の響きあり。 娑羅双樹の花の色、盛者必衰の理をあらわす。 おごれる人も久しからず、唯、春の夜の夢のごとし。 猛きものもついにはほろびぬ、 偏に風の前の塵に同じ。 ")];
+            }),
+            _: 1 /* STABLE */
+          }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_v_card_actions, null, {
+            "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+              return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_v_btn, null, {
+                "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+                  return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("源氏を選択")];
+                }),
+                _: 1 /* STABLE */
+              }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_v_btn, null, {
+                "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+                  return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("平家を選択")];
+                }),
+                _: 1 /* STABLE */
+              })];
+            }),
+            _: 1 /* STABLE */
+          })];
+        }),
+        _: 1 /* STABLE */
+      })];
     }),
     _: 1 /* STABLE */
-  }), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: "/bar"
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Go to Bar")];
-    }),
-    _: 1 /* STABLE */
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_view)], 64 /* STABLE_FRAGMENT */);
+  });
 }
 
 /***/ }),
@@ -23896,6 +23848,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 /* harmony import */ var _vue_App_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./vue/App.vue */ "./resources/js/vue/App.vue");
 /* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./router */ "./resources/js/router.js");
+/* harmony import */ var vuetify__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuetify */ "./node_modules/vuetify/lib/framework.mjs");
 /* harmony import */ var _components_ExampleComponent_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue");
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -23908,6 +23861,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
+
+var vuetify = (0,vuetify__WEBPACK_IMPORTED_MODULE_4__.createVuetify)();
 
 /**
  * The following block of code may be used to automatically register your
@@ -23927,8 +23882,9 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-Vue.component("hello-component", (__webpack_require__(/*! ./components/HelloComponent.vue */ "./resources/js/components/HelloComponent.vue")["default"]));
+//Vue.component("hello-component",require("./components/HelloComponent.vue").default);
 var app = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)(_vue_App_vue__WEBPACK_IMPORTED_MODULE_1__["default"]);
+app.use(vuetify);
 app.use(_router__WEBPACK_IMPORTED_MODULE_2__["default"]);
 app.mount("#app");
 
@@ -45707,200 +45663,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/process/browser.js":
-/*!*****************************************!*\
-  !*** ./node_modules/process/browser.js ***!
-  \*****************************************/
-/***/ ((module) => {
-
-// shim for using process in browser
-var process = module.exports = {};
-
-// cached from whatever global is present so that test runners that stub it
-// don't break things.  But we need to wrap it in a try catch in case it is
-// wrapped in strict mode code which doesn't define any globals.  It's inside a
-// function because try/catches deoptimize in certain engines.
-
-var cachedSetTimeout;
-var cachedClearTimeout;
-
-function defaultSetTimout() {
-    throw new Error('setTimeout has not been defined');
-}
-function defaultClearTimeout () {
-    throw new Error('clearTimeout has not been defined');
-}
-(function () {
-    try {
-        if (typeof setTimeout === 'function') {
-            cachedSetTimeout = setTimeout;
-        } else {
-            cachedSetTimeout = defaultSetTimout;
-        }
-    } catch (e) {
-        cachedSetTimeout = defaultSetTimout;
-    }
-    try {
-        if (typeof clearTimeout === 'function') {
-            cachedClearTimeout = clearTimeout;
-        } else {
-            cachedClearTimeout = defaultClearTimeout;
-        }
-    } catch (e) {
-        cachedClearTimeout = defaultClearTimeout;
-    }
-} ())
-function runTimeout(fun) {
-    if (cachedSetTimeout === setTimeout) {
-        //normal enviroments in sane situations
-        return setTimeout(fun, 0);
-    }
-    // if setTimeout wasn't available but was latter defined
-    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
-        cachedSetTimeout = setTimeout;
-        return setTimeout(fun, 0);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedSetTimeout(fun, 0);
-    } catch(e){
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
-            return cachedSetTimeout.call(null, fun, 0);
-        } catch(e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
-            return cachedSetTimeout.call(this, fun, 0);
-        }
-    }
-
-
-}
-function runClearTimeout(marker) {
-    if (cachedClearTimeout === clearTimeout) {
-        //normal enviroments in sane situations
-        return clearTimeout(marker);
-    }
-    // if clearTimeout wasn't available but was latter defined
-    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
-        cachedClearTimeout = clearTimeout;
-        return clearTimeout(marker);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedClearTimeout(marker);
-    } catch (e){
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
-            return cachedClearTimeout.call(null, marker);
-        } catch (e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
-            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
-            return cachedClearTimeout.call(this, marker);
-        }
-    }
-
-
-
-}
-var queue = [];
-var draining = false;
-var currentQueue;
-var queueIndex = -1;
-
-function cleanUpNextTick() {
-    if (!draining || !currentQueue) {
-        return;
-    }
-    draining = false;
-    if (currentQueue.length) {
-        queue = currentQueue.concat(queue);
-    } else {
-        queueIndex = -1;
-    }
-    if (queue.length) {
-        drainQueue();
-    }
-}
-
-function drainQueue() {
-    if (draining) {
-        return;
-    }
-    var timeout = runTimeout(cleanUpNextTick);
-    draining = true;
-
-    var len = queue.length;
-    while(len) {
-        currentQueue = queue;
-        queue = [];
-        while (++queueIndex < len) {
-            if (currentQueue) {
-                currentQueue[queueIndex].run();
-            }
-        }
-        queueIndex = -1;
-        len = queue.length;
-    }
-    currentQueue = null;
-    draining = false;
-    runClearTimeout(timeout);
-}
-
-process.nextTick = function (fun) {
-    var args = new Array(arguments.length - 1);
-    if (arguments.length > 1) {
-        for (var i = 1; i < arguments.length; i++) {
-            args[i - 1] = arguments[i];
-        }
-    }
-    queue.push(new Item(fun, args));
-    if (queue.length === 1 && !draining) {
-        runTimeout(drainQueue);
-    }
-};
-
-// v8 likes predictible objects
-function Item(fun, array) {
-    this.fun = fun;
-    this.array = array;
-}
-Item.prototype.run = function () {
-    this.fun.apply(null, this.array);
-};
-process.title = 'browser';
-process.browser = true;
-process.env = {};
-process.argv = [];
-process.version = ''; // empty string to avoid regexp issues
-process.versions = {};
-
-function noop() {}
-
-process.on = noop;
-process.addListener = noop;
-process.once = noop;
-process.off = noop;
-process.removeListener = noop;
-process.removeAllListeners = noop;
-process.emit = noop;
-process.prependListener = noop;
-process.prependOnceListener = noop;
-
-process.listeners = function (name) { return [] }
-
-process.binding = function (name) {
-    throw new Error('process.binding is not supported');
-};
-
-process.cwd = function () { return '/' };
-process.chdir = function (dir) {
-    throw new Error('process.chdir is not supported');
-};
-process.umask = function() { return 0; };
-
-
-/***/ }),
-
 /***/ "./node_modules/vue-loader/dist/exportHelper.js":
 /*!******************************************************!*\
   !*** ./node_modules/vue-loader/dist/exportHelper.js ***!
@@ -45951,34 +45713,6 @@ if (false) {}
 
 /***/ }),
 
-/***/ "./resources/js/components/HelloComponent.vue":
-/*!****************************************************!*\
-  !*** ./resources/js/components/HelloComponent.vue ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _HelloComponent_vue_vue_type_template_id_6b833df6__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HelloComponent.vue?vue&type=template&id=6b833df6 */ "./resources/js/components/HelloComponent.vue?vue&type=template&id=6b833df6");
-/* harmony import */ var _HelloComponent_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HelloComponent.vue?vue&type=script&lang=js */ "./resources/js/components/HelloComponent.vue?vue&type=script&lang=js");
-/* harmony import */ var C_xampp_htdocs_PHP_FINAL_src_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
-
-
-
-
-;
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_PHP_FINAL_src_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_HelloComponent_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_HelloComponent_vue_vue_type_template_id_6b833df6__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/HelloComponent.vue"]])
-/* hot reload */
-if (false) {}
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
-
-/***/ }),
-
 /***/ "./resources/js/vue/App.vue":
 /*!**********************************!*\
   !*** ./resources/js/vue/App.vue ***!
@@ -45991,14 +45725,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _App_vue_vue_type_template_id_e9db602c__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.vue?vue&type=template&id=e9db602c */ "./resources/js/vue/App.vue?vue&type=template&id=e9db602c");
-/* harmony import */ var _App_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.vue?vue&type=script&setup=true&lang=js */ "./resources/js/vue/App.vue?vue&type=script&setup=true&lang=js");
+/* harmony import */ var _App_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.vue?vue&type=script&lang=js */ "./resources/js/vue/App.vue?vue&type=script&lang=js");
 /* harmony import */ var C_xampp_htdocs_PHP_FINAL_src_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_PHP_FINAL_src_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_App_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_App_vue_vue_type_template_id_e9db602c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/vue/App.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_PHP_FINAL_src_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_App_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_App_vue_vue_type_template_id_e9db602c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/vue/App.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -46075,34 +45809,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/HelloComponent.vue?vue&type=script&lang=js":
-/*!****************************************************************************!*\
-  !*** ./resources/js/components/HelloComponent.vue?vue&type=script&lang=js ***!
-  \****************************************************************************/
+/***/ "./resources/js/vue/App.vue?vue&type=script&lang=js":
+/*!**********************************************************!*\
+  !*** ./resources/js/vue/App.vue?vue&type=script&lang=js ***!
+  \**********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_HelloComponent_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_App_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_HelloComponent_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./HelloComponent.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/HelloComponent.vue?vue&type=script&lang=js");
- 
-
-/***/ }),
-
-/***/ "./resources/js/vue/App.vue?vue&type=script&setup=true&lang=js":
-/*!*********************************************************************!*\
-  !*** ./resources/js/vue/App.vue?vue&type=script&setup=true&lang=js ***!
-  \*********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_App_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
-/* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_App_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./App.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/vue/App.vue?vue&type=script&setup=true&lang=js");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_App_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./App.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/vue/App.vue?vue&type=script&lang=js");
  
 
 /***/ }),
@@ -46119,22 +45837,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ExampleComponent_vue_vue_type_template_id_299e239e__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ExampleComponent_vue_vue_type_template_id_299e239e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ExampleComponent.vue?vue&type=template&id=299e239e */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e");
-
-
-/***/ }),
-
-/***/ "./resources/js/components/HelloComponent.vue?vue&type=template&id=6b833df6":
-/*!**********************************************************************************!*\
-  !*** ./resources/js/components/HelloComponent.vue?vue&type=template&id=6b833df6 ***!
-  \**********************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_HelloComponent_vue_vue_type_template_id_6b833df6__WEBPACK_IMPORTED_MODULE_0__.render)
-/* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_HelloComponent_vue_vue_type_template_id_6b833df6__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./HelloComponent.vue?vue&type=template&id=6b833df6 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/HelloComponent.vue?vue&type=template&id=6b833df6");
 
 
 /***/ }),
@@ -50106,6 +49808,8874 @@ function useRoute() {
 
 
 
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/composables/date/adapters/vuetify.mjs":
+/*!************************************************************************!*\
+  !*** ./node_modules/vuetify/lib/composables/date/adapters/vuetify.mjs ***!
+  \************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   VuetifyDateAdapter: () => (/* binding */ VuetifyDateAdapter)
+/* harmony export */ });
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../util/index.mjs */ "./node_modules/vuetify/lib/util/helpers.mjs");
+// Utilities
+ // Types
+const firstDay = {
+  '001': 1,
+  AD: 1,
+  AE: 6,
+  AF: 6,
+  AG: 0,
+  AI: 1,
+  AL: 1,
+  AM: 1,
+  AN: 1,
+  AR: 1,
+  AS: 0,
+  AT: 1,
+  AU: 1,
+  AX: 1,
+  AZ: 1,
+  BA: 1,
+  BD: 0,
+  BE: 1,
+  BG: 1,
+  BH: 6,
+  BM: 1,
+  BN: 1,
+  BR: 0,
+  BS: 0,
+  BT: 0,
+  BW: 0,
+  BY: 1,
+  BZ: 0,
+  CA: 0,
+  CH: 1,
+  CL: 1,
+  CM: 1,
+  CN: 1,
+  CO: 0,
+  CR: 1,
+  CY: 1,
+  CZ: 1,
+  DE: 1,
+  DJ: 6,
+  DK: 1,
+  DM: 0,
+  DO: 0,
+  DZ: 6,
+  EC: 1,
+  EE: 1,
+  EG: 6,
+  ES: 1,
+  ET: 0,
+  FI: 1,
+  FJ: 1,
+  FO: 1,
+  FR: 1,
+  GB: 1,
+  'GB-alt-variant': 0,
+  GE: 1,
+  GF: 1,
+  GP: 1,
+  GR: 1,
+  GT: 0,
+  GU: 0,
+  HK: 0,
+  HN: 0,
+  HR: 1,
+  HU: 1,
+  ID: 0,
+  IE: 1,
+  IL: 0,
+  IN: 0,
+  IQ: 6,
+  IR: 6,
+  IS: 1,
+  IT: 1,
+  JM: 0,
+  JO: 6,
+  JP: 0,
+  KE: 0,
+  KG: 1,
+  KH: 0,
+  KR: 0,
+  KW: 6,
+  KZ: 1,
+  LA: 0,
+  LB: 1,
+  LI: 1,
+  LK: 1,
+  LT: 1,
+  LU: 1,
+  LV: 1,
+  LY: 6,
+  MC: 1,
+  MD: 1,
+  ME: 1,
+  MH: 0,
+  MK: 1,
+  MM: 0,
+  MN: 1,
+  MO: 0,
+  MQ: 1,
+  MT: 0,
+  MV: 5,
+  MX: 0,
+  MY: 1,
+  MZ: 0,
+  NI: 0,
+  NL: 1,
+  NO: 1,
+  NP: 0,
+  NZ: 1,
+  OM: 6,
+  PA: 0,
+  PE: 0,
+  PH: 0,
+  PK: 0,
+  PL: 1,
+  PR: 0,
+  PT: 0,
+  PY: 0,
+  QA: 6,
+  RE: 1,
+  RO: 1,
+  RS: 1,
+  RU: 1,
+  SA: 0,
+  SD: 6,
+  SE: 1,
+  SG: 0,
+  SI: 1,
+  SK: 1,
+  SM: 1,
+  SV: 0,
+  SY: 6,
+  TH: 0,
+  TJ: 1,
+  TM: 1,
+  TR: 1,
+  TT: 0,
+  TW: 0,
+  UA: 1,
+  UM: 0,
+  US: 0,
+  UY: 1,
+  UZ: 1,
+  VA: 1,
+  VE: 0,
+  VI: 0,
+  VN: 1,
+  WS: 0,
+  XK: 1,
+  YE: 0,
+  ZA: 0,
+  ZW: 0
+};
+function getWeekArray(date, locale) {
+  const weeks = [];
+  let currentWeek = [];
+  const firstDayOfMonth = startOfMonth(date);
+  const lastDayOfMonth = endOfMonth(date);
+  const firstDayWeekIndex = (firstDayOfMonth.getDay() - firstDay[locale.slice(-2).toUpperCase()] + 7) % 7;
+  const lastDayWeekIndex = (lastDayOfMonth.getDay() - firstDay[locale.slice(-2).toUpperCase()] + 7) % 7;
+  for (let i = 0; i < firstDayWeekIndex; i++) {
+    const adjacentDay = new Date(firstDayOfMonth);
+    adjacentDay.setDate(adjacentDay.getDate() - (firstDayWeekIndex - i));
+    currentWeek.push(adjacentDay);
+  }
+  for (let i = 1; i <= lastDayOfMonth.getDate(); i++) {
+    const day = new Date(date.getFullYear(), date.getMonth(), i);
+
+    // Add the day to the current week
+    currentWeek.push(day);
+
+    // If the current week has 7 days, add it to the weeks array and start a new week
+    if (currentWeek.length === 7) {
+      weeks.push(currentWeek);
+      currentWeek = [];
+    }
+  }
+  for (let i = 1; i < 7 - lastDayWeekIndex; i++) {
+    const adjacentDay = new Date(lastDayOfMonth);
+    adjacentDay.setDate(adjacentDay.getDate() + i);
+    currentWeek.push(adjacentDay);
+  }
+  if (currentWeek.length > 0) {
+    weeks.push(currentWeek);
+  }
+  return weeks;
+}
+function startOfWeek(date) {
+  const d = new Date(date);
+  while (d.getDay() !== 0) {
+    d.setDate(d.getDate() - 1);
+  }
+  return d;
+}
+function endOfWeek(date) {
+  const d = new Date(date);
+  while (d.getDay() !== 6) {
+    d.setDate(d.getDate() + 1);
+  }
+  return d;
+}
+function startOfMonth(date) {
+  return new Date(date.getFullYear(), date.getMonth(), 1);
+}
+function endOfMonth(date) {
+  return new Date(date.getFullYear(), date.getMonth() + 1, 0);
+}
+function parseLocalDate(value) {
+  const parts = value.split('-').map(Number);
+
+  // new Date() uses local time zone when passing individual date component values
+  return new Date(parts[0], parts[1] - 1, parts[2]);
+}
+const _YYYMMDD = /^([12]\d{3}-([1-9]|0[1-9]|1[0-2])-([1-9]|0[1-9]|[12]\d|3[01]))$/;
+function date(value) {
+  if (value == null) return new Date();
+  if (value instanceof Date) return value;
+  if (typeof value === 'string') {
+    let parsed;
+    if (_YYYMMDD.test(value)) {
+      return parseLocalDate(value);
+    } else {
+      parsed = Date.parse(value);
+    }
+    if (!isNaN(parsed)) return new Date(parsed);
+  }
+  return null;
+}
+const sundayJanuarySecond2000 = new Date(2000, 0, 2);
+
+// The number of letters returned by getWeekday() varies by date library
+// So we've opted for 3-letter abbreviations for all locales
+function getWeekdays(locale) {
+  const daysFromSunday = firstDay[locale.slice(-2).toUpperCase()];
+  return (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_0__.createRange)(7).map(i => {
+    const weekday = new Date(sundayJanuarySecond2000);
+    weekday.setDate(sundayJanuarySecond2000.getDate() + daysFromSunday + i);
+    const formattedDay = new Intl.DateTimeFormat(locale, {
+      weekday: 'short'
+    }).format(weekday);
+    return formattedDay.charAt(0).toUpperCase() + formattedDay.slice(1);
+  });
+}
+function format(value, formatString, locale, formats) {
+  const newDate = date(value) ?? new Date();
+  const customFormat = formats?.[formatString];
+  if (typeof customFormat === 'function') {
+    return customFormat(newDate, formatString, locale);
+  }
+  let options = {};
+  switch (formatString) {
+    case 'fullDateWithWeekday':
+      options = {
+        weekday: 'long',
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric'
+      };
+      break;
+    case 'hours12h':
+      options = {
+        hour: 'numeric',
+        hour12: true
+      };
+      break;
+    case 'normalDateWithWeekday':
+      options = {
+        weekday: 'short',
+        day: 'numeric',
+        month: 'short'
+      };
+      break;
+    case 'keyboardDate':
+      options = {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric'
+      };
+      break;
+    case 'monthAndDate':
+      options = {
+        month: 'long',
+        day: 'numeric'
+      };
+      break;
+    case 'monthAndYear':
+      options = {
+        month: 'long',
+        year: 'numeric'
+      };
+      break;
+    case 'month':
+      options = {
+        month: 'long'
+      };
+      break;
+    case 'monthShort':
+      options = {
+        month: 'short'
+      };
+      break;
+    case 'dayOfMonth':
+      options = {
+        day: 'numeric'
+      };
+      break;
+    case 'shortDate':
+      options = {
+        year: '2-digit',
+        month: 'numeric',
+        day: 'numeric'
+      };
+      break;
+    case 'weekdayShort':
+      options = {
+        weekday: 'short'
+      };
+      break;
+    case 'year':
+      options = {
+        year: 'numeric'
+      };
+      break;
+    default:
+      options = customFormat ?? {
+        timeZone: 'UTC',
+        timeZoneName: 'short'
+      };
+  }
+  return new Intl.DateTimeFormat(locale, options).format(newDate);
+}
+function toISO(adapter, value) {
+  const date = adapter.toJsDate(value);
+  const year = date.getFullYear();
+  const month = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_0__.padStart)(String(date.getMonth() + 1), 2, '0');
+  const day = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_0__.padStart)(String(date.getDate()), 2, '0');
+  return `${year}-${month}-${day}`;
+}
+function parseISO(value) {
+  const [year, month, day] = value.split('-').map(Number);
+  return new Date(year, month - 1, day);
+}
+function addMinutes(date, amount) {
+  const d = new Date(date);
+  d.setMinutes(d.getMinutes() + amount);
+  return d;
+}
+function addHours(date, amount) {
+  const d = new Date(date);
+  d.setHours(d.getHours() + amount);
+  return d;
+}
+function addDays(date, amount) {
+  const d = new Date(date);
+  d.setDate(d.getDate() + amount);
+  return d;
+}
+function addWeeks(date, amount) {
+  const d = new Date(date);
+  d.setDate(d.getDate() + amount * 7);
+  return d;
+}
+function addMonths(date, amount) {
+  const d = new Date(date);
+  d.setMonth(d.getMonth() + amount);
+  return d;
+}
+function getYear(date) {
+  return date.getFullYear();
+}
+function getMonth(date) {
+  return date.getMonth();
+}
+function getNextMonth(date) {
+  return new Date(date.getFullYear(), date.getMonth() + 1, 1);
+}
+function getHours(date) {
+  return date.getHours();
+}
+function getMinutes(date) {
+  return date.getMinutes();
+}
+function startOfYear(date) {
+  return new Date(date.getFullYear(), 0, 1);
+}
+function endOfYear(date) {
+  return new Date(date.getFullYear(), 11, 31);
+}
+function isWithinRange(date, range) {
+  return isAfter(date, range[0]) && isBefore(date, range[1]);
+}
+function isValid(date) {
+  const d = new Date(date);
+  return d instanceof Date && !isNaN(d.getTime());
+}
+function isAfter(date, comparing) {
+  return date.getTime() > comparing.getTime();
+}
+function isBefore(date, comparing) {
+  return date.getTime() < comparing.getTime();
+}
+function isEqual(date, comparing) {
+  return date.getTime() === comparing.getTime();
+}
+function isSameDay(date, comparing) {
+  return date.getDate() === comparing.getDate() && date.getMonth() === comparing.getMonth() && date.getFullYear() === comparing.getFullYear();
+}
+function isSameMonth(date, comparing) {
+  return date.getMonth() === comparing.getMonth() && date.getFullYear() === comparing.getFullYear();
+}
+function getDiff(date, comparing, unit) {
+  const d = new Date(date);
+  const c = new Date(comparing);
+  if (unit === 'month') {
+    return d.getMonth() - c.getMonth() + (d.getFullYear() - c.getFullYear()) * 12;
+  }
+  return Math.floor((d.getTime() - c.getTime()) / (1000 * 60 * 60 * 24));
+}
+function setHours(date, count) {
+  const d = new Date(date);
+  d.setHours(count);
+  return d;
+}
+function setMinutes(date, count) {
+  const d = new Date(date);
+  d.setMinutes(count);
+  return d;
+}
+function setMonth(date, count) {
+  const d = new Date(date);
+  d.setMonth(count);
+  return d;
+}
+function setYear(date, year) {
+  const d = new Date(date);
+  d.setFullYear(year);
+  return d;
+}
+function startOfDay(date) {
+  return new Date(date.getFullYear(), date.getMonth(), date.getDate());
+}
+function endOfDay(date) {
+  return new Date(date.getFullYear(), date.getMonth(), date.getDate(), 23, 59, 59, 999);
+}
+class VuetifyDateAdapter {
+  constructor(options) {
+    this.locale = options.locale;
+    this.formats = options.formats;
+  }
+  date(value) {
+    return date(value);
+  }
+  toJsDate(date) {
+    return date;
+  }
+  toISO(date) {
+    return toISO(this, date);
+  }
+  parseISO(date) {
+    return parseISO(date);
+  }
+  addMinutes(date, amount) {
+    return addMinutes(date, amount);
+  }
+  addHours(date, amount) {
+    return addHours(date, amount);
+  }
+  addDays(date, amount) {
+    return addDays(date, amount);
+  }
+  addWeeks(date, amount) {
+    return addWeeks(date, amount);
+  }
+  addMonths(date, amount) {
+    return addMonths(date, amount);
+  }
+  getWeekArray(date) {
+    return getWeekArray(date, this.locale);
+  }
+  startOfWeek(date) {
+    return startOfWeek(date);
+  }
+  endOfWeek(date) {
+    return endOfWeek(date);
+  }
+  startOfMonth(date) {
+    return startOfMonth(date);
+  }
+  endOfMonth(date) {
+    return endOfMonth(date);
+  }
+  format(date, formatString) {
+    return format(date, formatString, this.locale, this.formats);
+  }
+  isEqual(date, comparing) {
+    return isEqual(date, comparing);
+  }
+  isValid(date) {
+    return isValid(date);
+  }
+  isWithinRange(date, range) {
+    return isWithinRange(date, range);
+  }
+  isAfter(date, comparing) {
+    return isAfter(date, comparing);
+  }
+  isBefore(date, comparing) {
+    return !isAfter(date, comparing) && !isEqual(date, comparing);
+  }
+  isSameDay(date, comparing) {
+    return isSameDay(date, comparing);
+  }
+  isSameMonth(date, comparing) {
+    return isSameMonth(date, comparing);
+  }
+  setMinutes(date, count) {
+    return setMinutes(date, count);
+  }
+  setHours(date, count) {
+    return setHours(date, count);
+  }
+  setMonth(date, count) {
+    return setMonth(date, count);
+  }
+  setYear(date, year) {
+    return setYear(date, year);
+  }
+  getDiff(date, comparing, unit) {
+    return getDiff(date, comparing, unit);
+  }
+  getWeekdays() {
+    return getWeekdays(this.locale);
+  }
+  getYear(date) {
+    return getYear(date);
+  }
+  getMonth(date) {
+    return getMonth(date);
+  }
+  getNextMonth(date) {
+    return getNextMonth(date);
+  }
+  getHours(date) {
+    return getHours(date);
+  }
+  getMinutes(date) {
+    return getMinutes(date);
+  }
+  startOfDay(date) {
+    return startOfDay(date);
+  }
+  endOfDay(date) {
+    return endOfDay(date);
+  }
+  startOfYear(date) {
+    return startOfYear(date);
+  }
+  endOfYear(date) {
+    return endOfYear(date);
+  }
+}
+//# sourceMappingURL=vuetify.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/composables/date/date.mjs":
+/*!************************************************************!*\
+  !*** ./node_modules/vuetify/lib/composables/date/date.mjs ***!
+  \************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   DateAdapterSymbol: () => (/* binding */ DateAdapterSymbol),
+/* harmony export */   DateOptionsSymbol: () => (/* binding */ DateOptionsSymbol),
+/* harmony export */   createDate: () => (/* binding */ createDate),
+/* harmony export */   getWeek: () => (/* binding */ getWeek),
+/* harmony export */   useDate: () => (/* binding */ useDate)
+/* harmony export */ });
+/* harmony import */ var _locale_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../locale.mjs */ "./node_modules/vuetify/lib/composables/locale.mjs");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../util/index.mjs */ "./node_modules/vuetify/lib/util/helpers.mjs");
+/* harmony import */ var _adapters_vuetify_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./adapters/vuetify.mjs */ "./node_modules/vuetify/lib/composables/date/adapters/vuetify.mjs");
+// Composables
+ // Utilities
+
+ // Types
+// Adapters
+
+/** Supports module augmentation to specify date object types */
+const DateOptionsSymbol = Symbol.for('vuetify:date-options');
+const DateAdapterSymbol = Symbol.for('vuetify:date-adapter');
+function createDate(options, locale) {
+  const _options = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_1__.mergeDeep)({
+    adapter: _adapters_vuetify_mjs__WEBPACK_IMPORTED_MODULE_2__.VuetifyDateAdapter,
+    locale: {
+      af: 'af-ZA',
+      // ar: '', # not the same value for all variants
+      bg: 'bg-BG',
+      ca: 'ca-ES',
+      ckb: '',
+      cs: 'cs-CZ',
+      de: 'de-DE',
+      el: 'el-GR',
+      en: 'en-US',
+      // es: '', # not the same value for all variants
+      et: 'et-EE',
+      fa: 'fa-IR',
+      fi: 'fi-FI',
+      // fr: '', #not the same value for all variants
+      hr: 'hr-HR',
+      hu: 'hu-HU',
+      he: 'he-IL',
+      id: 'id-ID',
+      it: 'it-IT',
+      ja: 'ja-JP',
+      ko: 'ko-KR',
+      lv: 'lv-LV',
+      lt: 'lt-LT',
+      nl: 'nl-NL',
+      no: 'no-NO',
+      pl: 'pl-PL',
+      pt: 'pt-PT',
+      ro: 'ro-RO',
+      ru: 'ru-RU',
+      sk: 'sk-SK',
+      sl: 'sl-SI',
+      srCyrl: 'sr-SP',
+      srLatn: 'sr-SP',
+      sv: 'sv-SE',
+      th: 'th-TH',
+      tr: 'tr-TR',
+      az: 'az-AZ',
+      uk: 'uk-UA',
+      vi: 'vi-VN',
+      zhHans: 'zh-CN',
+      zhHant: 'zh-TW'
+    }
+  }, options);
+  return {
+    options: _options,
+    instance: createInstance(_options, locale)
+  };
+}
+function createInstance(options, locale) {
+  const instance = (0,vue__WEBPACK_IMPORTED_MODULE_0__.reactive)(typeof options.adapter === 'function'
+  // eslint-disable-next-line new-cap
+  ? new options.adapter({
+    locale: options.locale[locale.current.value] ?? locale.current.value,
+    formats: options.formats
+  }) : options.adapter);
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(locale.current, value => {
+    instance.locale = options.locale[value] ?? value ?? instance.locale;
+  });
+  return instance;
+}
+function useDate() {
+  const options = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)(DateOptionsSymbol);
+  if (!options) throw new Error('[Vuetify] Could not find injected date options');
+  const locale = (0,_locale_mjs__WEBPACK_IMPORTED_MODULE_3__.useLocale)();
+  return createInstance(options, locale);
+}
+
+// https://stackoverflow.com/questions/274861/how-do-i-calculate-the-week-number-given-a-date/275024#275024
+function getWeek(adapter, value) {
+  const date = adapter.toJsDate(value);
+  let year = adapter.getYear(date);
+  let d1w1 = adapter.startOfYear(date);
+  if (date < d1w1) {
+    year = year - 1;
+    d1w1 = adapter.startOfYear(adapter.setYear(date, year));
+  } else {
+    const tv = adapter.startOfYear(adapter.setYear(date, year + 1));
+    if (date >= tv) {
+      year = year + 1;
+      d1w1 = tv;
+    }
+  }
+  const diffTime = Math.abs(date.getTime() - d1w1.getTime());
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+  return Math.floor(diffDays / 7) + 1;
+}
+//# sourceMappingURL=date.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/composables/defaults.mjs":
+/*!***********************************************************!*\
+  !*** ./node_modules/vuetify/lib/composables/defaults.mjs ***!
+  \***********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   DefaultsSymbol: () => (/* binding */ DefaultsSymbol),
+/* harmony export */   createDefaults: () => (/* binding */ createDefaults),
+/* harmony export */   injectDefaults: () => (/* binding */ injectDefaults),
+/* harmony export */   internalUseDefaults: () => (/* binding */ internalUseDefaults),
+/* harmony export */   provideDefaults: () => (/* binding */ provideDefaults),
+/* harmony export */   useDefaults: () => (/* binding */ useDefaults)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../util/index.mjs */ "./node_modules/vuetify/lib/util/helpers.mjs");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../util/index.mjs */ "./node_modules/vuetify/lib/util/getCurrentInstance.mjs");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../util/index.mjs */ "./node_modules/vuetify/lib/util/injectSelf.mjs");
+// Utilities
+
+ // Types
+const DefaultsSymbol = Symbol.for('vuetify:defaults');
+function createDefaults(options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(options);
+}
+function injectDefaults() {
+  const defaults = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)(DefaultsSymbol);
+  if (!defaults) throw new Error('[Vuetify] Could not find defaults instance');
+  return defaults;
+}
+function provideDefaults(defaults, options) {
+  const injectedDefaults = injectDefaults();
+  const providedDefaults = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(defaults);
+  const newDefaults = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+    const disabled = (0,vue__WEBPACK_IMPORTED_MODULE_0__.unref)(options?.disabled);
+    if (disabled) return injectedDefaults.value;
+    const scoped = (0,vue__WEBPACK_IMPORTED_MODULE_0__.unref)(options?.scoped);
+    const reset = (0,vue__WEBPACK_IMPORTED_MODULE_0__.unref)(options?.reset);
+    const root = (0,vue__WEBPACK_IMPORTED_MODULE_0__.unref)(options?.root);
+    if (providedDefaults.value == null && !(scoped || reset || root)) return injectedDefaults.value;
+    let properties = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_1__.mergeDeep)(providedDefaults.value, {
+      prev: injectedDefaults.value
+    });
+    if (scoped) return properties;
+    if (reset || root) {
+      const len = Number(reset || Infinity);
+      for (let i = 0; i <= len; i++) {
+        if (!properties || !('prev' in properties)) {
+          break;
+        }
+        properties = properties.prev;
+      }
+      if (properties && typeof root === 'string' && root in properties) {
+        properties = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_1__.mergeDeep)((0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_1__.mergeDeep)(properties, {
+          prev: properties
+        }), properties[root]);
+      }
+      return properties;
+    }
+    return properties.prev ? (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_1__.mergeDeep)(properties.prev, properties) : properties;
+  });
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)(DefaultsSymbol, newDefaults);
+  return newDefaults;
+}
+function propIsDefined(vnode, prop) {
+  return typeof vnode.props?.[prop] !== 'undefined' || typeof vnode.props?.[(0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_1__.toKebabCase)(prop)] !== 'undefined';
+}
+function internalUseDefaults() {
+  let props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  let name = arguments.length > 1 ? arguments[1] : undefined;
+  let defaults = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : injectDefaults();
+  const vm = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_2__.getCurrentInstance)('useDefaults');
+  name = name ?? vm.type.name ?? vm.type.__name;
+  if (!name) {
+    throw new Error('[Vuetify] Could not determine component name');
+  }
+  const componentDefaults = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => defaults.value?.[props._as ?? name]);
+  const _props = new Proxy(props, {
+    get(target, prop) {
+      const propValue = Reflect.get(target, prop);
+      if (prop === 'class' || prop === 'style') {
+        return [componentDefaults.value?.[prop], propValue].filter(v => v != null);
+      } else if (typeof prop === 'string' && !propIsDefined(vm.vnode, prop)) {
+        return componentDefaults.value?.[prop] ?? defaults.value?.global?.[prop] ?? propValue;
+      }
+      return propValue;
+    }
+  });
+  const _subcomponentDefaults = (0,vue__WEBPACK_IMPORTED_MODULE_0__.shallowRef)();
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.watchEffect)(() => {
+    if (componentDefaults.value) {
+      const subComponents = Object.entries(componentDefaults.value).filter(_ref => {
+        let [key] = _ref;
+        return key.startsWith(key[0].toUpperCase());
+      });
+      _subcomponentDefaults.value = subComponents.length ? Object.fromEntries(subComponents) : undefined;
+    } else {
+      _subcomponentDefaults.value = undefined;
+    }
+  });
+  function provideSubDefaults() {
+    const injected = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_3__.injectSelf)(DefaultsSymbol, vm);
+    (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)(DefaultsSymbol, (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+      return _subcomponentDefaults.value ? (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_1__.mergeDeep)(injected?.value ?? {}, _subcomponentDefaults.value) : injected?.value;
+    }));
+  }
+  return {
+    props: _props,
+    provideSubDefaults
+  };
+}
+function useDefaults() {
+  let props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  let name = arguments.length > 1 ? arguments[1] : undefined;
+  const {
+    props: _props,
+    provideSubDefaults
+  } = internalUseDefaults(props, name);
+  provideSubDefaults();
+  return _props;
+}
+//# sourceMappingURL=defaults.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/composables/display.mjs":
+/*!**********************************************************!*\
+  !*** ./node_modules/vuetify/lib/composables/display.mjs ***!
+  \**********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   DisplaySymbol: () => (/* binding */ DisplaySymbol),
+/* harmony export */   breakpoints: () => (/* binding */ breakpoints),
+/* harmony export */   createDisplay: () => (/* binding */ createDisplay),
+/* harmony export */   makeDisplayProps: () => (/* binding */ makeDisplayProps),
+/* harmony export */   useDisplay: () => (/* binding */ useDisplay)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../util/index.mjs */ "./node_modules/vuetify/lib/util/helpers.mjs");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../util/index.mjs */ "./node_modules/vuetify/lib/util/propsFactory.mjs");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../util/index.mjs */ "./node_modules/vuetify/lib/util/getCurrentInstance.mjs");
+/* harmony import */ var _util_globals_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../util/globals.mjs */ "./node_modules/vuetify/lib/util/globals.mjs");
+// Utilities
+
+
+ // Types
+const breakpoints = ['sm', 'md', 'lg', 'xl', 'xxl']; // no xs
+
+const DisplaySymbol = Symbol.for('vuetify:display');
+const defaultDisplayOptions = {
+  mobileBreakpoint: 'lg',
+  thresholds: {
+    xs: 0,
+    sm: 600,
+    md: 960,
+    lg: 1280,
+    xl: 1920,
+    xxl: 2560
+  }
+};
+const parseDisplayOptions = function () {
+  let options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : defaultDisplayOptions;
+  return (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_1__.mergeDeep)(defaultDisplayOptions, options);
+};
+function getClientWidth(ssr) {
+  return _util_globals_mjs__WEBPACK_IMPORTED_MODULE_2__.IN_BROWSER && !ssr ? window.innerWidth : typeof ssr === 'object' && ssr.clientWidth || 0;
+}
+function getClientHeight(ssr) {
+  return _util_globals_mjs__WEBPACK_IMPORTED_MODULE_2__.IN_BROWSER && !ssr ? window.innerHeight : typeof ssr === 'object' && ssr.clientHeight || 0;
+}
+function getPlatform(ssr) {
+  const userAgent = _util_globals_mjs__WEBPACK_IMPORTED_MODULE_2__.IN_BROWSER && !ssr ? window.navigator.userAgent : 'ssr';
+  function match(regexp) {
+    return Boolean(userAgent.match(regexp));
+  }
+  const android = match(/android/i);
+  const ios = match(/iphone|ipad|ipod/i);
+  const cordova = match(/cordova/i);
+  const electron = match(/electron/i);
+  const chrome = match(/chrome/i);
+  const edge = match(/edge/i);
+  const firefox = match(/firefox/i);
+  const opera = match(/opera/i);
+  const win = match(/win/i);
+  const mac = match(/mac/i);
+  const linux = match(/linux/i);
+  return {
+    android,
+    ios,
+    cordova,
+    electron,
+    chrome,
+    edge,
+    firefox,
+    opera,
+    win,
+    mac,
+    linux,
+    touch: _util_globals_mjs__WEBPACK_IMPORTED_MODULE_2__.SUPPORTS_TOUCH,
+    ssr: userAgent === 'ssr'
+  };
+}
+function createDisplay(options, ssr) {
+  const {
+    thresholds,
+    mobileBreakpoint
+  } = parseDisplayOptions(options);
+  const height = (0,vue__WEBPACK_IMPORTED_MODULE_0__.shallowRef)(getClientHeight(ssr));
+  const platform = (0,vue__WEBPACK_IMPORTED_MODULE_0__.shallowRef)(getPlatform(ssr));
+  const state = (0,vue__WEBPACK_IMPORTED_MODULE_0__.reactive)({});
+  const width = (0,vue__WEBPACK_IMPORTED_MODULE_0__.shallowRef)(getClientWidth(ssr));
+  function updateSize() {
+    height.value = getClientHeight();
+    width.value = getClientWidth();
+  }
+  function update() {
+    updateSize();
+    platform.value = getPlatform();
+  }
+
+  // eslint-disable-next-line max-statements
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.watchEffect)(() => {
+    const xs = width.value < thresholds.sm;
+    const sm = width.value < thresholds.md && !xs;
+    const md = width.value < thresholds.lg && !(sm || xs);
+    const lg = width.value < thresholds.xl && !(md || sm || xs);
+    const xl = width.value < thresholds.xxl && !(lg || md || sm || xs);
+    const xxl = width.value >= thresholds.xxl;
+    const name = xs ? 'xs' : sm ? 'sm' : md ? 'md' : lg ? 'lg' : xl ? 'xl' : 'xxl';
+    const breakpointValue = typeof mobileBreakpoint === 'number' ? mobileBreakpoint : thresholds[mobileBreakpoint];
+    const mobile = width.value < breakpointValue;
+    state.xs = xs;
+    state.sm = sm;
+    state.md = md;
+    state.lg = lg;
+    state.xl = xl;
+    state.xxl = xxl;
+    state.smAndUp = !xs;
+    state.mdAndUp = !(xs || sm);
+    state.lgAndUp = !(xs || sm || md);
+    state.xlAndUp = !(xs || sm || md || lg);
+    state.smAndDown = !(md || lg || xl || xxl);
+    state.mdAndDown = !(lg || xl || xxl);
+    state.lgAndDown = !(xl || xxl);
+    state.xlAndDown = !xxl;
+    state.name = name;
+    state.height = height.value;
+    state.width = width.value;
+    state.mobile = mobile;
+    state.mobileBreakpoint = mobileBreakpoint;
+    state.platform = platform.value;
+    state.thresholds = thresholds;
+  });
+  if (_util_globals_mjs__WEBPACK_IMPORTED_MODULE_2__.IN_BROWSER) {
+    window.addEventListener('resize', updateSize, {
+      passive: true
+    });
+  }
+  return {
+    ...(0,vue__WEBPACK_IMPORTED_MODULE_0__.toRefs)(state),
+    update,
+    ssr: !!ssr
+  };
+}
+const makeDisplayProps = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_3__.propsFactory)({
+  mobileBreakpoint: [Number, String]
+}, 'display');
+function useDisplay() {
+  let props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  let name = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_4__.getCurrentInstanceName)();
+  const display = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)(DisplaySymbol);
+  if (!display) throw new Error('Could not find Vuetify display injection');
+  const mobile = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+    if (!props.mobileBreakpoint) return display.mobile.value;
+    const breakpointValue = typeof props.mobileBreakpoint === 'number' ? props.mobileBreakpoint : display.thresholds.value[props.mobileBreakpoint];
+    return display.width.value < breakpointValue;
+  });
+  const displayClasses = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+    if (!name) return {};
+    return {
+      [`${name}--mobile`]: mobile.value
+    };
+  });
+  return {
+    ...display,
+    displayClasses,
+    mobile
+  };
+}
+//# sourceMappingURL=display.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/composables/icons.mjs":
+/*!********************************************************!*\
+  !*** ./node_modules/vuetify/lib/composables/icons.mjs ***!
+  \********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   IconSymbol: () => (/* binding */ IconSymbol),
+/* harmony export */   IconValue: () => (/* binding */ IconValue),
+/* harmony export */   VClassIcon: () => (/* binding */ VClassIcon),
+/* harmony export */   VComponentIcon: () => (/* binding */ VComponentIcon),
+/* harmony export */   VLigatureIcon: () => (/* binding */ VLigatureIcon),
+/* harmony export */   VSvgIcon: () => (/* binding */ VSvgIcon),
+/* harmony export */   createIcons: () => (/* binding */ createIcons),
+/* harmony export */   defaultSets: () => (/* binding */ defaultSets),
+/* harmony export */   makeIconProps: () => (/* binding */ makeIconProps),
+/* harmony export */   useIcon: () => (/* binding */ useIcon)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _iconsets_mdi_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../iconsets/mdi.mjs */ "./node_modules/vuetify/lib/iconsets/mdi.mjs");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../util/index.mjs */ "./node_modules/vuetify/lib/util/propsFactory.mjs");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../util/index.mjs */ "./node_modules/vuetify/lib/util/defineComponent.mjs");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../util/index.mjs */ "./node_modules/vuetify/lib/util/helpers.mjs");
+
+// Icons
+ // Utilities
+
+ // Types
+const IconValue = [String, Function, Object, Array];
+const IconSymbol = Symbol.for('vuetify:icons');
+const makeIconProps = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_1__.propsFactory)({
+  icon: {
+    type: IconValue
+  },
+  // Could not remove this and use makeTagProps, types complained because it is not required
+  tag: {
+    type: String,
+    required: true
+  }
+}, 'icon');
+const VComponentIcon = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_2__.genericComponent)()({
+  name: 'VComponentIcon',
+  props: makeIconProps(),
+  setup(props, _ref) {
+    let {
+      slots
+    } = _ref;
+    return () => {
+      const Icon = props.icon;
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(props.tag, null, {
+        default: () => [props.icon ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(Icon, null, null) : slots.default?.()]
+      });
+    };
+  }
+});
+const VSvgIcon = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_2__.defineComponent)({
+  name: 'VSvgIcon',
+  inheritAttrs: false,
+  props: makeIconProps(),
+  setup(props, _ref2) {
+    let {
+      attrs
+    } = _ref2;
+    return () => {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(props.tag, (0,vue__WEBPACK_IMPORTED_MODULE_0__.mergeProps)(attrs, {
+        "style": null
+      }), {
+        default: () => [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+          "class": "v-icon__svg",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "viewBox": "0 0 24 24",
+          "role": "img",
+          "aria-hidden": "true"
+        }, [Array.isArray(props.icon) ? props.icon.map(path => Array.isArray(path) ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+          "d": path[0],
+          "fill-opacity": path[1]
+        }, null) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+          "d": path
+        }, null)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+          "d": props.icon
+        }, null)])]
+      });
+    };
+  }
+});
+const VLigatureIcon = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_2__.defineComponent)({
+  name: 'VLigatureIcon',
+  props: makeIconProps(),
+  setup(props) {
+    return () => {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(props.tag, null, {
+        default: () => [props.icon]
+      });
+    };
+  }
+});
+const VClassIcon = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_2__.defineComponent)({
+  name: 'VClassIcon',
+  props: makeIconProps(),
+  setup(props) {
+    return () => {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(props.tag, {
+        "class": props.icon
+      }, null);
+    };
+  }
+});
+const defaultSets = {
+  svg: {
+    component: VSvgIcon
+  },
+  class: {
+    component: VClassIcon
+  }
+};
+
+// Composables
+function createIcons(options) {
+  return (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_3__.mergeDeep)({
+    defaultSet: 'mdi',
+    sets: {
+      ...defaultSets,
+      mdi: _iconsets_mdi_mjs__WEBPACK_IMPORTED_MODULE_4__.mdi
+    },
+    aliases: {
+      ..._iconsets_mdi_mjs__WEBPACK_IMPORTED_MODULE_4__.aliases,
+      /* eslint-disable max-len */
+      vuetify: ['M8.2241 14.2009L12 21L22 3H14.4459L8.2241 14.2009Z', ['M7.26303 12.4733L7.00113 12L2 3H12.5261C12.5261 3 12.5261 3 12.5261 3L7.26303 12.4733Z', 0.6]],
+      'vuetify-outline': 'svg:M7.26 12.47 12.53 3H2L7.26 12.47ZM14.45 3 8.22 14.2 12 21 22 3H14.45ZM18.6 5 12 16.88 10.51 14.2 15.62 5ZM7.26 8.35 5.4 5H9.13L7.26 8.35Z'
+      /* eslint-enable max-len */
+    }
+  }, options);
+}
+const useIcon = props => {
+  const icons = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)(IconSymbol);
+  if (!icons) throw new Error('Missing Vuetify Icons provide!');
+  const iconData = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+    const iconAlias = (0,vue__WEBPACK_IMPORTED_MODULE_0__.unref)(props);
+    if (!iconAlias) return {
+      component: VComponentIcon
+    };
+    let icon = iconAlias;
+    if (typeof icon === 'string') {
+      icon = icon.trim();
+      if (icon.startsWith('$')) {
+        icon = icons.aliases?.[icon.slice(1)];
+      }
+    }
+    if (!icon) throw new Error(`Could not find aliased icon "${iconAlias}"`);
+    if (Array.isArray(icon)) {
+      return {
+        component: VSvgIcon,
+        icon
+      };
+    } else if (typeof icon !== 'string') {
+      return {
+        component: VComponentIcon,
+        icon
+      };
+    }
+    const iconSetName = Object.keys(icons.sets).find(setName => typeof icon === 'string' && icon.startsWith(`${setName}:`));
+    const iconName = iconSetName ? icon.slice(iconSetName.length + 1) : icon;
+    const iconSet = icons.sets[iconSetName ?? icons.defaultSet];
+    return {
+      component: iconSet.component,
+      icon: iconName
+    };
+  });
+  return {
+    iconData
+  };
+};
+//# sourceMappingURL=icons.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/composables/index.mjs":
+/*!********************************************************!*\
+  !*** ./node_modules/vuetify/lib/composables/index.mjs ***!
+  \********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   useDate: () => (/* reexport safe */ _date_index_mjs__WEBPACK_IMPORTED_MODULE_0__.useDate),
+/* harmony export */   useDefaults: () => (/* reexport safe */ _defaults_mjs__WEBPACK_IMPORTED_MODULE_1__.useDefaults),
+/* harmony export */   useDisplay: () => (/* reexport safe */ _display_mjs__WEBPACK_IMPORTED_MODULE_2__.useDisplay),
+/* harmony export */   useLayout: () => (/* reexport safe */ _layout_mjs__WEBPACK_IMPORTED_MODULE_3__.useLayout),
+/* harmony export */   useLocale: () => (/* reexport safe */ _locale_mjs__WEBPACK_IMPORTED_MODULE_4__.useLocale),
+/* harmony export */   useRtl: () => (/* reexport safe */ _locale_mjs__WEBPACK_IMPORTED_MODULE_4__.useRtl),
+/* harmony export */   useTheme: () => (/* reexport safe */ _theme_mjs__WEBPACK_IMPORTED_MODULE_5__.useTheme)
+/* harmony export */ });
+/* harmony import */ var _date_index_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./date/index.mjs */ "./node_modules/vuetify/lib/composables/date/date.mjs");
+/* harmony import */ var _defaults_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./defaults.mjs */ "./node_modules/vuetify/lib/composables/defaults.mjs");
+/* harmony import */ var _display_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./display.mjs */ "./node_modules/vuetify/lib/composables/display.mjs");
+/* harmony import */ var _layout_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./layout.mjs */ "./node_modules/vuetify/lib/composables/layout.mjs");
+/* harmony import */ var _locale_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./locale.mjs */ "./node_modules/vuetify/lib/composables/locale.mjs");
+/* harmony import */ var _theme_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./theme.mjs */ "./node_modules/vuetify/lib/composables/theme.mjs");
+/*
+ * PUBLIC INTERFACES ONLY
+ * Imports in our code should be to the composable directly, not this file
+ */
+
+
+
+
+
+
+//# sourceMappingURL=index.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/composables/layout.mjs":
+/*!*********************************************************!*\
+  !*** ./node_modules/vuetify/lib/composables/layout.mjs ***!
+  \*********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   VuetifyLayoutItemKey: () => (/* binding */ VuetifyLayoutItemKey),
+/* harmony export */   VuetifyLayoutKey: () => (/* binding */ VuetifyLayoutKey),
+/* harmony export */   createLayout: () => (/* binding */ createLayout),
+/* harmony export */   makeLayoutItemProps: () => (/* binding */ makeLayoutItemProps),
+/* harmony export */   makeLayoutProps: () => (/* binding */ makeLayoutProps),
+/* harmony export */   useLayout: () => (/* binding */ useLayout),
+/* harmony export */   useLayoutItem: () => (/* binding */ useLayoutItem)
+/* harmony export */ });
+/* harmony import */ var _resizeObserver_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./resizeObserver.mjs */ "./node_modules/vuetify/lib/composables/resizeObserver.mjs");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../util/index.mjs */ "./node_modules/vuetify/lib/util/propsFactory.mjs");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../util/index.mjs */ "./node_modules/vuetify/lib/util/getCurrentInstance.mjs");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../util/index.mjs */ "./node_modules/vuetify/lib/util/helpers.mjs");
+// Composables
+ // Utilities
+
+ // Types
+const VuetifyLayoutKey = Symbol.for('vuetify:layout');
+const VuetifyLayoutItemKey = Symbol.for('vuetify:layout-item');
+const ROOT_ZINDEX = 1000;
+const makeLayoutProps = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_1__.propsFactory)({
+  overlaps: {
+    type: Array,
+    default: () => []
+  },
+  fullHeight: Boolean
+}, 'layout');
+
+// Composables
+const makeLayoutItemProps = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_1__.propsFactory)({
+  name: {
+    type: String
+  },
+  order: {
+    type: [Number, String],
+    default: 0
+  },
+  absolute: Boolean
+}, 'layout-item');
+function useLayout() {
+  const layout = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)(VuetifyLayoutKey);
+  if (!layout) throw new Error('[Vuetify] Could not find injected layout');
+  return {
+    getLayoutItem: layout.getLayoutItem,
+    mainRect: layout.mainRect,
+    mainStyles: layout.mainStyles
+  };
+}
+function useLayoutItem(options) {
+  const layout = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)(VuetifyLayoutKey);
+  if (!layout) throw new Error('[Vuetify] Could not find injected layout');
+  const id = options.id ?? `layout-item-${(0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_2__.getUid)()}`;
+  const vm = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_2__.getCurrentInstance)('useLayoutItem');
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)(VuetifyLayoutItemKey, {
+    id
+  });
+  const isKeptAlive = (0,vue__WEBPACK_IMPORTED_MODULE_0__.shallowRef)(false);
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.onDeactivated)(() => isKeptAlive.value = true);
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.onActivated)(() => isKeptAlive.value = false);
+  const {
+    layoutItemStyles,
+    layoutItemScrimStyles
+  } = layout.register(vm, {
+    ...options,
+    active: (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => isKeptAlive.value ? false : options.active.value),
+    id
+  });
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.onBeforeUnmount)(() => layout.unregister(id));
+  return {
+    layoutItemStyles,
+    layoutRect: layout.layoutRect,
+    layoutItemScrimStyles
+  };
+}
+const generateLayers = (layout, positions, layoutSizes, activeItems) => {
+  let previousLayer = {
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0
+  };
+  const layers = [{
+    id: '',
+    layer: {
+      ...previousLayer
+    }
+  }];
+  for (const id of layout) {
+    const position = positions.get(id);
+    const amount = layoutSizes.get(id);
+    const active = activeItems.get(id);
+    if (!position || !amount || !active) continue;
+    const layer = {
+      ...previousLayer,
+      [position.value]: parseInt(previousLayer[position.value], 10) + (active.value ? parseInt(amount.value, 10) : 0)
+    };
+    layers.push({
+      id,
+      layer
+    });
+    previousLayer = layer;
+  }
+  return layers;
+};
+function createLayout(props) {
+  const parentLayout = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)(VuetifyLayoutKey, null);
+  const rootZIndex = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => parentLayout ? parentLayout.rootZIndex.value - 100 : ROOT_ZINDEX);
+  const registered = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)([]);
+  const positions = (0,vue__WEBPACK_IMPORTED_MODULE_0__.reactive)(new Map());
+  const layoutSizes = (0,vue__WEBPACK_IMPORTED_MODULE_0__.reactive)(new Map());
+  const priorities = (0,vue__WEBPACK_IMPORTED_MODULE_0__.reactive)(new Map());
+  const activeItems = (0,vue__WEBPACK_IMPORTED_MODULE_0__.reactive)(new Map());
+  const disabledTransitions = (0,vue__WEBPACK_IMPORTED_MODULE_0__.reactive)(new Map());
+  const {
+    resizeRef,
+    contentRect: layoutRect
+  } = (0,_resizeObserver_mjs__WEBPACK_IMPORTED_MODULE_3__.useResizeObserver)();
+  const computedOverlaps = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+    const map = new Map();
+    const overlaps = props.overlaps ?? [];
+    for (const overlap of overlaps.filter(item => item.includes(':'))) {
+      const [top, bottom] = overlap.split(':');
+      if (!registered.value.includes(top) || !registered.value.includes(bottom)) continue;
+      const topPosition = positions.get(top);
+      const bottomPosition = positions.get(bottom);
+      const topAmount = layoutSizes.get(top);
+      const bottomAmount = layoutSizes.get(bottom);
+      if (!topPosition || !bottomPosition || !topAmount || !bottomAmount) continue;
+      map.set(bottom, {
+        position: topPosition.value,
+        amount: parseInt(topAmount.value, 10)
+      });
+      map.set(top, {
+        position: bottomPosition.value,
+        amount: -parseInt(bottomAmount.value, 10)
+      });
+    }
+    return map;
+  });
+  const layers = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+    const uniquePriorities = [...new Set([...priorities.values()].map(p => p.value))].sort((a, b) => a - b);
+    const layout = [];
+    for (const p of uniquePriorities) {
+      const items = registered.value.filter(id => priorities.get(id)?.value === p);
+      layout.push(...items);
+    }
+    return generateLayers(layout, positions, layoutSizes, activeItems);
+  });
+  const transitionsEnabled = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+    return !Array.from(disabledTransitions.values()).some(ref => ref.value);
+  });
+  const mainRect = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+    return layers.value[layers.value.length - 1].layer;
+  });
+  const mainStyles = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+    return {
+      '--v-layout-left': (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_4__.convertToUnit)(mainRect.value.left),
+      '--v-layout-right': (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_4__.convertToUnit)(mainRect.value.right),
+      '--v-layout-top': (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_4__.convertToUnit)(mainRect.value.top),
+      '--v-layout-bottom': (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_4__.convertToUnit)(mainRect.value.bottom),
+      ...(transitionsEnabled.value ? undefined : {
+        transition: 'none'
+      })
+    };
+  });
+  const items = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+    return layers.value.slice(1).map((_ref, index) => {
+      let {
+        id
+      } = _ref;
+      const {
+        layer
+      } = layers.value[index];
+      const size = layoutSizes.get(id);
+      const position = positions.get(id);
+      return {
+        id,
+        ...layer,
+        size: Number(size.value),
+        position: position.value
+      };
+    });
+  });
+  const getLayoutItem = id => {
+    return items.value.find(item => item.id === id);
+  };
+  const rootVm = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_2__.getCurrentInstance)('createLayout');
+  const isMounted = (0,vue__WEBPACK_IMPORTED_MODULE_0__.shallowRef)(false);
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.onMounted)(() => {
+    isMounted.value = true;
+  });
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)(VuetifyLayoutKey, {
+    register: (vm, _ref2) => {
+      let {
+        id,
+        order,
+        position,
+        layoutSize,
+        elementSize,
+        active,
+        disableTransitions,
+        absolute
+      } = _ref2;
+      priorities.set(id, order);
+      positions.set(id, position);
+      layoutSizes.set(id, layoutSize);
+      activeItems.set(id, active);
+      disableTransitions && disabledTransitions.set(id, disableTransitions);
+      const instances = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_4__.findChildrenWithProvide)(VuetifyLayoutItemKey, rootVm?.vnode);
+      const instanceIndex = instances.indexOf(vm);
+      if (instanceIndex > -1) registered.value.splice(instanceIndex, 0, id);else registered.value.push(id);
+      const index = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => items.value.findIndex(i => i.id === id));
+      const zIndex = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => rootZIndex.value + layers.value.length * 2 - index.value * 2);
+      const layoutItemStyles = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+        const isHorizontal = position.value === 'left' || position.value === 'right';
+        const isOppositeHorizontal = position.value === 'right';
+        const isOppositeVertical = position.value === 'bottom';
+        const styles = {
+          [position.value]: 0,
+          zIndex: zIndex.value,
+          transform: `translate${isHorizontal ? 'X' : 'Y'}(${(active.value ? 0 : -110) * (isOppositeHorizontal || isOppositeVertical ? -1 : 1)}%)`,
+          position: absolute.value || rootZIndex.value !== ROOT_ZINDEX ? 'absolute' : 'fixed',
+          ...(transitionsEnabled.value ? undefined : {
+            transition: 'none'
+          })
+        };
+        if (!isMounted.value) return styles;
+        const item = items.value[index.value];
+        if (!item) throw new Error(`[Vuetify] Could not find layout item "${id}"`);
+        const overlap = computedOverlaps.value.get(id);
+        if (overlap) {
+          item[overlap.position] += overlap.amount;
+        }
+        return {
+          ...styles,
+          height: isHorizontal ? `calc(100% - ${item.top}px - ${item.bottom}px)` : elementSize.value ? `${elementSize.value}px` : undefined,
+          left: isOppositeHorizontal ? undefined : `${item.left}px`,
+          right: isOppositeHorizontal ? `${item.right}px` : undefined,
+          top: position.value !== 'bottom' ? `${item.top}px` : undefined,
+          bottom: position.value !== 'top' ? `${item.bottom}px` : undefined,
+          width: !isHorizontal ? `calc(100% - ${item.left}px - ${item.right}px)` : elementSize.value ? `${elementSize.value}px` : undefined
+        };
+      });
+      const layoutItemScrimStyles = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => ({
+        zIndex: zIndex.value - 1
+      }));
+      return {
+        layoutItemStyles,
+        layoutItemScrimStyles,
+        zIndex
+      };
+    },
+    unregister: id => {
+      priorities.delete(id);
+      positions.delete(id);
+      layoutSizes.delete(id);
+      activeItems.delete(id);
+      disabledTransitions.delete(id);
+      registered.value = registered.value.filter(v => v !== id);
+    },
+    mainRect,
+    mainStyles,
+    getLayoutItem,
+    items,
+    layoutRect,
+    rootZIndex
+  });
+  const layoutClasses = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => ['v-layout', {
+    'v-layout--full-height': props.fullHeight
+  }]);
+  const layoutStyles = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => ({
+    zIndex: parentLayout ? rootZIndex.value : undefined,
+    position: parentLayout ? 'relative' : undefined,
+    overflow: parentLayout ? 'hidden' : undefined
+  }));
+  return {
+    layoutClasses,
+    layoutStyles,
+    getLayoutItem,
+    items,
+    layoutRect,
+    layoutRef: resizeRef
+  };
+}
+//# sourceMappingURL=layout.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/composables/locale.mjs":
+/*!*********************************************************!*\
+  !*** ./node_modules/vuetify/lib/composables/locale.mjs ***!
+  \*********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   LocaleSymbol: () => (/* binding */ LocaleSymbol),
+/* harmony export */   RtlSymbol: () => (/* binding */ RtlSymbol),
+/* harmony export */   createLocale: () => (/* binding */ createLocale),
+/* harmony export */   createRtl: () => (/* binding */ createRtl),
+/* harmony export */   provideLocale: () => (/* binding */ provideLocale),
+/* harmony export */   provideRtl: () => (/* binding */ provideRtl),
+/* harmony export */   useLocale: () => (/* binding */ useLocale),
+/* harmony export */   useRtl: () => (/* binding */ useRtl)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _locale_index_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../locale/index.mjs */ "./node_modules/vuetify/lib/locale/index.mjs");
+/* harmony import */ var _locale_adapters_vuetify_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../locale/adapters/vuetify.mjs */ "./node_modules/vuetify/lib/locale/adapters/vuetify.mjs");
+// Utilities
+
+
+ // Types
+const LocaleSymbol = Symbol.for('vuetify:locale');
+function isLocaleInstance(obj) {
+  return obj.name != null;
+}
+function createLocale(options) {
+  const i18n = options?.adapter && isLocaleInstance(options?.adapter) ? options?.adapter : (0,_locale_adapters_vuetify_mjs__WEBPACK_IMPORTED_MODULE_1__.createVuetifyAdapter)(options);
+  const rtl = createRtl(i18n, options);
+  return {
+    ...i18n,
+    ...rtl
+  };
+}
+function useLocale() {
+  const locale = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)(LocaleSymbol);
+  if (!locale) throw new Error('[Vuetify] Could not find injected locale instance');
+  return locale;
+}
+function provideLocale(props) {
+  const locale = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)(LocaleSymbol);
+  if (!locale) throw new Error('[Vuetify] Could not find injected locale instance');
+  const i18n = locale.provide(props);
+  const rtl = provideRtl(i18n, locale.rtl, props);
+  const data = {
+    ...i18n,
+    ...rtl
+  };
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)(LocaleSymbol, data);
+  return data;
+}
+
+// RTL
+
+const RtlSymbol = Symbol.for('vuetify:rtl');
+function createRtl(i18n, options) {
+  const rtl = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(options?.rtl ?? _locale_index_mjs__WEBPACK_IMPORTED_MODULE_2__.defaultRtl);
+  const isRtl = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => rtl.value[i18n.current.value] ?? false);
+  return {
+    isRtl,
+    rtl,
+    rtlClasses: (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => `v-locale--is-${isRtl.value ? 'rtl' : 'ltr'}`)
+  };
+}
+function provideRtl(locale, rtl, props) {
+  const isRtl = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => props.rtl ?? rtl.value[locale.current.value] ?? false);
+  return {
+    isRtl,
+    rtl,
+    rtlClasses: (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => `v-locale--is-${isRtl.value ? 'rtl' : 'ltr'}`)
+  };
+}
+function useRtl() {
+  const locale = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)(LocaleSymbol);
+  if (!locale) throw new Error('[Vuetify] Could not find injected rtl instance');
+  return {
+    isRtl: locale.isRtl,
+    rtlClasses: locale.rtlClasses
+  };
+}
+//# sourceMappingURL=locale.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/composables/proxiedModel.mjs":
+/*!***************************************************************!*\
+  !*** ./node_modules/vuetify/lib/composables/proxiedModel.mjs ***!
+  \***************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   useProxiedModel: () => (/* binding */ useProxiedModel)
+/* harmony export */ });
+/* harmony import */ var _toggleScope_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./toggleScope.mjs */ "./node_modules/vuetify/lib/composables/toggleScope.mjs");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../util/index.mjs */ "./node_modules/vuetify/lib/util/getCurrentInstance.mjs");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../util/index.mjs */ "./node_modules/vuetify/lib/util/helpers.mjs");
+// Composables
+ // Utilities
+
+ // Types
+// Composables
+function useProxiedModel(props, prop, defaultValue) {
+  let transformIn = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : v => v;
+  let transformOut = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : v => v;
+  const vm = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_1__.getCurrentInstance)('useProxiedModel');
+  const internal = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(props[prop] !== undefined ? props[prop] : defaultValue);
+  const kebabProp = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_2__.toKebabCase)(prop);
+  const checkKebab = kebabProp !== prop;
+  const isControlled = checkKebab ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+    void props[prop];
+    return !!((vm.vnode.props?.hasOwnProperty(prop) || vm.vnode.props?.hasOwnProperty(kebabProp)) && (vm.vnode.props?.hasOwnProperty(`onUpdate:${prop}`) || vm.vnode.props?.hasOwnProperty(`onUpdate:${kebabProp}`)));
+  }) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+    void props[prop];
+    return !!(vm.vnode.props?.hasOwnProperty(prop) && vm.vnode.props?.hasOwnProperty(`onUpdate:${prop}`));
+  });
+  (0,_toggleScope_mjs__WEBPACK_IMPORTED_MODULE_3__.useToggleScope)(() => !isControlled.value, () => {
+    (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(() => props[prop], val => {
+      internal.value = val;
+    });
+  });
+  const model = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)({
+    get() {
+      const externalValue = props[prop];
+      return transformIn(isControlled.value ? externalValue : internal.value);
+    },
+    set(internalValue) {
+      const newValue = transformOut(internalValue);
+      const value = (0,vue__WEBPACK_IMPORTED_MODULE_0__.toRaw)(isControlled.value ? props[prop] : internal.value);
+      if (value === newValue || transformIn(value) === internalValue) {
+        return;
+      }
+      internal.value = newValue;
+      vm?.emit(`update:${prop}`, newValue);
+    }
+  });
+  Object.defineProperty(model, 'externalValue', {
+    get: () => isControlled.value ? props[prop] : internal.value
+  });
+  return model;
+}
+//# sourceMappingURL=proxiedModel.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/composables/resizeObserver.mjs":
+/*!*****************************************************************!*\
+  !*** ./node_modules/vuetify/lib/composables/resizeObserver.mjs ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   useResizeObserver: () => (/* binding */ useResizeObserver)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../util/index.mjs */ "./node_modules/vuetify/lib/util/helpers.mjs");
+/* harmony import */ var _util_globals_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../util/globals.mjs */ "./node_modules/vuetify/lib/util/globals.mjs");
+// Utilities
+
+
+ // Types
+function useResizeObserver(callback) {
+  let box = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'content';
+  const resizeRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+  const contentRect = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+  if (_util_globals_mjs__WEBPACK_IMPORTED_MODULE_1__.IN_BROWSER) {
+    const observer = new ResizeObserver(entries => {
+      callback?.(entries, observer);
+      if (!entries.length) return;
+      if (box === 'content') {
+        contentRect.value = entries[0].contentRect;
+      } else {
+        contentRect.value = entries[0].target.getBoundingClientRect();
+      }
+    });
+    (0,vue__WEBPACK_IMPORTED_MODULE_0__.onBeforeUnmount)(() => {
+      observer.disconnect();
+    });
+    (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(resizeRef, (newValue, oldValue) => {
+      if (oldValue) {
+        observer.unobserve((0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_2__.refElement)(oldValue));
+        contentRect.value = undefined;
+      }
+      if (newValue) observer.observe((0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_2__.refElement)(newValue));
+    }, {
+      flush: 'post'
+    });
+  }
+  return {
+    resizeRef,
+    contentRect: (0,vue__WEBPACK_IMPORTED_MODULE_0__.readonly)(contentRect)
+  };
+}
+//# sourceMappingURL=resizeObserver.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/composables/theme.mjs":
+/*!********************************************************!*\
+  !*** ./node_modules/vuetify/lib/composables/theme.mjs ***!
+  \********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ThemeSymbol: () => (/* binding */ ThemeSymbol),
+/* harmony export */   createTheme: () => (/* binding */ createTheme),
+/* harmony export */   makeThemeProps: () => (/* binding */ makeThemeProps),
+/* harmony export */   provideTheme: () => (/* binding */ provideTheme),
+/* harmony export */   useTheme: () => (/* binding */ useTheme)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../util/index.mjs */ "./node_modules/vuetify/lib/util/propsFactory.mjs");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../util/index.mjs */ "./node_modules/vuetify/lib/util/helpers.mjs");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../util/index.mjs */ "./node_modules/vuetify/lib/util/colorUtils.mjs");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../util/index.mjs */ "./node_modules/vuetify/lib/util/globals.mjs");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../util/index.mjs */ "./node_modules/vuetify/lib/util/getCurrentInstance.mjs");
+// Utilities
+
+ // Types
+const ThemeSymbol = Symbol.for('vuetify:theme');
+const makeThemeProps = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_1__.propsFactory)({
+  theme: String
+}, 'theme');
+function genDefaults() {
+  return {
+    defaultTheme: 'light',
+    variations: {
+      colors: [],
+      lighten: 0,
+      darken: 0
+    },
+    themes: {
+      light: {
+        dark: false,
+        colors: {
+          background: '#FFFFFF',
+          surface: '#FFFFFF',
+          'surface-bright': '#FFFFFF',
+          'surface-variant': '#424242',
+          'on-surface-variant': '#EEEEEE',
+          primary: '#1867C0',
+          'primary-darken-1': '#1F5592',
+          secondary: '#48A9A6',
+          'secondary-darken-1': '#018786',
+          error: '#B00020',
+          info: '#2196F3',
+          success: '#4CAF50',
+          warning: '#FB8C00'
+        },
+        variables: {
+          'border-color': '#000000',
+          'border-opacity': 0.12,
+          'high-emphasis-opacity': 0.87,
+          'medium-emphasis-opacity': 0.60,
+          'disabled-opacity': 0.38,
+          'idle-opacity': 0.04,
+          'hover-opacity': 0.04,
+          'focus-opacity': 0.12,
+          'selected-opacity': 0.08,
+          'activated-opacity': 0.12,
+          'pressed-opacity': 0.12,
+          'dragged-opacity': 0.08,
+          'theme-kbd': '#212529',
+          'theme-on-kbd': '#FFFFFF',
+          'theme-code': '#F5F5F5',
+          'theme-on-code': '#000000'
+        }
+      },
+      dark: {
+        dark: true,
+        colors: {
+          background: '#121212',
+          surface: '#212121',
+          'surface-bright': '#ccbfd6',
+          'surface-variant': '#a3a3a3',
+          'on-surface-variant': '#424242',
+          primary: '#2196F3',
+          'primary-darken-1': '#277CC1',
+          secondary: '#54B6B2',
+          'secondary-darken-1': '#48A9A6',
+          error: '#CF6679',
+          info: '#2196F3',
+          success: '#4CAF50',
+          warning: '#FB8C00'
+        },
+        variables: {
+          'border-color': '#FFFFFF',
+          'border-opacity': 0.12,
+          'high-emphasis-opacity': 1,
+          'medium-emphasis-opacity': 0.70,
+          'disabled-opacity': 0.50,
+          'idle-opacity': 0.10,
+          'hover-opacity': 0.04,
+          'focus-opacity': 0.12,
+          'selected-opacity': 0.08,
+          'activated-opacity': 0.12,
+          'pressed-opacity': 0.16,
+          'dragged-opacity': 0.08,
+          'theme-kbd': '#212529',
+          'theme-on-kbd': '#FFFFFF',
+          'theme-code': '#343434',
+          'theme-on-code': '#CCCCCC'
+        }
+      }
+    }
+  };
+}
+function parseThemeOptions() {
+  let options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : genDefaults();
+  const defaults = genDefaults();
+  if (!options) return {
+    ...defaults,
+    isDisabled: true
+  };
+  const themes = {};
+  for (const [key, theme] of Object.entries(options.themes ?? {})) {
+    const defaultTheme = theme.dark || key === 'dark' ? defaults.themes?.dark : defaults.themes?.light;
+    themes[key] = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_2__.mergeDeep)(defaultTheme, theme);
+  }
+  return (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_2__.mergeDeep)(defaults, {
+    ...options,
+    themes
+  });
+}
+
+// Composables
+function createTheme(options) {
+  const parsedOptions = parseThemeOptions(options);
+  const name = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(parsedOptions.defaultTheme);
+  const themes = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(parsedOptions.themes);
+  const computedThemes = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+    const acc = {};
+    for (const [name, original] of Object.entries(themes.value)) {
+      const theme = acc[name] = {
+        ...original,
+        colors: {
+          ...original.colors
+        }
+      };
+      if (parsedOptions.variations) {
+        for (const name of parsedOptions.variations.colors) {
+          const color = theme.colors[name];
+          if (!color) continue;
+          for (const variation of ['lighten', 'darken']) {
+            const fn = variation === 'lighten' ? _util_index_mjs__WEBPACK_IMPORTED_MODULE_3__.lighten : _util_index_mjs__WEBPACK_IMPORTED_MODULE_3__.darken;
+            for (const amount of (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_2__.createRange)(parsedOptions.variations[variation], 1)) {
+              theme.colors[`${name}-${variation}-${amount}`] = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_3__.RGBtoHex)(fn((0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_3__.parseColor)(color), amount));
+            }
+          }
+        }
+      }
+      for (const color of Object.keys(theme.colors)) {
+        if (/^on-[a-z]/.test(color) || theme.colors[`on-${color}`]) continue;
+        const onColor = `on-${color}`;
+        const colorVal = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_3__.parseColor)(theme.colors[color]);
+        theme.colors[onColor] = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_3__.getForeground)(colorVal);
+      }
+    }
+    return acc;
+  });
+  const current = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => computedThemes.value[name.value]);
+  const styles = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+    const lines = [];
+    if (current.value.dark) {
+      createCssClass(lines, ':root', ['color-scheme: dark']);
+    }
+    createCssClass(lines, ':root', genCssVariables(current.value));
+    for (const [themeName, theme] of Object.entries(computedThemes.value)) {
+      createCssClass(lines, `.v-theme--${themeName}`, [`color-scheme: ${theme.dark ? 'dark' : 'normal'}`, ...genCssVariables(theme)]);
+    }
+    const bgLines = [];
+    const fgLines = [];
+    const colors = new Set(Object.values(computedThemes.value).flatMap(theme => Object.keys(theme.colors)));
+    for (const key of colors) {
+      if (/^on-[a-z]/.test(key)) {
+        createCssClass(fgLines, `.${key}`, [`color: rgb(var(--v-theme-${key})) !important`]);
+      } else {
+        createCssClass(bgLines, `.bg-${key}`, [`--v-theme-overlay-multiplier: var(--v-theme-${key}-overlay-multiplier)`, `background-color: rgb(var(--v-theme-${key})) !important`, `color: rgb(var(--v-theme-on-${key})) !important`]);
+        createCssClass(fgLines, `.text-${key}`, [`color: rgb(var(--v-theme-${key})) !important`]);
+        createCssClass(fgLines, `.border-${key}`, [`--v-border-color: var(--v-theme-${key})`]);
+      }
+    }
+    lines.push(...bgLines, ...fgLines);
+    return lines.map((str, i) => i === 0 ? str : `    ${str}`).join('');
+  });
+  function getHead() {
+    return {
+      style: [{
+        children: styles.value,
+        id: 'vuetify-theme-stylesheet',
+        nonce: parsedOptions.cspNonce || false
+      }]
+    };
+  }
+  function install(app) {
+    if (parsedOptions.isDisabled) return;
+    const head = app._context.provides.usehead;
+    if (head) {
+      if (head.push) {
+        const entry = head.push(getHead);
+        if (_util_index_mjs__WEBPACK_IMPORTED_MODULE_4__.IN_BROWSER) {
+          (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(styles, () => {
+            entry.patch(getHead);
+          });
+        }
+      } else {
+        if (_util_index_mjs__WEBPACK_IMPORTED_MODULE_4__.IN_BROWSER) {
+          head.addHeadObjs((0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(getHead));
+          (0,vue__WEBPACK_IMPORTED_MODULE_0__.watchEffect)(() => head.updateDOM());
+        } else {
+          head.addHeadObjs(getHead());
+        }
+      }
+    } else {
+      let styleEl = _util_index_mjs__WEBPACK_IMPORTED_MODULE_4__.IN_BROWSER ? document.getElementById('vuetify-theme-stylesheet') : null;
+      if (_util_index_mjs__WEBPACK_IMPORTED_MODULE_4__.IN_BROWSER) {
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(styles, updateStyles, {
+          immediate: true
+        });
+      } else {
+        updateStyles();
+      }
+      function updateStyles() {
+        if (typeof document !== 'undefined' && !styleEl) {
+          const el = document.createElement('style');
+          el.type = 'text/css';
+          el.id = 'vuetify-theme-stylesheet';
+          if (parsedOptions.cspNonce) el.setAttribute('nonce', parsedOptions.cspNonce);
+          styleEl = el;
+          document.head.appendChild(styleEl);
+        }
+        if (styleEl) styleEl.innerHTML = styles.value;
+      }
+    }
+  }
+  const themeClasses = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => parsedOptions.isDisabled ? undefined : `v-theme--${name.value}`);
+  return {
+    install,
+    isDisabled: parsedOptions.isDisabled,
+    name,
+    themes,
+    current,
+    computedThemes,
+    themeClasses,
+    styles,
+    global: {
+      name,
+      current
+    }
+  };
+}
+function provideTheme(props) {
+  (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_5__.getCurrentInstance)('provideTheme');
+  const theme = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)(ThemeSymbol, null);
+  if (!theme) throw new Error('Could not find Vuetify theme injection');
+  const name = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+    return props.theme ?? theme.name.value;
+  });
+  const current = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => theme.themes.value[name.value]);
+  const themeClasses = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => theme.isDisabled ? undefined : `v-theme--${name.value}`);
+  const newTheme = {
+    ...theme,
+    name,
+    current,
+    themeClasses
+  };
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)(ThemeSymbol, newTheme);
+  return newTheme;
+}
+function useTheme() {
+  (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_5__.getCurrentInstance)('useTheme');
+  const theme = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)(ThemeSymbol, null);
+  if (!theme) throw new Error('Could not find Vuetify theme injection');
+  return theme;
+}
+function createCssClass(lines, selector, content) {
+  lines.push(`${selector} {\n`, ...content.map(line => `  ${line};\n`), '}\n');
+}
+function genCssVariables(theme) {
+  const lightOverlay = theme.dark ? 2 : 1;
+  const darkOverlay = theme.dark ? 1 : 2;
+  const variables = [];
+  for (const [key, value] of Object.entries(theme.colors)) {
+    const rgb = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_3__.parseColor)(value);
+    variables.push(`--v-theme-${key}: ${rgb.r},${rgb.g},${rgb.b}`);
+    if (!key.startsWith('on-')) {
+      variables.push(`--v-theme-${key}-overlay-multiplier: ${(0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_3__.getLuma)(value) > 0.18 ? lightOverlay : darkOverlay}`);
+    }
+  }
+  for (const [key, value] of Object.entries(theme.variables)) {
+    const color = typeof value === 'string' && value.startsWith('#') ? (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_3__.parseColor)(value) : undefined;
+    const rgb = color ? `${color.r}, ${color.g}, ${color.b}` : undefined;
+    variables.push(`--v-${key}: ${rgb ?? value}`);
+  }
+  return variables;
+}
+//# sourceMappingURL=theme.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/composables/toggleScope.mjs":
+/*!**************************************************************!*\
+  !*** ./node_modules/vuetify/lib/composables/toggleScope.mjs ***!
+  \**************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   useToggleScope: () => (/* binding */ useToggleScope)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+// Utilities
+
+
+// Types
+
+function useToggleScope(source, fn) {
+  let scope;
+  function start() {
+    scope = (0,vue__WEBPACK_IMPORTED_MODULE_0__.effectScope)();
+    scope.run(() => fn.length ? fn(() => {
+      scope?.stop();
+      start();
+    }) : fn());
+  }
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(source, active => {
+    if (active && !scope) {
+      start();
+    } else if (!active) {
+      scope?.stop();
+      scope = undefined;
+    }
+  }, {
+    immediate: true
+  });
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.onScopeDispose)(() => {
+    scope?.stop();
+  });
+}
+//# sourceMappingURL=toggleScope.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/framework.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/framework.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   createVuetify: () => (/* binding */ createVuetify),
+/* harmony export */   useDate: () => (/* reexport safe */ _composables_index_mjs__WEBPACK_IMPORTED_MODULE_1__.useDate),
+/* harmony export */   useDefaults: () => (/* reexport safe */ _composables_index_mjs__WEBPACK_IMPORTED_MODULE_1__.useDefaults),
+/* harmony export */   useDisplay: () => (/* reexport safe */ _composables_index_mjs__WEBPACK_IMPORTED_MODULE_1__.useDisplay),
+/* harmony export */   useLayout: () => (/* reexport safe */ _composables_index_mjs__WEBPACK_IMPORTED_MODULE_1__.useLayout),
+/* harmony export */   useLocale: () => (/* reexport safe */ _composables_index_mjs__WEBPACK_IMPORTED_MODULE_1__.useLocale),
+/* harmony export */   useRtl: () => (/* reexport safe */ _composables_index_mjs__WEBPACK_IMPORTED_MODULE_1__.useRtl),
+/* harmony export */   useTheme: () => (/* reexport safe */ _composables_index_mjs__WEBPACK_IMPORTED_MODULE_1__.useTheme),
+/* harmony export */   version: () => (/* binding */ version)
+/* harmony export */ });
+/* harmony import */ var _composables_date_date_mjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./composables/date/date.mjs */ "./node_modules/vuetify/lib/composables/date/date.mjs");
+/* harmony import */ var _composables_defaults_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./composables/defaults.mjs */ "./node_modules/vuetify/lib/composables/defaults.mjs");
+/* harmony import */ var _composables_display_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./composables/display.mjs */ "./node_modules/vuetify/lib/composables/display.mjs");
+/* harmony import */ var _composables_icons_mjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./composables/icons.mjs */ "./node_modules/vuetify/lib/composables/icons.mjs");
+/* harmony import */ var _composables_locale_mjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./composables/locale.mjs */ "./node_modules/vuetify/lib/composables/locale.mjs");
+/* harmony import */ var _composables_theme_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./composables/theme.mjs */ "./node_modules/vuetify/lib/composables/theme.mjs");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./util/index.mjs */ "./node_modules/vuetify/lib/util/helpers.mjs");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./util/index.mjs */ "./node_modules/vuetify/lib/util/defineComponent.mjs");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./util/index.mjs */ "./node_modules/vuetify/lib/util/globals.mjs");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./util/index.mjs */ "./node_modules/vuetify/lib/util/getCurrentInstance.mjs");
+/* harmony import */ var _composables_index_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./composables/index.mjs */ "./node_modules/vuetify/lib/composables/index.mjs");
+// Composables
+
+
+
+
+
+ // Utilities
+
+ // Types
+
+function createVuetify() {
+  let vuetify = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  const {
+    blueprint,
+    ...rest
+  } = vuetify;
+  const options = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_2__.mergeDeep)(blueprint, rest);
+  const {
+    aliases = {},
+    components = {},
+    directives = {}
+  } = options;
+  const defaults = (0,_composables_defaults_mjs__WEBPACK_IMPORTED_MODULE_3__.createDefaults)(options.defaults);
+  const display = (0,_composables_display_mjs__WEBPACK_IMPORTED_MODULE_4__.createDisplay)(options.display, options.ssr);
+  const theme = (0,_composables_theme_mjs__WEBPACK_IMPORTED_MODULE_5__.createTheme)(options.theme);
+  const icons = (0,_composables_icons_mjs__WEBPACK_IMPORTED_MODULE_6__.createIcons)(options.icons);
+  const locale = (0,_composables_locale_mjs__WEBPACK_IMPORTED_MODULE_7__.createLocale)(options.locale);
+  const date = (0,_composables_date_date_mjs__WEBPACK_IMPORTED_MODULE_8__.createDate)(options.date, locale);
+  const install = app => {
+    for (const key in directives) {
+      app.directive(key, directives[key]);
+    }
+    for (const key in components) {
+      app.component(key, components[key]);
+    }
+    for (const key in aliases) {
+      app.component(key, (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_9__.defineComponent)({
+        ...aliases[key],
+        name: key,
+        aliasName: aliases[key].name
+      }));
+    }
+    theme.install(app);
+    app.provide(_composables_defaults_mjs__WEBPACK_IMPORTED_MODULE_3__.DefaultsSymbol, defaults);
+    app.provide(_composables_display_mjs__WEBPACK_IMPORTED_MODULE_4__.DisplaySymbol, display);
+    app.provide(_composables_theme_mjs__WEBPACK_IMPORTED_MODULE_5__.ThemeSymbol, theme);
+    app.provide(_composables_icons_mjs__WEBPACK_IMPORTED_MODULE_6__.IconSymbol, icons);
+    app.provide(_composables_locale_mjs__WEBPACK_IMPORTED_MODULE_7__.LocaleSymbol, locale);
+    app.provide(_composables_date_date_mjs__WEBPACK_IMPORTED_MODULE_8__.DateOptionsSymbol, date.options);
+    app.provide(_composables_date_date_mjs__WEBPACK_IMPORTED_MODULE_8__.DateAdapterSymbol, date.instance);
+    if (_util_index_mjs__WEBPACK_IMPORTED_MODULE_10__.IN_BROWSER && options.ssr) {
+      if (app.$nuxt) {
+        app.$nuxt.hook('app:suspense:resolve', () => {
+          display.update();
+        });
+      } else {
+        const {
+          mount
+        } = app;
+        app.mount = function () {
+          const vm = mount(...arguments);
+          (0,vue__WEBPACK_IMPORTED_MODULE_0__.nextTick)(() => display.update());
+          app.mount = mount;
+          return vm;
+        };
+      }
+    }
+    _util_index_mjs__WEBPACK_IMPORTED_MODULE_11__.getUid.reset();
+    if (true) {
+      app.mixin({
+        computed: {
+          $vuetify() {
+            return (0,vue__WEBPACK_IMPORTED_MODULE_0__.reactive)({
+              defaults: inject.call(this, _composables_defaults_mjs__WEBPACK_IMPORTED_MODULE_3__.DefaultsSymbol),
+              display: inject.call(this, _composables_display_mjs__WEBPACK_IMPORTED_MODULE_4__.DisplaySymbol),
+              theme: inject.call(this, _composables_theme_mjs__WEBPACK_IMPORTED_MODULE_5__.ThemeSymbol),
+              icons: inject.call(this, _composables_icons_mjs__WEBPACK_IMPORTED_MODULE_6__.IconSymbol),
+              locale: inject.call(this, _composables_locale_mjs__WEBPACK_IMPORTED_MODULE_7__.LocaleSymbol),
+              date: inject.call(this, _composables_date_date_mjs__WEBPACK_IMPORTED_MODULE_8__.DateAdapterSymbol)
+            });
+          }
+        }
+      });
+    }
+  };
+  return {
+    install,
+    defaults,
+    display,
+    theme,
+    icons,
+    locale,
+    date
+  };
+}
+const version = "3.4.10";
+createVuetify.version = version;
+
+// Vue's inject() can only be used in setup
+function inject(key) {
+  const vm = this.$;
+  const provides = vm.parent?.provides ?? vm.vnode.appContext?.provides;
+  if (provides && key in provides) {
+    return provides[key];
+  }
+}
+//# sourceMappingURL=framework.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/iconsets/mdi.mjs":
+/*!***************************************************!*\
+  !*** ./node_modules/vuetify/lib/iconsets/mdi.mjs ***!
+  \***************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   aliases: () => (/* binding */ aliases),
+/* harmony export */   mdi: () => (/* binding */ mdi)
+/* harmony export */ });
+/* harmony import */ var _composables_icons_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../composables/icons.mjs */ "./node_modules/vuetify/lib/composables/icons.mjs");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+// Composables
+ // Utilities
+
+
+// Types
+
+const aliases = {
+  collapse: 'mdi-chevron-up',
+  complete: 'mdi-check',
+  cancel: 'mdi-close-circle',
+  close: 'mdi-close',
+  delete: 'mdi-close-circle',
+  // delete (e.g. v-chip close)
+  clear: 'mdi-close-circle',
+  success: 'mdi-check-circle',
+  info: 'mdi-information',
+  warning: 'mdi-alert-circle',
+  error: 'mdi-close-circle',
+  prev: 'mdi-chevron-left',
+  next: 'mdi-chevron-right',
+  checkboxOn: 'mdi-checkbox-marked',
+  checkboxOff: 'mdi-checkbox-blank-outline',
+  checkboxIndeterminate: 'mdi-minus-box',
+  delimiter: 'mdi-circle',
+  // for carousel
+  sortAsc: 'mdi-arrow-up',
+  sortDesc: 'mdi-arrow-down',
+  expand: 'mdi-chevron-down',
+  menu: 'mdi-menu',
+  subgroup: 'mdi-menu-down',
+  dropdown: 'mdi-menu-down',
+  radioOn: 'mdi-radiobox-marked',
+  radioOff: 'mdi-radiobox-blank',
+  edit: 'mdi-pencil',
+  ratingEmpty: 'mdi-star-outline',
+  ratingFull: 'mdi-star',
+  ratingHalf: 'mdi-star-half-full',
+  loading: 'mdi-cached',
+  first: 'mdi-page-first',
+  last: 'mdi-page-last',
+  unfold: 'mdi-unfold-more-horizontal',
+  file: 'mdi-paperclip',
+  plus: 'mdi-plus',
+  minus: 'mdi-minus',
+  calendar: 'mdi-calendar',
+  eyeDropper: 'mdi-eyedropper'
+};
+const mdi = {
+  // Not using mergeProps here, functional components merge props by default (?)
+  component: props => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(_composables_icons_mjs__WEBPACK_IMPORTED_MODULE_1__.VClassIcon, {
+    ...props,
+    class: 'mdi'
+  })
+};
+
+//# sourceMappingURL=mdi.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/adapters/vuetify.mjs":
+/*!**************************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/adapters/vuetify.mjs ***!
+  \**************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   createVuetifyAdapter: () => (/* binding */ createVuetifyAdapter)
+/* harmony export */ });
+/* harmony import */ var _composables_proxiedModel_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../composables/proxiedModel.mjs */ "./node_modules/vuetify/lib/composables/proxiedModel.mjs");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../util/index.mjs */ "./node_modules/vuetify/lib/util/helpers.mjs");
+/* harmony import */ var _util_index_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../util/index.mjs */ "./node_modules/vuetify/lib/util/console.mjs");
+/* harmony import */ var _en_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../en.mjs */ "./node_modules/vuetify/lib/locale/en.mjs");
+// Composables
+ // Utilities
+
+ // Locales
+ // Types
+const LANG_PREFIX = '$vuetify.';
+const replace = (str, params) => {
+  return str.replace(/\{(\d+)\}/g, (match, index) => {
+    return String(params[+index]);
+  });
+};
+const createTranslateFunction = (current, fallback, messages) => {
+  return function (key) {
+    for (var _len = arguments.length, params = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+      params[_key - 1] = arguments[_key];
+    }
+    if (!key.startsWith(LANG_PREFIX)) {
+      return replace(key, params);
+    }
+    const shortKey = key.replace(LANG_PREFIX, '');
+    const currentLocale = current.value && messages.value[current.value];
+    const fallbackLocale = fallback.value && messages.value[fallback.value];
+    let str = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_1__.getObjectValueByPath)(currentLocale, shortKey, null);
+    if (!str) {
+      (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_2__.consoleWarn)(`Translation key "${key}" not found in "${current.value}", trying fallback locale`);
+      str = (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_1__.getObjectValueByPath)(fallbackLocale, shortKey, null);
+    }
+    if (!str) {
+      (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_2__.consoleError)(`Translation key "${key}" not found in fallback`);
+      str = key;
+    }
+    if (typeof str !== 'string') {
+      (0,_util_index_mjs__WEBPACK_IMPORTED_MODULE_2__.consoleError)(`Translation key "${key}" has a non-string value`);
+      str = key;
+    }
+    return replace(str, params);
+  };
+};
+function createNumberFunction(current, fallback) {
+  return (value, options) => {
+    const numberFormat = new Intl.NumberFormat([current.value, fallback.value], options);
+    return numberFormat.format(value);
+  };
+}
+function useProvided(props, prop, provided) {
+  const internal = (0,_composables_proxiedModel_mjs__WEBPACK_IMPORTED_MODULE_3__.useProxiedModel)(props, prop, props[prop] ?? provided.value);
+
+  // TODO: Remove when defaultValue works
+  internal.value = props[prop] ?? provided.value;
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(provided, v => {
+    if (props[prop] == null) {
+      internal.value = provided.value;
+    }
+  });
+  return internal;
+}
+function createProvideFunction(state) {
+  return props => {
+    const current = useProvided(props, 'locale', state.current);
+    const fallback = useProvided(props, 'fallback', state.fallback);
+    const messages = useProvided(props, 'messages', state.messages);
+    return {
+      name: 'vuetify',
+      current,
+      fallback,
+      messages,
+      t: createTranslateFunction(current, fallback, messages),
+      n: createNumberFunction(current, fallback),
+      provide: createProvideFunction({
+        current,
+        fallback,
+        messages
+      })
+    };
+  };
+}
+function createVuetifyAdapter(options) {
+  const current = (0,vue__WEBPACK_IMPORTED_MODULE_0__.shallowRef)(options?.locale ?? 'en');
+  const fallback = (0,vue__WEBPACK_IMPORTED_MODULE_0__.shallowRef)(options?.fallback ?? 'en');
+  const messages = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)({
+    en: _en_mjs__WEBPACK_IMPORTED_MODULE_4__["default"],
+    ...options?.messages
+  });
+  return {
+    name: 'vuetify',
+    current,
+    fallback,
+    messages,
+    t: createTranslateFunction(current, fallback, messages),
+    n: createNumberFunction(current, fallback),
+    provide: createProvideFunction({
+      current,
+      fallback,
+      messages
+    })
+  };
+}
+//# sourceMappingURL=vuetify.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/af.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/af.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'badge',
+  open: 'Open',
+  close: 'Close',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'Geen ooreenstemmende resultate is gevind nie',
+    loadingText: 'Loading item...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Rye per bladsy:',
+    ariaLabel: {
+      sortDescending: 'Sorted descending.',
+      sortAscending: 'Sorted ascending..',
+      sortNone: 'Not sorted.',
+      activateNone: 'Activate to remove sorting.',
+      activateDescending: 'Activate to sort descending.',
+      activateAscending: 'Activate to sort ascending.'
+    },
+    sortBy: 'Sort by'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Aantal per bladsy:',
+    itemsPerPageAll: 'Alles',
+    nextPage: 'Volgende bladsy',
+    prevPage: 'Vorige bladsy',
+    firstPage: 'Eerste bladsy',
+    lastPage: 'Laaste bladsy',
+    pageText: '{0}-{1} van {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'Geen data is beskikbaar nie',
+  carousel: {
+    prev: 'Vorige visuele',
+    next: 'Volgende visuele',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} meer',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} files',
+    counterSize: '{0} files ({1} in total)'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Paginasie-navigasie',
+      next: 'Volgende bladsy',
+      previous: 'Vorige bladsy',
+      page: 'Gaan na bladsy {0}',
+      currentPage: 'Huidige bladsy, Bladsy {0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=af.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/ar.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/ar.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'شارة',
+  open: 'Open',
+  close: 'إغلاق',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'لم يتم إيجاد نتائج',
+    loadingText: 'يتم جلب العناصر...'
+  },
+  dataTable: {
+    itemsPerPageText: 'عدد الصفوف لكل صفحة:',
+    ariaLabel: {
+      sortDescending: 'مرتب تنازلياً.',
+      sortAscending: 'مرتب تصاعدياً.',
+      sortNone: 'غير مرتب.',
+      activateNone: 'نشط لإزالة الترتيب.',
+      activateDescending: 'نشط للترتيب تنازلياً.',
+      activateAscending: 'نشط للترتيب تصاعدياً.'
+    },
+    sortBy: 'رتب حسب'
+  },
+  dataFooter: {
+    itemsPerPageText: 'عدد العناصر لكل صفحة:',
+    itemsPerPageAll: 'الكل',
+    nextPage: 'الصفحة التالية',
+    prevPage: 'الصفحة السابقة',
+    firstPage: 'الصفحة الأولى',
+    lastPage: 'الصفحة الأخيرة',
+    pageText: '{0}-{1} من {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'لا توجد بيانات',
+  carousel: {
+    prev: 'المعروض السابق',
+    next: 'المعروض التالي',
+    ariaLabel: {
+      delimiter: 'المعروض رقم {0} من {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} أكثر',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} ملفات',
+    counterSize: '{0} ملفات ({1} في المجموع)'
+  },
+  timePicker: {
+    am: 'صباحاً',
+    pm: 'مساءً'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'الإنتقال بين الصفحات',
+      next: 'الصفحة التالية',
+      previous: 'الصفحة السابقة',
+      page: '{0} انتقل إلى الصفحة',
+      currentPage: '{0} الصفحة الحالية رقمها',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'القييم {0} من {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=ar.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/az.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/az.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'nişan',
+  open: 'Open',
+  close: 'Bağla',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'Uyğun məlumat tapılmadı',
+    loadingText: 'Yüklənir... Zəhmət olmasa, gözləyin.'
+  },
+  dataTable: {
+    itemsPerPageText: 'Səhifə başı sətir sayı:',
+    ariaLabel: {
+      sortDescending: 'Azalan sıra ilə düzülmüş.',
+      sortAscending: 'Artan sıra ilə düzülmüş.',
+      sortNone: 'Sıralanmamışdır. ',
+      activateNone: 'Sıralamanı yığışdır.',
+      activateDescending: 'Azalan sıra ilə düz.',
+      activateAscending: 'Artan sıra ilə düz.'
+    },
+    sortBy: 'Sırala'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Səhifə başı sətir sayı:',
+    itemsPerPageAll: 'Hamısı',
+    nextPage: 'Növbəti səhifə',
+    prevPage: 'Əvvəlki səhifə',
+    firstPage: 'İlk səhifə',
+    lastPage: 'Son səhifə',
+    pageText: '{0} - {1} arası, Cəmi: {2} qeydiyyat'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'Bu görüntüdə məlumat yoxdur.',
+  carousel: {
+    prev: 'Əvvəlki görüntü',
+    next: 'Növbəti görüntü',
+    ariaLabel: {
+      delimiter: 'Galereya səhifə {0} / {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} ədad daha',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} fayl',
+    counterSize: '{0} fayl (cəmi {1})'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Səhifələmə Naviqasiyası',
+      next: 'Növbəti səhifə',
+      previous: 'Əvəvlki səhifə',
+      page: 'Səhifəyə get {0}',
+      currentPage: 'Cari səhifə, Səhifə {0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=az.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/bg.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/bg.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Значка',
+  open: 'Отвори',
+  close: 'Затвори',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Отмяна'
+  },
+  dataIterator: {
+    noResultsText: 'Не са намерени записи',
+    loadingText: 'Зареждане на елементи...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Редове на страница:',
+    ariaLabel: {
+      sortDescending: 'Подреди в намаляващ ред.',
+      sortAscending: 'Подреди в нарастващ ред.',
+      sortNone: 'Без подредба.',
+      activateNone: 'Активирай за премахване на подредбата.',
+      activateDescending: 'Активирай за подредба в намаляващ ред.',
+      activateAscending: 'Активирай за подредба в нарастващ ред.'
+    },
+    sortBy: 'Сортирай по'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Елементи на страница:',
+    itemsPerPageAll: 'Всички',
+    nextPage: 'Следваща страница',
+    prevPage: 'Предишна страница',
+    firstPage: 'Първа страница',
+    lastPage: 'Последна страница',
+    pageText: '{0}-{1} от {2}'
+  },
+  dateRangeInput: {
+    divider: 'до'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Избор на дати',
+      header: 'Въвеждане на дати'
+    },
+    title: 'Избор на дата',
+    header: 'Въвеждане на дата',
+    input: {
+      placeholder: 'Въведете дата'
+    }
+  },
+  noDataText: 'Няма налични данни',
+  carousel: {
+    prev: 'Предишна визуализация',
+    next: 'Следваща визуализация',
+    ariaLabel: {
+      delimiter: 'Кадър {0} от {1} на въртележката'
+    }
+  },
+  calendar: {
+    moreEvents: 'Още {0}',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Изчисти {0}',
+    prependAction: '{0} предшестващо действие',
+    appendAction: '{0} последващо действие',
+    otp: 'Моля, въведете OTP символ {0}'
+  },
+  fileInput: {
+    counter: '{0} файла',
+    counterSize: '{0} файла ({1} общо)'
+  },
+  timePicker: {
+    am: 'пр. обяд',
+    pm: 'сл. обяд'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Странициране',
+      next: 'Следваща страница',
+      previous: 'Предишна страница',
+      page: 'Отиди на страница {0}',
+      currentPage: 'Текуща страница, Страница {0}',
+      first: 'Първа страница',
+      last: 'Последна страница'
+    }
+  },
+  stepper: {
+    next: 'Следващ',
+    prev: 'Предишен'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Оценка {0} от {1}'
+    }
+  },
+  loading: 'Зареждане...',
+  infiniteScroll: {
+    loadMore: 'Зареди още',
+    empty: 'Няма повече'
+  }
+});
+//# sourceMappingURL=bg.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/ca.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/ca.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Insígnia',
+  open: 'Open',
+  close: 'Tancar',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'Sense dades per mostrar',
+    loadingText: 'Carregant...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Files per pàgina:',
+    ariaLabel: {
+      sortDescending: 'Ordre descendent.',
+      sortAscending: 'Ordre ascendent.',
+      sortNone: 'Sense ordenar.',
+      activateNone: 'Premi per treure la ordenació.',
+      activateDescending: 'Premi per ordenar descendent.',
+      activateAscending: 'Premi per ordenar ascendent.'
+    },
+    sortBy: 'Ordenat per'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Elements per pàgina:',
+    itemsPerPageAll: 'Tot',
+    nextPage: 'Pàgina següent',
+    prevPage: 'Pàgina anterior',
+    firstPage: 'Primera pàgina',
+    lastPage: 'Última pàgina',
+    pageText: '{0}-{1} de {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'Sense dades',
+  carousel: {
+    prev: 'Visualització prèvia',
+    next: 'Visualització següent',
+    ariaLabel: {
+      delimiter: 'Diapositiva {0} of {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} més',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} fitxers',
+    counterSize: '{0} fitxers ({1} en total)'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Navegació de la pàgina',
+      next: 'Pàgina següent',
+      previous: 'Pàgina anterior',
+      page: 'Ves a la pàgina {0}',
+      currentPage: 'Pàgina actual, pàgina {0}',
+      first: 'Primera pàgina',
+      last: 'Última pàgina'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Puntuació {0} de {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=ca.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/ckb.mjs":
+/*!*************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/ckb.mjs ***!
+  \*************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'باج',
+  open: 'Open',
+  close: 'داخستن',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'هیچ تۆمارێکی هاوتا نەدۆزرایەوە',
+    loadingText: 'بارکردنی ئایتمەکان...'
+  },
+  dataTable: {
+    itemsPerPageText: 'ڕیزەکان بۆ هەر پەڕەیەک:',
+    ariaLabel: {
+      sortDescending: '.سەر بەرەو خوار ڕیزکراوە',
+      sortAscending: '.سەر بەرەو ژوور ڕیزکراوە',
+      sortNone: 'ڕیزنەکراوە.',
+      activateNone: 'چالاککردن بۆ لابردنی ڕیزکردن.',
+      activateDescending: 'چالاککردن بۆ ڕیزکردنی سەربەرەوخوار.',
+      activateAscending: 'چالاککردن بۆ ڕیزکردنی سەر بەرەو ژوور.'
+    },
+    sortBy: 'ڕیزکردن بەپێی'
+  },
+  dataFooter: {
+    itemsPerPageText: 'ئایتمەکان بۆ هەر پەڕەیەک:',
+    itemsPerPageAll: 'هەمووی',
+    nextPage: 'پەڕەی دواتر',
+    prevPage: 'پەڕەی پێشوو',
+    firstPage: 'پەڕەی یەکەم',
+    lastPage: 'پەڕەی کۆتایی',
+    pageText: '{0}-{1} لە {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'هیچ داتایەک بەردەست نیە',
+  carousel: {
+    prev: 'بینراوی پێشوو',
+    next: 'بینراوی داهاتوو',
+    ariaLabel: {
+      delimiter: 'سلایدی کارۆسێل {0} لە {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} زیاتر',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} فایل',
+    counterSize: '{0} فایل ({1} لە کۆی گشتی)'
+  },
+  timePicker: {
+    am: 'پێش نیوەڕۆژ',
+    pm: 'دوای نیوەڕۆژ'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'ڕێنیشاندەری پەڕەگۆڕکێ',
+      next: 'پەڕەی دواتر',
+      previous: 'پەڕەی پێشوو',
+      page: 'بڕۆ بۆ پەڕەی {0}',
+      currentPage: 'پەڕەی ئێستا، پەڕە{0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=ckb.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/cs.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/cs.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Odznak',
+  open: 'Otevřiť',
+  close: 'Zavřít',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Zrušit'
+  },
+  dataIterator: {
+    noResultsText: 'Nenalezeny žádné záznamy',
+    loadingText: 'Načítám položky...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Řádků na stránku:',
+    ariaLabel: {
+      sortDescending: 'Řazeno sestupně.',
+      sortAscending: 'Řazeno vzestupně.',
+      sortNone: 'Neseřazeno.',
+      activateNone: 'Aktivováním vypnete řazení.',
+      activateDescending: 'Aktivováním se bude řadit sestupně.',
+      activateAscending: 'Aktivováním se bude řadit vzestupně.'
+    },
+    sortBy: 'Řadit dle'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Položek na stránku:',
+    itemsPerPageAll: 'Vše',
+    nextPage: 'Další strana',
+    prevPage: 'Předchozí strana',
+    firstPage: 'První strana',
+    lastPage: 'Poslední strana',
+    pageText: '{0}-{1} z {2}'
+  },
+  dateRangeInput: {
+    divider: 'do'
+  },
+  datePicker: {
+    itemsSelected: '{0} vybrán',
+    range: {
+      title: 'Vyberte datumy',
+      header: 'Zadejte datumy'
+    },
+    title: 'Vyberte datum',
+    header: 'Zadejte datum',
+    input: {
+      placeholder: 'Zadejte datum'
+    }
+  },
+  noDataText: 'Nejsou dostupná žádná data',
+  carousel: {
+    prev: 'Předchozí obrázek',
+    next: 'Další obrázek',
+    ariaLabel: {
+      delimiter: 'Obrázek {0} z {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} dalších',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Vymazat {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Vložte výhradně OTP znaky {0}'
+  },
+  fileInput: {
+    counter: '{0} souborů',
+    counterSize: '{0} souborů ({1} celkem)'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Navigace po stránkách',
+      next: 'Další strana',
+      previous: 'Předchozí strana',
+      page: 'Přejít na stránku {0}',
+      currentPage: 'Aktuální stránka, stránka {0}',
+      first: 'První stránka',
+      last: 'Poslední stránka'
+    }
+  },
+  stepper: {
+    next: 'Další',
+    prev: 'Předchozí'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Hodnocení {0} z {1}'
+    }
+  },
+  loading: 'Načítám...',
+  infiniteScroll: {
+    loadMore: 'Načíst více',
+    empty: 'Žádné další'
+  }
+});
+//# sourceMappingURL=cs.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/da.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/da.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Emblem',
+  open: 'Open',
+  close: 'Luk',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'Ingen matchende data fundet',
+    loadingText: 'Indhenter data...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Rækker pr. side:',
+    ariaLabel: {
+      sortDescending: 'Sorteret faldende.',
+      sortAscending: 'Sorteret stigende.',
+      sortNone: 'Ikke sorteret.',
+      activateNone: 'Aktiver for at fjerne sortering.',
+      activateDescending: 'Aktiver for at sortere faldende.',
+      activateAscending: 'Aktiver for at sortere stigende.'
+    },
+    sortBy: 'Sorter efter'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Rækker pr. side:',
+    itemsPerPageAll: 'Alle',
+    nextPage: 'Næste side',
+    prevPage: 'Forrige side',
+    firstPage: 'Første side',
+    lastPage: 'Sidste side',
+    pageText: '{0}-{1} af {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'Ingen data tilgængelig',
+  carousel: {
+    prev: 'Forrige visuelle',
+    next: 'Næste visuelle',
+    ariaLabel: {
+      delimiter: 'Karrusel dias {0} af {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} mere',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} filer',
+    counterSize: '{0} filer ({1} total)'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Pagineringsnavigation',
+      next: 'Næste side',
+      previous: 'Forrige side',
+      page: 'Gå til side {0}',
+      currentPage: 'Nuværende side, Side {0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Bedømmelse {0} af {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=da.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/de.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/de.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Abzeichen',
+  open: 'Öffnen',
+  close: 'Schließen',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Abbrechen'
+  },
+  dataIterator: {
+    noResultsText: 'Keine Elemente gefunden',
+    loadingText: 'Lade Elemente...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Zeilen pro Seite:',
+    ariaLabel: {
+      sortDescending: 'Absteigend sortiert.',
+      sortAscending: 'Aufsteigend sortiert.',
+      sortNone: 'Nicht sortiert.',
+      activateNone: 'Aktivieren um Sortierung zu entfernen.',
+      activateDescending: 'Aktivieren um absteigend zu sortieren.',
+      activateAscending: 'Aktivieren um aufsteigend zu sortieren.'
+    },
+    sortBy: 'Sortiere nach'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Elemente pro Seite:',
+    itemsPerPageAll: 'Alle',
+    nextPage: 'Nächste Seite',
+    prevPage: 'Vorherige Seite',
+    firstPage: 'Erste Seite',
+    lastPage: 'Letzte Seite',
+    pageText: '{0}-{1} von {2}'
+  },
+  dateRangeInput: {
+    divider: 'bis'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Daten auswählen',
+      header: 'Daten eingeben'
+    },
+    title: 'Datum auswählen',
+    header: 'Datum eingeben',
+    input: {
+      placeholder: 'Datum eingeben'
+    }
+  },
+  noDataText: 'Keine Daten vorhanden',
+  carousel: {
+    prev: 'Vorheriges Bild',
+    next: 'Nächstes Bild',
+    ariaLabel: {
+      delimiter: 'Element {0} von {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} mehr',
+    today: 'Today'
+  },
+  input: {
+    clear: '{0} leeren',
+    prependAction: '{0} vorangestellte Aktion',
+    appendAction: '{0} angehängte Aktion',
+    otp: 'Bitte OTP-Zeichen {0} eingeben'
+  },
+  fileInput: {
+    counter: '{0} Dateien',
+    counterSize: '{0} Dateien ({1} gesamt)'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Seitennavigation',
+      next: 'Nächste Seite',
+      previous: 'Vorherige Seite',
+      page: 'Gehe zu Seite {0}',
+      currentPage: 'Aktuelle Seite, Seite {0}',
+      first: 'Erste Seite',
+      last: 'Letzte Seite'
+    }
+  },
+  stepper: {
+    next: 'Weiter',
+    prev: 'Zurück'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Bewertung {0} von {1}'
+    }
+  },
+  loading: 'Laden...',
+  infiniteScroll: {
+    loadMore: 'Mehr laden',
+    empty: 'Nichts weiteres'
+  }
+});
+//# sourceMappingURL=de.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/el.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/el.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Σήμα',
+  open: 'Open',
+  close: 'Close',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'Δε βρέθηκαν αποτελέσματα',
+    loadingText: 'Loading item...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Γραμμές ανά σελίδα:',
+    ariaLabel: {
+      sortDescending: 'Sorted descending.',
+      sortAscending: 'Sorted ascending.',
+      sortNone: 'Not sorted.',
+      activateNone: 'Activate to remove sorting.',
+      activateDescending: 'Activate to sort descending.',
+      activateAscending: 'Activate to sort ascending.'
+    },
+    sortBy: 'Sort by'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Αντικείμενα ανά σελίδα:',
+    itemsPerPageAll: 'Όλα',
+    nextPage: 'Επόμενη σελίδα',
+    prevPage: 'Προηγούμενη σελίδα',
+    firstPage: 'Πρώτη σελίδα',
+    lastPage: 'Τελευταία σελίδα',
+    pageText: '{0}-{1} από {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'Χωρίς δεδομένα',
+  carousel: {
+    prev: 'הקודם חזותי',
+    next: 'הבא חזותי',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} ακόμη',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} files',
+    counterSize: '{0} files ({1} in total)'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Πλοήγηση με προορισμούς',
+      next: 'Επόμενη σελίδα',
+      previous: 'Προηγούμενη σελίδα',
+      page: 'Πήγαινε στην σελίδα {0}',
+      currentPage: 'Τρέχουσα σελίδα, σελίδα {0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=el.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/en.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/en.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Badge',
+  open: 'Open',
+  close: 'Close',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'No matching records found',
+    loadingText: 'Loading items...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Rows per page:',
+    ariaLabel: {
+      sortDescending: 'Sorted descending.',
+      sortAscending: 'Sorted ascending.',
+      sortNone: 'Not sorted.',
+      activateNone: 'Activate to remove sorting.',
+      activateDescending: 'Activate to sort descending.',
+      activateAscending: 'Activate to sort ascending.'
+    },
+    sortBy: 'Sort by'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Items per page:',
+    itemsPerPageAll: 'All',
+    nextPage: 'Next page',
+    prevPage: 'Previous page',
+    firstPage: 'First page',
+    lastPage: 'Last page',
+    pageText: '{0}-{1} of {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'No data available',
+  carousel: {
+    prev: 'Previous visual',
+    next: 'Next visual',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} more',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} files',
+    counterSize: '{0} files ({1} in total)'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Pagination Navigation',
+      next: 'Next page',
+      previous: 'Previous page',
+      page: 'Go to page {0}',
+      currentPage: 'Page {0}, Current page',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=en.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/es.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/es.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Placa',
+  open: 'Open',
+  close: 'Cerrar',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'Ningún elemento coincide con la búsqueda',
+    loadingText: 'Cargando...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Filas por página:',
+    ariaLabel: {
+      sortDescending: 'Orden descendente.',
+      sortAscending: 'Orden ascendente.',
+      sortNone: 'Sin ordenar.',
+      activateNone: 'Pulse para quitar orden.',
+      activateDescending: 'Pulse para ordenar de forma descendente.',
+      activateAscending: 'Pulse para ordenar de forma ascendente.'
+    },
+    sortBy: 'Ordenado por'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Elementos por página:',
+    itemsPerPageAll: 'Todos',
+    nextPage: 'Página siguiente',
+    prevPage: 'Página anterior',
+    firstPage: 'Primera página',
+    lastPage: 'Última página',
+    pageText: '{0}-{1} de {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'No hay datos disponibles',
+  carousel: {
+    prev: 'Visual anterior',
+    next: 'Visual siguiente',
+    ariaLabel: {
+      delimiter: 'Visual {0} de {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} más',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} archivos',
+    counterSize: '{0} archivos ({1} en total)'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Navegación de paginación',
+      next: 'Página siguiente',
+      previous: 'Página anterior',
+      page: 'Ir a la página {0}',
+      currentPage: 'Página actual, página {0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Puntuación {0} de {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=es.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/et.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/et.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Märk',
+  open: 'Open',
+  close: 'Sulge',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'Vastavaid kirjeid ei leitud',
+    loadingText: 'Andmeid laaditakse...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Ridu leheküljel:',
+    ariaLabel: {
+      sortDescending: 'Kahanevalt sorteeritud.',
+      sortAscending: 'Kasvavalt sorteeritud.',
+      sortNone: 'Ei ole sorteeritud.',
+      activateNone: 'Vajuta uuesti sorteerimise eemaldamiseks.',
+      activateDescending: 'Vajuta uuesti, et sorteerida kahanevalt.',
+      activateAscending: 'Vajuta kasvavalt sorteerimiseks.'
+    },
+    sortBy: 'Sorteerimise alus'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Kirjeid leheküljel:',
+    itemsPerPageAll: 'Kõik',
+    nextPage: 'Järgmine lehekülg',
+    prevPage: 'Eelmine lehekülg',
+    firstPage: 'Esimene lehekülg',
+    lastPage: 'Viimane lehekülg',
+    pageText: '{0}-{1} {2}st'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'Andmed puuduvad',
+  carousel: {
+    prev: 'Eelmine visuaalne',
+    next: 'Järgmine visuaalne',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} veel',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} faili',
+    counterSize: '{0} faili (kokku {1})'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Pagination Navigation',
+      next: 'Järgmine lehekülg',
+      previous: 'Eelmine lehekülg',
+      page: 'Mine lehele {0}',
+      currentPage: 'Praegune leht, leht {0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=et.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/fa.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/fa.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'نشان',
+  open: 'Open',
+  close: 'بستن',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'لغو'
+  },
+  dataIterator: {
+    noResultsText: 'نتیجه‌ای یافت نشد',
+    loadingText: 'در حال بارگذاری...'
+  },
+  dataTable: {
+    itemsPerPageText: 'ردیف در صفحه:',
+    ariaLabel: {
+      sortDescending: 'مرتب‌سازی نزولی',
+      sortAscending: 'مرتب‌سازی صعودی',
+      sortNone: 'بدون مرتب‌سازی',
+      activateNone: 'غیرفعال‌سازی مرتب‌سازی',
+      activateDescending: 'غیرفعال‌سازی مرتب‌سازی نزولی',
+      activateAscending: 'غیرفعال‌سازی مرتب‌سازی صعودی'
+    },
+    sortBy: 'مرتب‌سازی براساس'
+  },
+  dataFooter: {
+    itemsPerPageText: 'ردیف در صفحه:',
+    itemsPerPageAll: 'همه',
+    nextPage: 'صفحه‌ی بعد',
+    prevPage: 'صفحه‌ی قبل',
+    firstPage: 'صفحه‌ی یکم',
+    lastPage: 'صفحه‌ی آخر',
+    pageText: '{0} تا {1} از {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'انتخاب تاریخ‌ها',
+      header: 'تاریخ‌ها را وارد کنید'
+    },
+    title: 'انتخاب تاریخ',
+    header: 'تاریخ را وارد کنید',
+    input: {
+      placeholder: 'تاریخ را وارد کنید'
+    }
+  },
+  noDataText: 'داده‌ای موجود نیست',
+  carousel: {
+    prev: 'اسلاید قبلی',
+    next: 'اسلاید بعدی',
+    ariaLabel: {
+      delimiter: 'اسلاید {0} از {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{بیشتر {0',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} پرونده',
+    counterSize: '{0} پرونده ({1} در کل)'
+  },
+  timePicker: {
+    am: 'قبل از ظهر',
+    pm: 'بعد از ظهر'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'جهت یابی صفحه',
+      next: 'صفحه‌ی بعد',
+      previous: 'صفحه‌ی قبلی',
+      page: 'برو صفحه {0}',
+      currentPage: '{0} صفحه‌ی فعلی ، صفحه‌ی',
+      first: 'صفحه‌ی اول',
+      last: 'صفحه‌ی آخر'
+    }
+  },
+  stepper: {
+    next: 'بعدی',
+    prev: 'قبلی'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}'
+    }
+  },
+  loading: 'در حال بارگذاری...',
+  infiniteScroll: {
+    loadMore: 'بارگذاری بیشتر',
+    empty: 'پایان'
+  }
+});
+//# sourceMappingURL=fa.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/fi.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/fi.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Infopiste',
+  open: 'Open',
+  close: 'Sulje',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'Ei osumia',
+    loadingText: 'Ladataan kohteita...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Rivejä sivulla:',
+    ariaLabel: {
+      sortDescending: ': Järjestetty laskevasti. Poista järjestäminen aktivoimalla.',
+      sortAscending: ': Järjestetty nousevasti. Järjestä laskevasti aktivoimalla.',
+      sortNone: ': Ei järjestetty. Järjestä nousevasti aktivoimalla.',
+      activateNone: 'Aktivoi lajittelun poistamiseksi.',
+      activateDescending: 'Aktivoi laskevien laskevien lajittelemiseksi.',
+      activateAscending: 'Aktivoi lajitella nouseva.'
+    },
+    sortBy: 'Järjestä'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Kohteita sivulla:',
+    itemsPerPageAll: 'Kaikki',
+    nextPage: 'Seuraava sivu',
+    prevPage: 'Edellinen sivu',
+    firstPage: 'Ensimmäinen sivu',
+    lastPage: 'Viimeinen sivu',
+    pageText: '{0}-{1} ({2})'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'Ei dataa',
+  carousel: {
+    prev: 'Edellinen kuva',
+    next: 'Seuraava kuva',
+    ariaLabel: {
+      delimiter: 'Karusellin kuva {0}/{1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} lisää',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} tiedostoa',
+    counterSize: '{0} tiedostoa ({1} yhteensä)'
+  },
+  timePicker: {
+    am: 'ap.',
+    pm: 'ip.'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Pagination Navigation',
+      next: 'Seuraava sivu',
+      previous: 'Edellinen sivu',
+      page: 'Mene sivulle {0}',
+      currentPage: 'Nykyinen sivu, Sivu {0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Luokitus {0}/{1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=fi.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/fr.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/fr.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Badge',
+  open: 'Ouvrir',
+  close: 'Fermer',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Annuler'
+  },
+  dataIterator: {
+    noResultsText: 'Aucun enregistrement correspondant trouvé',
+    loadingText: `Chargement de l'élément...`
+  },
+  dataTable: {
+    itemsPerPageText: 'Lignes par page :',
+    ariaLabel: {
+      sortDescending: 'Tri décroissant.',
+      sortAscending: 'Tri croissant.',
+      sortNone: 'Non trié.',
+      activateNone: 'Activer pour supprimer le tri.',
+      activateDescending: 'Activer pour trier par ordre décroissant.',
+      activateAscending: 'Activer pour trier par ordre croissant.'
+    },
+    sortBy: 'Trier par'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Éléments par page :',
+    itemsPerPageAll: 'Tous',
+    nextPage: 'Page suivante',
+    prevPage: 'Page précédente',
+    firstPage: 'Première page',
+    lastPage: 'Dernière page',
+    pageText: '{0}-{1} de {2}'
+  },
+  dateRangeInput: {
+    divider: 'à'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Sélectionner des dates',
+      header: 'Entrer des dates'
+    },
+    title: 'Sélectionner une date',
+    header: 'Entrer une date',
+    input: {
+      placeholder: 'Entrer une date'
+    }
+  },
+  noDataText: 'Aucune donnée disponible',
+  carousel: {
+    prev: 'Visuel précédent',
+    next: 'Visuel suivant',
+    ariaLabel: {
+      delimiter: 'Diapositive {0} de {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} de plus',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Vider {0}',
+    prependAction: '{0} action avant',
+    appendAction: '{0} action après',
+    otp: 'Caractère {0} du mot de passe à usage unique'
+  },
+  fileInput: {
+    counter: '{0} fichier(s)',
+    counterSize: '{0} fichier(s) ({1} au total)'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Navigation de pagination',
+      next: 'Page suivante',
+      previous: 'Page précédente',
+      page: 'Aller à la page {0}',
+      currentPage: 'Page actuelle, Page {0}',
+      first: 'Première page',
+      last: 'Dernière page'
+    }
+  },
+  stepper: {
+    next: 'Suivant',
+    prev: 'Précédent'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Note de {0} sur {1}'
+    }
+  },
+  loading: 'Chargement...',
+  infiniteScroll: {
+    loadMore: 'Charger plus',
+    empty: 'Aucune donnée supplémentaire'
+  }
+});
+//# sourceMappingURL=fr.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/he.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/he.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'תג',
+  open: 'Open',
+  close: 'סגור',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'לא נמצאו תוצאות מתאימות',
+    loadingText: 'טוען פריט...'
+  },
+  dataTable: {
+    itemsPerPageText: 'שורות לעמוד:',
+    ariaLabel: {
+      sortDescending: 'ממוין לפי סדר עולה. לחץ להספקת המיון.',
+      sortAscending: 'ממוין לפי סדר יורד. לחץ למיון לפי סדר עולה.',
+      sortNone: 'לא ממוין. לחץ למיון לפי סדר עולה.',
+      activateNone: 'הפעל להסרת המיון.',
+      activateDescending: 'הפעל למיון יורד.',
+      activateAscending: 'הפעל למיון עולה.'
+    },
+    sortBy: 'סדר לפי'
+  },
+  dataFooter: {
+    itemsPerPageText: 'פריטים לדף:',
+    itemsPerPageAll: 'הכל',
+    nextPage: 'עמוד הבא',
+    prevPage: 'עמוד הקודם',
+    firstPage: 'עמוד ראשון',
+    lastPage: 'עמוד אחרון',
+    pageText: '{0}-{1} מתוך {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'אין נתונים זמינים',
+  carousel: {
+    prev: 'מצג קודם',
+    next: 'מצג הבא',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} נוספים',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} קבצים',
+    counterSize: '{0} קבצים ({1} בסך הכל)'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'ניווט עימוד',
+      next: 'עמוד הבא',
+      previous: 'עמוד הקודם',
+      page: '{0} לך לעמוד',
+      currentPage: '{0} עמוד נוכחי, עמוד',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=he.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/hr.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/hr.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Bedž',
+  open: 'Open',
+  close: 'Zatvori',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'Nisu pronađene odgovarajuće stavke',
+    loadingText: 'Učitavanje...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Redaka po stranici:',
+    ariaLabel: {
+      sortDescending: 'Sortirano silazno.',
+      sortAscending: 'Sortirano uzlazno.',
+      sortNone: 'Nije sortirano.',
+      activateNone: 'Odaberite za uklanjanje sortiranja.',
+      activateDescending: 'Odaberite za silazno sortiranje.',
+      activateAscending: 'Odaberite za uzlazno sortiranje.'
+    },
+    sortBy: 'Sortirajte po'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Stavki po stranici:',
+    itemsPerPageAll: 'Sve',
+    nextPage: 'Sljedeća stranica',
+    prevPage: 'Prethodna stranica',
+    firstPage: 'Prva stranica',
+    lastPage: 'Posljednja stranica',
+    pageText: '{0}-{1} od {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'Nema dostupnih podataka',
+  carousel: {
+    prev: 'Prethodno',
+    next: 'Sljedeće',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}'
+    }
+  },
+  calendar: {
+    moreEvents: 'Još {0}',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: 'Odabranih datoteka: {0}',
+    counterSize: 'Odabranih datoteka: {0} ({1} ukupno)'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Navigacija stranicama',
+      next: 'Sljedeća stranica',
+      previous: 'Prethodna stranica',
+      page: 'Idi na stranicu {0}',
+      currentPage: 'Trenutna stranica, stranica {0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=hr.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/hu.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/hu.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Jelvény',
+  open: 'Open',
+  close: 'Bezárás',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'Nincs egyező találat',
+    loadingText: 'Betöltés...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Elem oldalanként:',
+    ariaLabel: {
+      sortDescending: 'Csökkenő sorrendbe rendezve.',
+      sortAscending: 'Növekvő sorrendbe rendezve.',
+      sortNone: 'Rendezetlen.',
+      activateNone: 'Rendezés törlése.',
+      activateDescending: 'Aktiváld a csökkenő rendezésért.',
+      activateAscending: 'Aktiváld a növekvő rendezésért.'
+    },
+    sortBy: 'Rendezés'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Elem oldalanként:',
+    itemsPerPageAll: 'Mind',
+    nextPage: 'Következő oldal',
+    prevPage: 'Előző oldal',
+    firstPage: 'Első oldal',
+    lastPage: 'Utolsó oldal',
+    pageText: '{0}-{1} / {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'Nincs elérhető adat',
+  carousel: {
+    prev: 'Előző',
+    next: 'Következő',
+    ariaLabel: {
+      delimiter: 'Dia {0}/{1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} további',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} fájl',
+    counterSize: '{0} fájl ({1} összesen)'
+  },
+  timePicker: {
+    am: 'de',
+    pm: 'du'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Oldal navigáció',
+      next: 'Következő oldal',
+      previous: 'Előző oldal',
+      page: 'Menj a(z) {0}. oldalra',
+      currentPage: 'Aktuális oldal: {0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=hu.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/id.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/id.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Lencana',
+  open: 'Open',
+  close: 'Tutup',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'Tidak ditemukan catatan yang cocok',
+    loadingText: 'Memuat data...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Baris per halaman:',
+    ariaLabel: {
+      sortDescending: 'Diurutkan kebawah.',
+      sortAscending: 'Diurutkan keatas.',
+      sortNone: 'Tidak diurutkan.',
+      activateNone: 'Aktifkan untuk menghapus penyortiran.',
+      activateDescending: 'Aktifkan untuk mengurutkan kebawah.',
+      activateAscending: 'Aktifkan untuk mengurutkan keatas.'
+    },
+    sortBy: 'Urutkan berdasar'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Item per halaman:',
+    itemsPerPageAll: 'Semua',
+    nextPage: 'Halaman selanjutnya',
+    prevPage: 'Halaman sebelumnya',
+    firstPage: 'Halaman pertama',
+    lastPage: 'Halaman terakhir',
+    pageText: '{0}-{1} dari {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'Tidak ada data tersedia',
+  carousel: {
+    prev: 'Visual sebelumnya',
+    next: 'Visual selanjutnya',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} lagi',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} berkas',
+    counterSize: '{0} berkas (dari total {1})'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Navigasi Pagination',
+      next: 'Halaman selanjutnya',
+      previous: 'Halaman sebelumnya',
+      page: 'Buka halaman {0}',
+      currentPage: 'Halaman Saat Ini, Halaman {0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=id.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/index.mjs":
+/*!***************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/index.mjs ***!
+  \***************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   af: () => (/* reexport safe */ _af_mjs__WEBPACK_IMPORTED_MODULE_0__["default"]),
+/* harmony export */   ar: () => (/* reexport safe */ _ar_mjs__WEBPACK_IMPORTED_MODULE_1__["default"]),
+/* harmony export */   az: () => (/* reexport safe */ _az_mjs__WEBPACK_IMPORTED_MODULE_37__["default"]),
+/* harmony export */   bg: () => (/* reexport safe */ _bg_mjs__WEBPACK_IMPORTED_MODULE_2__["default"]),
+/* harmony export */   ca: () => (/* reexport safe */ _ca_mjs__WEBPACK_IMPORTED_MODULE_3__["default"]),
+/* harmony export */   ckb: () => (/* reexport safe */ _ckb_mjs__WEBPACK_IMPORTED_MODULE_4__["default"]),
+/* harmony export */   cs: () => (/* reexport safe */ _cs_mjs__WEBPACK_IMPORTED_MODULE_5__["default"]),
+/* harmony export */   da: () => (/* reexport safe */ _da_mjs__WEBPACK_IMPORTED_MODULE_6__["default"]),
+/* harmony export */   de: () => (/* reexport safe */ _de_mjs__WEBPACK_IMPORTED_MODULE_7__["default"]),
+/* harmony export */   defaultRtl: () => (/* binding */ defaultRtl),
+/* harmony export */   el: () => (/* reexport safe */ _el_mjs__WEBPACK_IMPORTED_MODULE_8__["default"]),
+/* harmony export */   en: () => (/* reexport safe */ _en_mjs__WEBPACK_IMPORTED_MODULE_9__["default"]),
+/* harmony export */   es: () => (/* reexport safe */ _es_mjs__WEBPACK_IMPORTED_MODULE_10__["default"]),
+/* harmony export */   et: () => (/* reexport safe */ _et_mjs__WEBPACK_IMPORTED_MODULE_11__["default"]),
+/* harmony export */   fa: () => (/* reexport safe */ _fa_mjs__WEBPACK_IMPORTED_MODULE_12__["default"]),
+/* harmony export */   fi: () => (/* reexport safe */ _fi_mjs__WEBPACK_IMPORTED_MODULE_13__["default"]),
+/* harmony export */   fr: () => (/* reexport safe */ _fr_mjs__WEBPACK_IMPORTED_MODULE_14__["default"]),
+/* harmony export */   he: () => (/* reexport safe */ _he_mjs__WEBPACK_IMPORTED_MODULE_17__["default"]),
+/* harmony export */   hr: () => (/* reexport safe */ _hr_mjs__WEBPACK_IMPORTED_MODULE_15__["default"]),
+/* harmony export */   hu: () => (/* reexport safe */ _hu_mjs__WEBPACK_IMPORTED_MODULE_16__["default"]),
+/* harmony export */   id: () => (/* reexport safe */ _id_mjs__WEBPACK_IMPORTED_MODULE_18__["default"]),
+/* harmony export */   it: () => (/* reexport safe */ _it_mjs__WEBPACK_IMPORTED_MODULE_19__["default"]),
+/* harmony export */   ja: () => (/* reexport safe */ _ja_mjs__WEBPACK_IMPORTED_MODULE_20__["default"]),
+/* harmony export */   ko: () => (/* reexport safe */ _ko_mjs__WEBPACK_IMPORTED_MODULE_21__["default"]),
+/* harmony export */   lt: () => (/* reexport safe */ _lt_mjs__WEBPACK_IMPORTED_MODULE_23__["default"]),
+/* harmony export */   lv: () => (/* reexport safe */ _lv_mjs__WEBPACK_IMPORTED_MODULE_22__["default"]),
+/* harmony export */   nl: () => (/* reexport safe */ _nl_mjs__WEBPACK_IMPORTED_MODULE_24__["default"]),
+/* harmony export */   no: () => (/* reexport safe */ _no_mjs__WEBPACK_IMPORTED_MODULE_25__["default"]),
+/* harmony export */   pl: () => (/* reexport safe */ _pl_mjs__WEBPACK_IMPORTED_MODULE_26__["default"]),
+/* harmony export */   pt: () => (/* reexport safe */ _pt_mjs__WEBPACK_IMPORTED_MODULE_27__["default"]),
+/* harmony export */   ro: () => (/* reexport safe */ _ro_mjs__WEBPACK_IMPORTED_MODULE_28__["default"]),
+/* harmony export */   ru: () => (/* reexport safe */ _ru_mjs__WEBPACK_IMPORTED_MODULE_29__["default"]),
+/* harmony export */   sk: () => (/* reexport safe */ _sk_mjs__WEBPACK_IMPORTED_MODULE_30__["default"]),
+/* harmony export */   sl: () => (/* reexport safe */ _sl_mjs__WEBPACK_IMPORTED_MODULE_31__["default"]),
+/* harmony export */   srCyrl: () => (/* reexport safe */ _sr_Cyrl_mjs__WEBPACK_IMPORTED_MODULE_32__["default"]),
+/* harmony export */   srLatn: () => (/* reexport safe */ _sr_Latn_mjs__WEBPACK_IMPORTED_MODULE_33__["default"]),
+/* harmony export */   sv: () => (/* reexport safe */ _sv_mjs__WEBPACK_IMPORTED_MODULE_34__["default"]),
+/* harmony export */   th: () => (/* reexport safe */ _th_mjs__WEBPACK_IMPORTED_MODULE_35__["default"]),
+/* harmony export */   tr: () => (/* reexport safe */ _tr_mjs__WEBPACK_IMPORTED_MODULE_36__["default"]),
+/* harmony export */   uk: () => (/* reexport safe */ _uk_mjs__WEBPACK_IMPORTED_MODULE_38__["default"]),
+/* harmony export */   vi: () => (/* reexport safe */ _vi_mjs__WEBPACK_IMPORTED_MODULE_39__["default"]),
+/* harmony export */   zhHans: () => (/* reexport safe */ _zh_Hans_mjs__WEBPACK_IMPORTED_MODULE_40__["default"]),
+/* harmony export */   zhHant: () => (/* reexport safe */ _zh_Hant_mjs__WEBPACK_IMPORTED_MODULE_41__["default"])
+/* harmony export */ });
+/* harmony import */ var _af_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./af.mjs */ "./node_modules/vuetify/lib/locale/af.mjs");
+/* harmony import */ var _ar_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ar.mjs */ "./node_modules/vuetify/lib/locale/ar.mjs");
+/* harmony import */ var _bg_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./bg.mjs */ "./node_modules/vuetify/lib/locale/bg.mjs");
+/* harmony import */ var _ca_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ca.mjs */ "./node_modules/vuetify/lib/locale/ca.mjs");
+/* harmony import */ var _ckb_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ckb.mjs */ "./node_modules/vuetify/lib/locale/ckb.mjs");
+/* harmony import */ var _cs_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./cs.mjs */ "./node_modules/vuetify/lib/locale/cs.mjs");
+/* harmony import */ var _da_mjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./da.mjs */ "./node_modules/vuetify/lib/locale/da.mjs");
+/* harmony import */ var _de_mjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./de.mjs */ "./node_modules/vuetify/lib/locale/de.mjs");
+/* harmony import */ var _el_mjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./el.mjs */ "./node_modules/vuetify/lib/locale/el.mjs");
+/* harmony import */ var _en_mjs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./en.mjs */ "./node_modules/vuetify/lib/locale/en.mjs");
+/* harmony import */ var _es_mjs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./es.mjs */ "./node_modules/vuetify/lib/locale/es.mjs");
+/* harmony import */ var _et_mjs__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./et.mjs */ "./node_modules/vuetify/lib/locale/et.mjs");
+/* harmony import */ var _fa_mjs__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./fa.mjs */ "./node_modules/vuetify/lib/locale/fa.mjs");
+/* harmony import */ var _fi_mjs__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./fi.mjs */ "./node_modules/vuetify/lib/locale/fi.mjs");
+/* harmony import */ var _fr_mjs__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./fr.mjs */ "./node_modules/vuetify/lib/locale/fr.mjs");
+/* harmony import */ var _hr_mjs__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./hr.mjs */ "./node_modules/vuetify/lib/locale/hr.mjs");
+/* harmony import */ var _hu_mjs__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./hu.mjs */ "./node_modules/vuetify/lib/locale/hu.mjs");
+/* harmony import */ var _he_mjs__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./he.mjs */ "./node_modules/vuetify/lib/locale/he.mjs");
+/* harmony import */ var _id_mjs__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./id.mjs */ "./node_modules/vuetify/lib/locale/id.mjs");
+/* harmony import */ var _it_mjs__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./it.mjs */ "./node_modules/vuetify/lib/locale/it.mjs");
+/* harmony import */ var _ja_mjs__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./ja.mjs */ "./node_modules/vuetify/lib/locale/ja.mjs");
+/* harmony import */ var _ko_mjs__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./ko.mjs */ "./node_modules/vuetify/lib/locale/ko.mjs");
+/* harmony import */ var _lv_mjs__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./lv.mjs */ "./node_modules/vuetify/lib/locale/lv.mjs");
+/* harmony import */ var _lt_mjs__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./lt.mjs */ "./node_modules/vuetify/lib/locale/lt.mjs");
+/* harmony import */ var _nl_mjs__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./nl.mjs */ "./node_modules/vuetify/lib/locale/nl.mjs");
+/* harmony import */ var _no_mjs__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./no.mjs */ "./node_modules/vuetify/lib/locale/no.mjs");
+/* harmony import */ var _pl_mjs__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./pl.mjs */ "./node_modules/vuetify/lib/locale/pl.mjs");
+/* harmony import */ var _pt_mjs__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./pt.mjs */ "./node_modules/vuetify/lib/locale/pt.mjs");
+/* harmony import */ var _ro_mjs__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./ro.mjs */ "./node_modules/vuetify/lib/locale/ro.mjs");
+/* harmony import */ var _ru_mjs__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./ru.mjs */ "./node_modules/vuetify/lib/locale/ru.mjs");
+/* harmony import */ var _sk_mjs__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./sk.mjs */ "./node_modules/vuetify/lib/locale/sk.mjs");
+/* harmony import */ var _sl_mjs__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./sl.mjs */ "./node_modules/vuetify/lib/locale/sl.mjs");
+/* harmony import */ var _sr_Cyrl_mjs__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./sr-Cyrl.mjs */ "./node_modules/vuetify/lib/locale/sr-Cyrl.mjs");
+/* harmony import */ var _sr_Latn_mjs__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./sr-Latn.mjs */ "./node_modules/vuetify/lib/locale/sr-Latn.mjs");
+/* harmony import */ var _sv_mjs__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./sv.mjs */ "./node_modules/vuetify/lib/locale/sv.mjs");
+/* harmony import */ var _th_mjs__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./th.mjs */ "./node_modules/vuetify/lib/locale/th.mjs");
+/* harmony import */ var _tr_mjs__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./tr.mjs */ "./node_modules/vuetify/lib/locale/tr.mjs");
+/* harmony import */ var _az_mjs__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./az.mjs */ "./node_modules/vuetify/lib/locale/az.mjs");
+/* harmony import */ var _uk_mjs__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./uk.mjs */ "./node_modules/vuetify/lib/locale/uk.mjs");
+/* harmony import */ var _vi_mjs__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./vi.mjs */ "./node_modules/vuetify/lib/locale/vi.mjs");
+/* harmony import */ var _zh_Hans_mjs__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./zh-Hans.mjs */ "./node_modules/vuetify/lib/locale/zh-Hans.mjs");
+/* harmony import */ var _zh_Hant_mjs__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./zh-Hant.mjs */ "./node_modules/vuetify/lib/locale/zh-Hant.mjs");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const defaultRtl = {
+  af: false,
+  ar: true,
+  bg: false,
+  ca: false,
+  ckb: false,
+  cs: false,
+  de: false,
+  el: false,
+  en: false,
+  es: false,
+  et: false,
+  fa: true,
+  fi: false,
+  fr: false,
+  hr: false,
+  hu: false,
+  he: true,
+  id: false,
+  it: false,
+  ja: false,
+  ko: false,
+  lv: false,
+  lt: false,
+  nl: false,
+  no: false,
+  pl: false,
+  pt: false,
+  ro: false,
+  ru: false,
+  sk: false,
+  sl: false,
+  srCyrl: false,
+  srLatn: false,
+  sv: false,
+  th: false,
+  tr: false,
+  az: false,
+  uk: false,
+  vi: false,
+  zhHans: false,
+  zhHant: false
+};
+//# sourceMappingURL=index.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/it.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/it.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Distintivo',
+  open: 'Apri',
+  close: 'Chiudi',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Annulla'
+  },
+  dataIterator: {
+    noResultsText: 'Nessun risultato trovato',
+    loadingText: 'Caricamento in corso...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Righe per pagina:',
+    ariaLabel: {
+      sortDescending: 'Ordinati in ordine decrescente.',
+      sortAscending: 'Ordinati in ordine crescente.',
+      sortNone: 'Non ordinato.',
+      activateNone: `Attiva per rimuovere l'ordinamento.`,
+      activateDescending: 'Attiva per ordinare in ordine decrescente.',
+      activateAscending: 'Attiva per ordinare in ordine crescente.'
+    },
+    sortBy: 'Ordina per'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Elementi per pagina:',
+    itemsPerPageAll: 'Tutti',
+    nextPage: 'Pagina seguente',
+    prevPage: 'Pagina precedente',
+    firstPage: 'Prima pagina',
+    lastPage: 'Ultima pagina',
+    pageText: '{0}-{1} di {2}'
+  },
+  dateRangeInput: {
+    divider: 'a'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Seleziona date',
+      header: 'Inserisci date'
+    },
+    title: 'Seleziona data',
+    header: 'Inserisci data',
+    input: {
+      placeholder: 'Inserisci data'
+    }
+  },
+  noDataText: 'Nessun elemento disponibile',
+  carousel: {
+    prev: 'Vista precedente',
+    next: 'Prossima vista',
+    ariaLabel: {
+      delimiter: 'Slide carosello {0} di {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} di più',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Cancella {0}',
+    prependAction: 'Azione precedente {0}',
+    appendAction: 'Azione successiva {0}',
+    otp: 'Inserisci il codice OTP {0}'
+  },
+  fileInput: {
+    counter: '{0} file',
+    counterSize: '{0} file ({1} in totale)'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Navigazione impaginazione',
+      next: 'Pagina seguente',
+      previous: 'Pagina precedente',
+      page: 'Vai alla pagina {0}',
+      currentPage: 'Pagina corrente, pagina {0}',
+      first: 'Prima pagina',
+      last: 'Ultima pagina'
+    }
+  },
+  stepper: {
+    next: 'Successivo',
+    prev: 'Precedente'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Valutazione {0} di {1}'
+    }
+  },
+  loading: 'Caricamento...',
+  infiniteScroll: {
+    loadMore: 'Carica altro',
+    empty: 'Nessun elemento'
+  }
+});
+//# sourceMappingURL=it.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/ja.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/ja.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'バッジ',
+  open: 'Open',
+  close: '閉じる',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: '検索結果が見つかりません。',
+    loadingText: '項目をロード中です...'
+  },
+  dataTable: {
+    itemsPerPageText: '1ページあたりの行数：',
+    ariaLabel: {
+      sortDescending: '降順の並び替え。',
+      sortAscending: '昇順の並び替え。',
+      sortNone: 'ソートされていません。',
+      activateNone: 'ソートを削除するには有効にしてください。',
+      activateDescending: '降順の並び替えのためには有効にしてください。',
+      activateAscending: '昇順のソートのためには有効にしてください。'
+    },
+    sortBy: 'ソート方式'
+  },
+  dataFooter: {
+    itemsPerPageText: '1ページあたりの件数：',
+    itemsPerPageAll: 'すべて',
+    nextPage: '次のページ',
+    prevPage: '前のページ',
+    firstPage: '最初のページ',
+    lastPage: '最後のページ',
+    pageText: '{0}-{1} 件目 / {2}件'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'データはありません。',
+  carousel: {
+    prev: '前のビジュアル',
+    next: '次のビジュアル',
+    ariaLabel: {
+      delimiter: 'カルーセルのスライド {0}件目 / {1}件'
+    }
+  },
+  calendar: {
+    moreEvents: 'さらに{0}',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} ファイル',
+    counterSize: '{0} ファイル (合計 {1})'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'ページネーションナビゲーション',
+      next: '次のページ',
+      previous: '前のページ',
+      page: '{0}ページ目に移動',
+      currentPage: '現在のページ、ページ {0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: '評価 {1} のうち {0}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=ja.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/ko.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/ko.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: '배지',
+  open: 'Open',
+  close: '닫기',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: '일치하는 항목이 없습니다.',
+    loadingText: '불러오는 중...'
+  },
+  dataTable: {
+    itemsPerPageText: '페이지 당 행 수:',
+    ariaLabel: {
+      sortDescending: '내림차순 정렬.',
+      sortAscending: '오름차순 정렬.',
+      sortNone: '정렬하지 않음.',
+      activateNone: '정렬을 취소하려면 활성화하세요.',
+      activateDescending: '내림차순 정렬을 위해 활성화하세요.',
+      activateAscending: '오름차순 정렬을 위해 활성화하세요.'
+    },
+    sortBy: 'Sort by'
+  },
+  dataFooter: {
+    itemsPerPageText: '페이지 당 항목 수:',
+    itemsPerPageAll: '전체',
+    nextPage: '다음 페이지',
+    prevPage: '이전 페이지',
+    firstPage: '첫 페이지',
+    lastPage: '마지막 페이지',
+    pageText: '{2} 중 {0}-{1}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: '데이터가 없습니다.',
+  carousel: {
+    prev: '이전 화면',
+    next: '다음 화면',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} 더보기',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} files',
+    counterSize: '{0} files ({1} in total)'
+  },
+  timePicker: {
+    am: '오전',
+    pm: '오후'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Pagination Navigation',
+      next: '다음 페이지',
+      previous: '이전 페이지',
+      page: '고토 페이지 {0}',
+      currentPage: '현재 페이지, 페이지 {0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=ko.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/lt.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/lt.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Ženklelis',
+  open: 'Open',
+  close: 'Uždaryti',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'Nerasta atitinkančių įrašų',
+    loadingText: 'Kraunama...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Eilutės per puslapį:',
+    ariaLabel: {
+      sortDescending: 'Išrikiuota mažėjimo tvarka.',
+      sortAscending: 'Išrikiuota didėjimo tvarka.',
+      sortNone: 'Nerikiuota.',
+      activateNone: 'Suaktyvinkite, jei norite rikiavimą pašalinti.',
+      activateDescending: 'Suaktyvinkite, jei norite rikiuoti mažėjimo tvarka.',
+      activateAscending: 'Suaktyvinkite, jei norite rikiuoti didėjimo tvarka.'
+    },
+    sortBy: 'Sort by'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Įrašai per puslapį:',
+    itemsPerPageAll: 'Visi',
+    nextPage: 'Kitas puslapis',
+    prevPage: 'Ankstesnis puslapis',
+    firstPage: 'Pirmas puslapis',
+    lastPage: 'Paskutinis puslapis',
+    pageText: '{0}-{1} iš {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'Nėra duomenų',
+  carousel: {
+    prev: 'Ankstesnioji skaidrė',
+    next: 'Kita skaidrė',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}'
+    }
+  },
+  calendar: {
+    moreEvents: 'Daugiau {0}',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} failų',
+    counterSize: '{0} failų ({1} iš viso)'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Puslapio naršymas',
+      next: 'Kitas puslapis',
+      previous: 'Ankstesnis puslapis',
+      page: 'Eiti į puslapį {0}',
+      currentPage: 'Dabartinis puslapis, puslapis {0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=lt.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/lv.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/lv.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Žetons',
+  open: 'Open',
+  close: 'Aizvērt',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'Nekas netika atrasts',
+    loadingText: 'Ielādē...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Rādīt lapā:',
+    ariaLabel: {
+      sortDescending: 'Sakārtots dilstošā secībā.',
+      sortAscending: 'Sakārtots augošā secībā.',
+      sortNone: 'Nav sakārtots.',
+      activateNone: 'Aktivizēt, lai noņemtu kārtošanu.',
+      activateDescending: 'Aktivizēt, lai sakārtotu dilstošā secībā.',
+      activateAscending: 'Aktivizēt, lai sakārtotu augošā secībā.'
+    },
+    sortBy: 'Sort by'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Rādīt lapā:',
+    itemsPerPageAll: 'Visu',
+    nextPage: 'Nākamā lapa',
+    prevPage: 'Iepriekšējā lapa',
+    firstPage: 'Pirmā lapa',
+    lastPage: 'Pēdējā lapa',
+    pageText: '{0}-{1} no {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'Nav pieejamu datu',
+  carousel: {
+    prev: 'Iepriekšējais slaids',
+    next: 'Nākamais slaids',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}'
+    }
+  },
+  calendar: {
+    moreEvents: 'Vēl {0}',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} files',
+    counterSize: '{0} files ({1} in total)'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Navigācija paginationā',
+      next: 'Nākamā lapa',
+      previous: 'Iepriekšējā lapa',
+      page: 'Iet uz lapu {0}',
+      currentPage: 'Pašreizējā lapa, lapa {0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=lv.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/nl.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/nl.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'insigne',
+  open: 'Openen',
+  close: 'Sluiten',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Annuleren'
+  },
+  dataIterator: {
+    noResultsText: 'Geen overeenkomende resultaten gevonden',
+    loadingText: 'Items aan het laden...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Rijen per pagina:',
+    ariaLabel: {
+      sortDescending: 'Aflopend gesorteerd.',
+      sortAscending: 'Oplopend gesorteerd.',
+      sortNone: 'Niet gesorteerd.',
+      activateNone: 'Activeer om de sortering te verwijderen.',
+      activateDescending: 'Activeer om aflopend te sorteren.',
+      activateAscending: 'Activeer om oplopend te sorteren.'
+    },
+    sortBy: 'Sorteer volgens'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Aantal per pagina:',
+    itemsPerPageAll: 'Alles',
+    nextPage: 'Volgende pagina',
+    prevPage: 'Vorige pagina',
+    firstPage: 'Eerste pagina',
+    lastPage: 'Laatste pagina',
+    pageText: '{0}-{1} van {2}'
+  },
+  dateRangeInput: {
+    divider: 'tot'
+  },
+  datePicker: {
+    itemsSelected: '{0} geselecteerd',
+    range: {
+      title: 'Selecteer datums',
+      header: 'Voer datums in'
+    },
+    title: 'Selecteer datum',
+    header: 'Voer datum in',
+    input: {
+      placeholder: 'Voer datum in'
+    }
+  },
+  noDataText: 'Geen gegevens beschikbaar',
+  carousel: {
+    prev: 'Vorig beeld',
+    next: 'Volgend beeld',
+    ariaLabel: {
+      delimiter: 'Carrousel beeld {0} van {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} meer',
+    today: 'Vandaag'
+  },
+  input: {
+    clear: 'Maak {0} leeg',
+    prependAction: '{0} voorafgaande actie',
+    appendAction: '{0} bijgevoegde actie',
+    otp: 'Vul alsjeblieft OTP karakter {0} in'
+  },
+  fileInput: {
+    counter: '{0} bestanden',
+    counterSize: '{0} bestanden ({1} in totaal)'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Pagina navigatie',
+      next: 'Volgende pagina',
+      previous: 'Vorige pagina',
+      page: 'Ga naar pagina {0}',
+      currentPage: 'Huidige pagina, pagina {0}',
+      first: 'Eerste pagina',
+      last: 'Laatste pagina'
+    }
+  },
+  stepper: {
+    next: 'Volgende',
+    prev: 'Vorige'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Beoordeling {0} van {1}'
+    }
+  },
+  loading: 'Aan het laden...',
+  infiniteScroll: {
+    loadMore: 'Laad meer',
+    empty: 'Niet meer'
+  }
+});
+//# sourceMappingURL=nl.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/no.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/no.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Skilt',
+  open: 'Open',
+  close: 'Lukk',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Avbryt'
+  },
+  dataIterator: {
+    noResultsText: 'Fant ingen matchende elementer.',
+    loadingText: 'Laster elementer...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Rader per side:',
+    ariaLabel: {
+      sortDescending: 'Sortert synkende.',
+      sortAscending: 'Sortert stigende.',
+      sortNone: 'Ikke sortert.',
+      activateNone: 'Aktiver for å fjerne sortering.',
+      activateDescending: 'Aktiver for å sortere synkende.',
+      activateAscending: 'Aktiver for å sortere stigende.'
+    },
+    sortBy: 'Sorter etter'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Elementer per side:',
+    itemsPerPageAll: 'Alle',
+    nextPage: 'Neste side',
+    prevPage: 'Forrige side',
+    firstPage: 'Første side',
+    lastPage: 'Siste side',
+    pageText: '{0}-{1} av {2}'
+  },
+  dateRangeInput: {
+    divider: 'til'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Velg datoer',
+      header: 'Velg datoer'
+    },
+    title: 'Velg dato',
+    header: 'Velg dato',
+    input: {
+      placeholder: 'Fyll inn dato'
+    }
+  },
+  noDataText: 'Ingen data er tilgjengelig',
+  carousel: {
+    prev: 'Forrige bilde',
+    next: 'Neste bilde',
+    ariaLabel: {
+      delimiter: 'Karusellbilde {0} av {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} flere',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Fjern {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} filer',
+    counterSize: '{0} filer ({1} totalt)'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Paginasjonsnavigasjon',
+      next: 'Neste side',
+      previous: 'Forrige side',
+      page: 'Gå til side {0}',
+      currentPage: 'Gjeldende side, side {0}',
+      first: 'Første side',
+      last: 'Siste side'
+    }
+  },
+  stepper: {
+    next: 'Neste',
+    prev: 'Forrige'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Anmeldelse {0} av {1}'
+    }
+  },
+  loading: 'Laster...',
+  infiniteScroll: {
+    loadMore: 'Last flere',
+    empty: 'Det var alt'
+  }
+});
+//# sourceMappingURL=no.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/pl.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/pl.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Odznaka',
+  open: 'Otwórz',
+  close: 'Zamknij',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Anuluj'
+  },
+  dataIterator: {
+    noResultsText: 'Nie znaleziono danych odpowiadających wyszukiwaniu',
+    loadingText: 'Wczytywanie danych...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Wierszy na stronie:',
+    ariaLabel: {
+      sortDescending: 'Sortowanie malejąco. Kliknij aby zmienić.',
+      sortAscending: 'Sortowanie rosnąco. Kliknij aby zmienić.',
+      sortNone: 'Bez sortowania. Kliknij aby posortować rosnąco.',
+      activateNone: 'Kliknij aby usunąć sortowanie.',
+      activateDescending: 'Kliknij aby posortować malejąco.',
+      activateAscending: 'Kliknij aby posortować rosnąco.'
+    },
+    sortBy: 'Sortuj według'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Pozycji na stronie:',
+    itemsPerPageAll: 'Wszystkie',
+    nextPage: 'Następna strona',
+    prevPage: 'Poprzednia strona',
+    firstPage: 'Pierwsza strona',
+    lastPage: 'Ostatnia strona',
+    pageText: '{0}-{1} z {2}'
+  },
+  dateRangeInput: {
+    divider: 'do'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Wybór zakresu dat',
+      header: 'Wprowadź zakres dat'
+    },
+    title: 'Wybór daty',
+    header: 'Wprowadź datę',
+    input: {
+      placeholder: 'Wprowadź datę'
+    }
+  },
+  noDataText: 'Brak danych',
+  carousel: {
+    prev: 'Poprzedni obraz',
+    next: 'Następny obraz',
+    ariaLabel: {
+      delimiter: 'Obraz {0} z {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} więcej',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Wyczyść {0}',
+    prependAction: '{0} dodatkowa akcja',
+    appendAction: '{0} dodatkowa akcja',
+    otp: 'Proszę wprowadzić znak nr {0}'
+  },
+  fileInput: {
+    counter: 'Liczba plików: {0}',
+    counterSize: 'Liczba plików: {0} (łącznie {1})'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Nawigacja paginacyjna',
+      next: 'Następna strona',
+      previous: 'Poprzednia strona',
+      page: 'Idź do strony {0}',
+      currentPage: 'Bieżąca strona, strona {0}',
+      first: 'Pierwsza strona',
+      last: 'Ostatnia strona'
+    }
+  },
+  stepper: {
+    next: 'Następny',
+    prev: 'Poprzedni'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Ocena {0} na {1}'
+    }
+  },
+  loading: 'Wczytywanie danych...',
+  infiniteScroll: {
+    loadMore: 'Wczytaj więcej',
+    empty: 'Brak kolejnych danych'
+  }
+});
+//# sourceMappingURL=pl.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/pt.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/pt.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Distintivo',
+  open: 'Abrir',
+  close: 'Fechar',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'Nenhum dado encontrado',
+    loadingText: 'Carregando itens...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Linhas por página:',
+    ariaLabel: {
+      sortDescending: 'Ordenado decrescente.',
+      sortAscending: 'Ordenado crescente.',
+      sortNone: 'Não ordenado.',
+      activateNone: 'Ative para remover a ordenação.',
+      activateDescending: 'Ative para ordenar decrescente.',
+      activateAscending: 'Ative para ordenar crescente.'
+    },
+    sortBy: 'Ordenar por'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Itens por página:',
+    itemsPerPageAll: 'Todos',
+    nextPage: 'Próxima página',
+    prevPage: 'Página anterior',
+    firstPage: 'Primeira página',
+    lastPage: 'Última página',
+    pageText: '{0}-{1} de {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selecionados',
+    range: {
+      title: 'Selecione as datas',
+      header: 'Digite as datas'
+    },
+    title: 'Selecione a data',
+    header: 'Digite a data',
+    input: {
+      placeholder: 'Insira a data'
+    }
+  },
+  noDataText: 'Não há dados disponíveis',
+  carousel: {
+    prev: 'Visão anterior',
+    next: 'Próxima visão',
+    ariaLabel: {
+      delimiter: 'Slide {0} de {1} do carrossel'
+    }
+  },
+  calendar: {
+    moreEvents: 'Mais {0}',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Limpar {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Por favor insira o caracter OTP {0}'
+  },
+  fileInput: {
+    counter: '{0} arquivo(s)',
+    counterSize: '{0} arquivo(s) ({1} no total)'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Navegação de paginação',
+      next: 'Próxima página',
+      previous: 'Página anterior',
+      page: 'Ir à página {0}',
+      currentPage: 'Página atual, página {0}',
+      first: 'Primeira página',
+      last: 'Última página'
+    }
+  },
+  stepper: {
+    next: 'Próximo',
+    prev: 'Anterior'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Avaliação {0} de {1}'
+    }
+  },
+  loading: 'Carregando...',
+  infiniteScroll: {
+    loadMore: 'Carregar mais',
+    empty: 'Não há mais dados'
+  }
+});
+//# sourceMappingURL=pt.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/ro.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/ro.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Insignă',
+  open: 'Open',
+  close: 'Închideți',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Anulează'
+  },
+  dataIterator: {
+    noResultsText: 'Nu s-au găsit înregistrări corespunzătoare',
+    loadingText: 'Se încarcă articolele...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Rânduri pe pagină:',
+    ariaLabel: {
+      sortDescending: 'Sortate descendent.',
+      sortAscending: 'Sortate ascendent.',
+      sortNone: 'Nesortate.',
+      activateNone: 'Activați pentru a elimina sortarea.',
+      activateDescending: 'Activați pentru a sorta descendent.',
+      activateAscending: 'Activați pentru a sorta ascendent.'
+    },
+    sortBy: 'Sortați după'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Articole pe pagină:',
+    itemsPerPageAll: 'Toate',
+    nextPage: 'Pagina următoare',
+    prevPage: 'Pagina anterioară',
+    firstPage: 'Prima pagină',
+    lastPage: 'Ultima pagină',
+    pageText: '{0}-{1} din {2}'
+  },
+  dateRangeInput: {
+    divider: 'până la'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Selectați datele',
+      header: 'Introduceți datele'
+    },
+    title: 'Selectați data',
+    header: 'Introduceți data',
+    input: {
+      placeholder: 'Introduceți data'
+    }
+  },
+  noDataText: 'Nu există date disponibile',
+  carousel: {
+    prev: 'Vizualul anterior',
+    next: 'Vizualul următor',
+    ariaLabel: {
+      delimiter: 'Slide carusel {0} din {1}'
+    }
+  },
+  calendar: {
+    moreEvents: 'încă {0}',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Șterge {0}',
+    prependAction: '{0} acțiune de inserare la început',
+    appendAction: '{0} acțiune de inserare la sfârșit',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} fișiere',
+    counterSize: '{0} fișiere ({1} în total)'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Navigare prin pagini',
+      next: 'Pagina următoare',
+      previous: 'Pagina anterioară',
+      page: 'Mergeți la pagina {0}',
+      currentPage: 'Pagina curentă, pagina {0}',
+      first: 'Prima pagină',
+      last: 'Ultima pagină'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating de {0} din {1}'
+    }
+  },
+  loading: 'Se încarcă...',
+  infiniteScroll: {
+    loadMore: 'Încarcă mai multe',
+    empty: 'Nu mai există'
+  }
+});
+//# sourceMappingURL=ro.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/ru.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/ru.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Знак',
+  open: 'Открыть',
+  close: 'Закрыть',
+  confirmEdit: {
+    ok: 'ОК',
+    cancel: 'Отмена'
+  },
+  dataIterator: {
+    noResultsText: 'Не найдено подходящих записей',
+    loadingText: 'Запись загружается...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Строк на странице:',
+    ariaLabel: {
+      sortDescending: 'Упорядочено по убыванию.',
+      sortAscending: 'Упорядочено по возрастанию.',
+      sortNone: 'Не упорядочено.',
+      activateNone: 'Активируйте, чтобы убрать сортировку.',
+      activateDescending: 'Активируйте для упорядочивания убыванию.',
+      activateAscending: 'Активируйте для упорядочивания по возрастанию.'
+    },
+    sortBy: 'Сортировать по'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Записей на странице:',
+    itemsPerPageAll: 'Все',
+    nextPage: 'Следующая страница',
+    prevPage: 'Предыдущая страница',
+    firstPage: 'Первая страница',
+    lastPage: 'Последняя страница',
+    pageText: '{0}-{1} из {2}'
+  },
+  dateRangeInput: {
+    divider: 'до'
+  },
+  datePicker: {
+    itemsSelected: '{0} выбрано',
+    range: {
+      title: 'Выбранные даты',
+      header: 'Ввод дат'
+    },
+    title: 'Выбор даты',
+    header: 'Ввод даты',
+    input: {
+      placeholder: 'Введите дату'
+    }
+  },
+  noDataText: 'Отсутствуют данные',
+  carousel: {
+    prev: 'Предыдущий слайд',
+    next: 'Следующий слайд',
+    ariaLabel: {
+      delimiter: 'Слайд {0} из {1}'
+    }
+  },
+  calendar: {
+    moreEvents: 'Еще {0}',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Очистить {0}',
+    prependAction: '{0} предварительных действий',
+    appendAction: '{0} добавочных действий',
+    otp: 'Пожалуйста введите символы OTP {0}'
+  },
+  fileInput: {
+    counter: 'Файлов: {0}',
+    counterSize: 'Файлов: {0} (всего {1})'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Навигация по страницам',
+      next: 'Следующая страница',
+      previous: 'Предыдущая страница',
+      page: 'Перейти на страницу {0}',
+      currentPage: 'Текущая страница, Страница {0}',
+      first: 'Первая страница',
+      last: 'Последняя страница'
+    }
+  },
+  stepper: {
+    next: 'Следующий',
+    prev: 'Предыдущий'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Рейтинг {0} из {1}'
+    }
+  },
+  loading: 'Загрузка...',
+  infiniteScroll: {
+    loadMore: 'Загрузить ещё',
+    empty: 'Больше нечего загружать'
+  }
+});
+//# sourceMappingURL=ru.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/sk.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/sk.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Odznak',
+  open: 'Open',
+  close: 'Zavrieť',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'Neboli nájdené žiadne záznamy',
+    loadingText: 'Načítavam položky...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Počet riadkov na stránku:',
+    ariaLabel: {
+      sortDescending: 'Zoradené zostupne.',
+      sortAscending: 'Zoradené vzostupne.',
+      sortNone: 'Nezoradené.',
+      activateNone: 'Aktivujte na zrušenie triedenia.',
+      activateDescending: 'Aktivujte na zoradenie zostupne.',
+      activateAscending: 'Aktivujte na zoradenie vzostupne.'
+    },
+    sortBy: 'Zoradiť podľa'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Počet položiek na stránku:',
+    itemsPerPageAll: 'Všetko',
+    nextPage: 'Ďalšia stránka',
+    prevPage: 'Predchádzajúca stránka',
+    firstPage: 'Prvá stránka',
+    lastPage: 'Posledná stránka',
+    pageText: '{0}–{1} z {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'Nie sú dostupné žiadne dáta',
+  carousel: {
+    prev: 'Predchádzajúci obrázok',
+    next: 'Další obrázok',
+    ariaLabel: {
+      delimiter: 'Snímka {0} z {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} ďalších',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} súborov',
+    counterSize: '{0} súborov ({1} celkom)'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Navigácia stránkovania',
+      next: 'Ďalšia stránka',
+      previous: 'Predchádzajúca stránka',
+      page: 'Ísť na stránku {0}',
+      currentPage: 'Aktuálna stránka, stránka {0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Hodnotenie {0} z {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=sk.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/sl.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/sl.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Značka',
+  open: 'Open',
+  close: 'Zapri',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'Ni iskanega zapisa',
+    loadingText: 'Nalaganje...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Vrstic na stran:',
+    ariaLabel: {
+      sortDescending: 'Razvrščeno padajoče.',
+      sortAscending: 'Razvrščeno naraščajoče.',
+      sortNone: 'Ni razvrščeno.',
+      activateNone: 'Aktivirajte za odstranitev razvrščanja.',
+      activateDescending: 'Aktivirajte za padajoče razvrščanje.',
+      activateAscending: 'Aktivirajte za naraščajoče razvrščanje.'
+    },
+    sortBy: 'Razvrsti po'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Predmetov na stran:',
+    itemsPerPageAll: 'Vse',
+    nextPage: 'Naslednja stran',
+    prevPage: 'Prejšnja stran',
+    firstPage: 'Prva stran',
+    lastPage: 'Zadnja stran',
+    pageText: '{0}-{1} od {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'Ni podatkov',
+  carousel: {
+    prev: 'Prejšnji prikaz',
+    next: 'Naslednji prikaz',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}'
+    }
+  },
+  calendar: {
+    moreEvents: 'Še {0}',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} datotek',
+    counterSize: '{0} datotek ({1} skupno)'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Navigacija po strani po strani',
+      next: 'Naslednja stran',
+      previous: 'Prejšnja stran',
+      page: 'Pojdi na stran {0}',
+      currentPage: 'Trenutna stran, stran {0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=sl.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/sr-Cyrl.mjs":
+/*!*****************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/sr-Cyrl.mjs ***!
+  \*****************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Значка',
+  open: 'Open',
+  close: 'Затвори',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'Ни један запис није пронађен',
+    loadingText: 'Учитавање ставке...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Редова по страници:',
+    ariaLabel: {
+      sortDescending: 'Сортирано опадајуће.',
+      sortAscending: 'Сортирано растуће.',
+      sortNone: 'Није сортирано.',
+      activateNone: 'Кликни да уклониш сортирање.',
+      activateDescending: 'Кликни да сортираш опадајуће.',
+      activateAscending: 'Кликни да сортираш растуће.'
+    },
+    sortBy: 'Сортирај по'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Ставки по страници:',
+    itemsPerPageAll: 'Све',
+    nextPage: 'Следећа страница',
+    prevPage: 'Претходна страница',
+    firstPage: 'Прва страница',
+    lastPage: 'Последња страница',
+    pageText: '{0}-{1} од {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'Нема доступних података',
+  carousel: {
+    prev: 'Претходна слика',
+    next: 'Следећа слика',
+    ariaLabel: {
+      delimiter: 'Слика {0} од {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} више',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} фајлова',
+    counterSize: '{0} фајлова ({1} укупно)'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Навигација страницама',
+      next: 'Следећа страница',
+      previous: 'Претходна страница',
+      page: 'Иди на страну {0}',
+      currentPage: 'Тренутна страница, страница {0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Оцена {0} од {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=sr-Cyrl.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/sr-Latn.mjs":
+/*!*****************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/sr-Latn.mjs ***!
+  \*****************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Značka',
+  open: 'Open',
+  close: 'Zatvori',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'Nijedan zapis nije pronađen',
+    loadingText: 'Učitavanje stavke...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Redova po stranici:',
+    ariaLabel: {
+      sortDescending: 'Sortirano opadajuće.',
+      sortAscending: 'Sortirano rastuće.',
+      sortNone: 'Nije sortirano.',
+      activateNone: 'Klikni da ukloniš sortiranje.',
+      activateDescending: 'Klikni da sortiraš opadajuće.',
+      activateAscending: 'Klikni da sortiraš rastuće.'
+    },
+    sortBy: 'Sortiraj po'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Stavki po stranici:',
+    itemsPerPageAll: 'Sve',
+    nextPage: 'Sledeća stranica',
+    prevPage: 'Prethodna stranica',
+    firstPage: 'Prva stranica',
+    lastPage: 'Poslednja stranica',
+    pageText: '{0}-{1} od {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'Nema dostupnih podataka',
+  carousel: {
+    prev: 'Prethodna slika',
+    next: 'Sledeća slika',
+    ariaLabel: {
+      delimiter: 'Slika {0} od {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} više',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} fajlova',
+    counterSize: '{0} fajlova ({1} ukupno)'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Navigacija stranicama',
+      next: 'Sledeća stranica',
+      previous: 'Prethodna stranica',
+      page: 'Idi na stranu {0}',
+      currentPage: 'Trenutna stranica, stranica {0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Ocena {0} od {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=sr-Latn.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/sv.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/sv.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Bricka',
+  open: 'Open',
+  close: 'Stäng',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Avbryt'
+  },
+  dataIterator: {
+    noResultsText: 'Hittade inga poster',
+    loadingText: 'Laddar data...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Rader per sida:',
+    ariaLabel: {
+      sortDescending: 'Fallande sortering.',
+      sortAscending: 'Stigande sortering.',
+      sortNone: 'Osorterat.',
+      activateNone: 'Aktivera för att ta bort sortering.',
+      activateDescending: 'Aktivera för att sortera fallande.',
+      activateAscending: 'Aktivera för att sortera stigande.'
+    },
+    sortBy: 'Sortera efter'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Objekt per sida:',
+    itemsPerPageAll: 'Alla',
+    nextPage: 'Nästa sida',
+    prevPage: 'Föregående sida',
+    firstPage: 'Första sidan',
+    lastPage: 'Sista sidan',
+    pageText: '{0}-{1} av {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Välj datum',
+      header: 'Välj datum'
+    },
+    title: 'Välj datum',
+    header: 'Välj datum',
+    input: {
+      placeholder: 'Välj datum'
+    }
+  },
+  noDataText: 'Ingen data tillgänglig',
+  carousel: {
+    prev: 'Föregående vy',
+    next: 'Nästa vy',
+    ariaLabel: {
+      delimiter: 'Karusellvy {0} av {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} fler',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Rensa {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} filer',
+    counterSize: '{0} filer ({1})'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Paginering',
+      next: 'Nästa sida',
+      previous: 'Föregående sida',
+      page: 'Gå till sida {0}',
+      currentPage: 'Aktuell sida, sida {0}',
+      first: 'Första sidan',
+      last: 'Sista sidan'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Betyg {0} av {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=sv.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/th.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/th.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'สัญลักษณ์',
+  open: 'Open',
+  close: 'ปิด',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'ไม่พบข้อมูลที่ค้นหา',
+    loadingText: 'กำลังโหลดข้อมูล...'
+  },
+  dataTable: {
+    itemsPerPageText: 'แถวต่อหน้า:',
+    ariaLabel: {
+      sortDescending: 'เรียงจากมากไปน้อยอยู่',
+      sortAscending: 'เรียงจากน้อยไปมากอยู่',
+      sortNone: 'ไม่ได้เรียงลำดับ',
+      activateNone: 'กดเพื่อปิดการเรียงลำดับ',
+      activateDescending: 'กดเพื่อเรียงจากมากไปน้อย',
+      activateAscending: 'กดเพื่อเรียงจากน้อยไปมาก'
+    },
+    sortBy: 'เรียงตาม'
+  },
+  dataFooter: {
+    itemsPerPageText: 'รายการต่อหน้า:',
+    itemsPerPageAll: 'ทั้งหมด',
+    nextPage: 'หน้าต่อไป',
+    prevPage: 'หน้าที่แล้ว',
+    firstPage: 'หน้าแรก',
+    lastPage: 'หน้าสุดท้าย',
+    pageText: '{0}-{1} จาก {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'ไม่มีข้อมูล',
+  carousel: {
+    prev: 'ภาพก่อนหน้า',
+    next: 'ภาพถัดไป',
+    ariaLabel: {
+      delimiter: 'ภาพสไลด์ที่ {0} จาก {1}'
+    }
+  },
+  calendar: {
+    moreEvents: 'มีอีก {0}',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} ไฟล์',
+    counterSize: '{0} ไฟล์ (รวม {1})'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'การนำทางไปยังหน้า',
+      next: 'หน้าต่อไป',
+      previous: 'หน้าที่แล้ว',
+      page: 'ไปที่หน้า {0}',
+      currentPage: 'หน้าปัจจุบัน (หน้า {0})',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=th.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/tr.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/tr.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'rozet',
+  open: 'Open',
+  close: 'Kapat',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'Eşleşen veri bulunamadı',
+    loadingText: 'Yükleniyor... Lütfen bekleyin.'
+  },
+  dataTable: {
+    itemsPerPageText: 'Sayfa başına satır:',
+    ariaLabel: {
+      sortDescending: 'Z den A ya sıralı.',
+      sortAscending: 'A dan Z ye sıralı.',
+      sortNone: 'Sıralı değil. ',
+      activateNone: 'Sıralamayı kaldırmak için etkinleştir.',
+      activateDescending: 'Z den A ya sıralamak için etkinleştir.',
+      activateAscending: 'A dan Z ye sıralamak için etkinleştir.'
+    },
+    sortBy: 'Sırala'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Sayfa başına satır:',
+    itemsPerPageAll: 'Hepsi',
+    nextPage: 'Sonraki sayfa',
+    prevPage: 'Önceki sayfa',
+    firstPage: 'İlk sayfa',
+    lastPage: 'Son sayfa',
+    pageText: '{0} - {1} arası, Toplam: {2} kayıt'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'Bu görünümde veri yok.',
+  carousel: {
+    prev: 'Önceki görsel',
+    next: 'Sonraki görsel',
+    ariaLabel: {
+      delimiter: 'Galeri sayfa {0} / {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} tane daha',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} dosya',
+    counterSize: '{0} dosya (toplamda {1})'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Sayfalandırma Navigasyonu',
+      next: 'Sonraki sayfa',
+      previous: 'Önceki sayfa',
+      page: 'Sayfaya git {0}',
+      currentPage: 'Geçerli Sayfa, Sayfa {0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=tr.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/uk.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/uk.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Знак',
+  open: 'Open',
+  close: 'Закрити',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'В результаті пошуку нічого не знайдено',
+    loadingText: 'Завантаження...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Рядків на сторінці:',
+    ariaLabel: {
+      sortDescending: 'Відсортовано за спаданням.',
+      sortAscending: 'Відсортовано за зростанням.',
+      sortNone: 'Не відсортовано.',
+      activateNone: 'Активувати, щоб видалити сортування.',
+      activateDescending: 'Активувати, щоб відсортувати за спаданням.',
+      activateAscending: 'Активувати, щоб відсортувати за зростанням.'
+    },
+    sortBy: 'Відсортувати за'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Елементів на сторінці:',
+    itemsPerPageAll: 'Всі',
+    nextPage: 'Наступна сторінка',
+    prevPage: 'Попередня сторінка',
+    firstPage: 'Перша сторінка',
+    lastPage: 'Остання сторінка',
+    pageText: '{0}-{1} з {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'Немає даних для відображення',
+  carousel: {
+    prev: 'Попередній слайд',
+    next: 'Наступий слайд',
+    ariaLabel: {
+      delimiter: 'Слайд {0} з {1}'
+    }
+  },
+  calendar: {
+    moreEvents: 'Ще {0}',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} файлів',
+    counterSize: '{0} файлів ({1} загалом)'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Навігація по сторінках',
+      next: 'Наступна сторінка',
+      previous: 'Попередня сторінка',
+      page: 'Перейти на сторінку {0}',
+      currentPage: 'Поточна сторінка, Сторінка {0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=uk.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/vi.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/vi.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: 'Huy hiệu',
+  open: 'Open',
+  close: 'Đóng',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: 'Không tìm thấy kết quả nào',
+    loadingText: 'Đang tải...'
+  },
+  dataTable: {
+    itemsPerPageText: 'Số hàng mỗi trang:',
+    ariaLabel: {
+      sortDescending: 'Sắp xếp giảm dần.',
+      sortAscending: 'Sắp xếp tăng dần.',
+      sortNone: 'Không sắp xếp.',
+      activateNone: 'Kích hoạt để bỏ sắp xếp.',
+      activateDescending: 'Kích hoạt để sắp xếp giảm dần.',
+      activateAscending: 'Kích hoạt để sắp xếp tăng dần.'
+    },
+    sortBy: 'Sắp xếp'
+  },
+  dataFooter: {
+    itemsPerPageText: 'Số mục mỗi trang:',
+    itemsPerPageAll: 'Toàn bộ',
+    nextPage: 'Trang tiếp theo',
+    prevPage: 'Trang trước',
+    firstPage: 'Trang đầu',
+    lastPage: 'Trang cuối',
+    pageText: '{0}-{1} trên {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: 'Không có dữ liệu',
+  carousel: {
+    prev: 'Ảnh tiếp theo',
+    next: 'Ảnh trước',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} trên {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '{0} nữa',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} tệp',
+    counterSize: '{0} tệp (tổng cộng {1})'
+  },
+  timePicker: {
+    am: 'SA',
+    pm: 'CH'
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Điều hướng phân trang',
+      next: 'Trang tiếp theo',
+      previous: 'Trang trước',
+      page: 'Đến trang {0}',
+      currentPage: 'Trang hiện tại, Trang {0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Đánh giá {0} trên {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=vi.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/zh-Hans.mjs":
+/*!*****************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/zh-Hans.mjs ***!
+  \*****************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: '徽章',
+  open: 'Open',
+  close: '关闭',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: '没有符合条件的结果',
+    loadingText: '加载中……'
+  },
+  dataTable: {
+    itemsPerPageText: '每页数目：',
+    ariaLabel: {
+      sortDescending: '：降序排列。',
+      sortAscending: '：升序排列。',
+      sortNone: '：未排序。',
+      activateNone: '点击以移除排序。',
+      activateDescending: '点击以降序排列。',
+      activateAscending: '点击以升序排列。'
+    },
+    sortBy: '排序方式'
+  },
+  dataFooter: {
+    itemsPerPageText: '每页数目：',
+    itemsPerPageAll: '全部',
+    nextPage: '下一页',
+    prevPage: '上一页',
+    firstPage: '首页',
+    lastPage: '尾页',
+    pageText: '{0}-{1} 共 {2}'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: '没有数据',
+  carousel: {
+    prev: '上一张',
+    next: '下一张',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '还有 {0} 项',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} 个文件',
+    counterSize: '{0} 个文件（共 {1}）'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: '分页导航',
+      next: '下一页',
+      previous: '上一页',
+      page: '转到页面 {0}',
+      currentPage: '当前页 {0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=zh-Hans.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/locale/zh-Hant.mjs":
+/*!*****************************************************!*\
+  !*** ./node_modules/vuetify/lib/locale/zh-Hant.mjs ***!
+  \*****************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  badge: '徽章',
+  open: 'Open',
+  close: '關閉',
+  confirmEdit: {
+    ok: 'OK',
+    cancel: 'Cancel'
+  },
+  dataIterator: {
+    noResultsText: '沒有符合條件的結果',
+    loadingText: '讀取中...'
+  },
+  dataTable: {
+    itemsPerPageText: '每頁列數：',
+    ariaLabel: {
+      sortDescending: '：降序排列。',
+      sortAscending: '：升序排列。',
+      sortNone: '無排序方式。點擊以升序排列。',
+      activateNone: '點擊以移除排序方式。',
+      activateDescending: '點擊以降序排列。',
+      activateAscending: '點擊以移除排序方式。'
+    },
+    sortBy: '排序方式'
+  },
+  dataFooter: {
+    itemsPerPageText: '每頁項目：',
+    itemsPerPageAll: '全部',
+    nextPage: '下一頁',
+    prevPage: '上一頁',
+    firstPage: '第一頁',
+    lastPage: '最後頁',
+    pageText: '{2} 條中的 {0}~{1} 條'
+  },
+  dateRangeInput: {
+    divider: 'to'
+  },
+  datePicker: {
+    itemsSelected: '{0} selected',
+    range: {
+      title: 'Select dates',
+      header: 'Enter dates'
+    },
+    title: 'Select date',
+    header: 'Enter date',
+    input: {
+      placeholder: 'Enter date'
+    }
+  },
+  noDataText: '沒有資料',
+  carousel: {
+    prev: '上一張',
+    next: '下一張',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}'
+    }
+  },
+  calendar: {
+    moreEvents: '還有其他 {0} 項',
+    today: 'Today'
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+    otp: 'Please enter OTP character {0}'
+  },
+  fileInput: {
+    counter: '{0} 個檔案',
+    counterSize: '{0} 個檔案（共 {1}）'
+  },
+  timePicker: {
+    am: 'AM',
+    pm: 'PM'
+  },
+  pagination: {
+    ariaLabel: {
+      root: '分頁導航',
+      next: '下一頁',
+      previous: '上一頁',
+      page: '轉到頁面 {0}',
+      currentPage: '當前頁 {0}',
+      first: 'First page',
+      last: 'Last page'
+    }
+  },
+  stepper: {
+    next: 'Next',
+    prev: 'Previous'
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}'
+    }
+  },
+  loading: 'Loading...',
+  infiniteScroll: {
+    loadMore: 'Load more',
+    empty: 'No more'
+  }
+});
+//# sourceMappingURL=zh-Hant.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/util/colorUtils.mjs":
+/*!******************************************************!*\
+  !*** ./node_modules/vuetify/lib/util/colorUtils.mjs ***!
+  \******************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   HSLtoHSV: () => (/* binding */ HSLtoHSV),
+/* harmony export */   HSLtoRGB: () => (/* binding */ HSLtoRGB),
+/* harmony export */   HSVtoCSS: () => (/* binding */ HSVtoCSS),
+/* harmony export */   HSVtoHSL: () => (/* binding */ HSVtoHSL),
+/* harmony export */   HSVtoHex: () => (/* binding */ HSVtoHex),
+/* harmony export */   HSVtoRGB: () => (/* binding */ HSVtoRGB),
+/* harmony export */   HexToHSV: () => (/* binding */ HexToHSV),
+/* harmony export */   HexToRGB: () => (/* binding */ HexToRGB),
+/* harmony export */   RGBToInt: () => (/* binding */ RGBToInt),
+/* harmony export */   RGBtoCSS: () => (/* binding */ RGBtoCSS),
+/* harmony export */   RGBtoHSV: () => (/* binding */ RGBtoHSV),
+/* harmony export */   RGBtoHex: () => (/* binding */ RGBtoHex),
+/* harmony export */   classToHex: () => (/* binding */ classToHex),
+/* harmony export */   darken: () => (/* binding */ darken),
+/* harmony export */   getContrast: () => (/* binding */ getContrast),
+/* harmony export */   getForeground: () => (/* binding */ getForeground),
+/* harmony export */   getLuma: () => (/* binding */ getLuma),
+/* harmony export */   isCssColor: () => (/* binding */ isCssColor),
+/* harmony export */   isParsableColor: () => (/* binding */ isParsableColor),
+/* harmony export */   lighten: () => (/* binding */ lighten),
+/* harmony export */   parseColor: () => (/* binding */ parseColor),
+/* harmony export */   parseGradient: () => (/* binding */ parseGradient),
+/* harmony export */   parseHex: () => (/* binding */ parseHex)
+/* harmony export */ });
+/* harmony import */ var _color_APCA_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./color/APCA.mjs */ "./node_modules/vuetify/lib/util/color/APCA.mjs");
+/* harmony import */ var _console_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./console.mjs */ "./node_modules/vuetify/lib/util/console.mjs");
+/* harmony import */ var _helpers_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./helpers.mjs */ "./node_modules/vuetify/lib/util/helpers.mjs");
+/* harmony import */ var _color_transformCIELAB_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./color/transformCIELAB.mjs */ "./node_modules/vuetify/lib/util/color/transformCIELAB.mjs");
+/* harmony import */ var _color_transformSRGB_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./color/transformSRGB.mjs */ "./node_modules/vuetify/lib/util/color/transformSRGB.mjs");
+// Utilities
+
+
+
+
+ // Types
+function isCssColor(color) {
+  return !!color && /^(#|var\(--|(rgb|hsl)a?\()/.test(color);
+}
+function isParsableColor(color) {
+  return isCssColor(color) && !/^((rgb|hsl)a?\()?var\(--/.test(color);
+}
+const cssColorRe = /^(?<fn>(?:rgb|hsl)a?)\((?<values>.+)\)/;
+const mappers = {
+  rgb: (r, g, b, a) => ({
+    r,
+    g,
+    b,
+    a
+  }),
+  rgba: (r, g, b, a) => ({
+    r,
+    g,
+    b,
+    a
+  }),
+  hsl: (h, s, l, a) => HSLtoRGB({
+    h,
+    s,
+    l,
+    a
+  }),
+  hsla: (h, s, l, a) => HSLtoRGB({
+    h,
+    s,
+    l,
+    a
+  }),
+  hsv: (h, s, v, a) => HSVtoRGB({
+    h,
+    s,
+    v,
+    a
+  }),
+  hsva: (h, s, v, a) => HSVtoRGB({
+    h,
+    s,
+    v,
+    a
+  })
+};
+function parseColor(color) {
+  if (typeof color === 'number') {
+    if (isNaN(color) || color < 0 || color > 0xFFFFFF) {
+      // int can't have opacity
+      (0,_console_mjs__WEBPACK_IMPORTED_MODULE_0__.consoleWarn)(`'${color}' is not a valid hex color`);
+    }
+    return {
+      r: (color & 0xFF0000) >> 16,
+      g: (color & 0xFF00) >> 8,
+      b: color & 0xFF
+    };
+  } else if (typeof color === 'string' && cssColorRe.test(color)) {
+    const {
+      groups
+    } = color.match(cssColorRe);
+    const {
+      fn,
+      values
+    } = groups;
+    const realValues = values.split(/,\s*/).map(v => {
+      if (v.endsWith('%') && ['hsl', 'hsla', 'hsv', 'hsva'].includes(fn)) {
+        return parseFloat(v) / 100;
+      } else {
+        return parseFloat(v);
+      }
+    });
+    return mappers[fn](...realValues);
+  } else if (typeof color === 'string') {
+    let hex = color.startsWith('#') ? color.slice(1) : color;
+    if ([3, 4].includes(hex.length)) {
+      hex = hex.split('').map(char => char + char).join('');
+    } else if (![6, 8].includes(hex.length)) {
+      (0,_console_mjs__WEBPACK_IMPORTED_MODULE_0__.consoleWarn)(`'${color}' is not a valid hex(a) color`);
+    }
+    const int = parseInt(hex, 16);
+    if (isNaN(int) || int < 0 || int > 0xFFFFFFFF) {
+      (0,_console_mjs__WEBPACK_IMPORTED_MODULE_0__.consoleWarn)(`'${color}' is not a valid hex(a) color`);
+    }
+    return HexToRGB(hex);
+  } else if (typeof color === 'object') {
+    if ((0,_helpers_mjs__WEBPACK_IMPORTED_MODULE_1__.has)(color, ['r', 'g', 'b'])) {
+      return color;
+    } else if ((0,_helpers_mjs__WEBPACK_IMPORTED_MODULE_1__.has)(color, ['h', 's', 'l'])) {
+      return HSVtoRGB(HSLtoHSV(color));
+    } else if ((0,_helpers_mjs__WEBPACK_IMPORTED_MODULE_1__.has)(color, ['h', 's', 'v'])) {
+      return HSVtoRGB(color);
+    }
+  }
+  throw new TypeError(`Invalid color: ${color == null ? color : String(color) || color.constructor.name}\nExpected #hex, #hexa, rgb(), rgba(), hsl(), hsla(), object or number`);
+}
+function RGBToInt(color) {
+  return (color.r << 16) + (color.g << 8) + color.b;
+}
+function classToHex(color, colors, currentTheme) {
+  const [colorName, colorModifier] = color.toString().trim().replace('-', '').split(' ', 2);
+  let hexColor = '';
+  if (colorName && colorName in colors) {
+    if (colorModifier && colorModifier in colors[colorName]) {
+      hexColor = colors[colorName][colorModifier];
+    } else if ('base' in colors[colorName]) {
+      hexColor = colors[colorName].base;
+    }
+  } else if (colorName && colorName in currentTheme) {
+    hexColor = currentTheme[colorName];
+  }
+  return hexColor;
+}
+
+/** Converts HSVA to RGBA. Based on formula from https://en.wikipedia.org/wiki/HSL_and_HSV */
+function HSVtoRGB(hsva) {
+  const {
+    h,
+    s,
+    v,
+    a
+  } = hsva;
+  const f = n => {
+    const k = (n + h / 60) % 6;
+    return v - v * s * Math.max(Math.min(k, 4 - k, 1), 0);
+  };
+  const rgb = [f(5), f(3), f(1)].map(v => Math.round(v * 255));
+  return {
+    r: rgb[0],
+    g: rgb[1],
+    b: rgb[2],
+    a
+  };
+}
+function HSLtoRGB(hsla) {
+  return HSVtoRGB(HSLtoHSV(hsla));
+}
+
+/** Converts RGBA to HSVA. Based on formula from https://en.wikipedia.org/wiki/HSL_and_HSV */
+function RGBtoHSV(rgba) {
+  if (!rgba) return {
+    h: 0,
+    s: 1,
+    v: 1,
+    a: 1
+  };
+  const r = rgba.r / 255;
+  const g = rgba.g / 255;
+  const b = rgba.b / 255;
+  const max = Math.max(r, g, b);
+  const min = Math.min(r, g, b);
+  let h = 0;
+  if (max !== min) {
+    if (max === r) {
+      h = 60 * (0 + (g - b) / (max - min));
+    } else if (max === g) {
+      h = 60 * (2 + (b - r) / (max - min));
+    } else if (max === b) {
+      h = 60 * (4 + (r - g) / (max - min));
+    }
+  }
+  if (h < 0) h = h + 360;
+  const s = max === 0 ? 0 : (max - min) / max;
+  const hsv = [h, s, max];
+  return {
+    h: hsv[0],
+    s: hsv[1],
+    v: hsv[2],
+    a: rgba.a
+  };
+}
+function HSVtoHSL(hsva) {
+  const {
+    h,
+    s,
+    v,
+    a
+  } = hsva;
+  const l = v - v * s / 2;
+  const sprime = l === 1 || l === 0 ? 0 : (v - l) / Math.min(l, 1 - l);
+  return {
+    h,
+    s: sprime,
+    l,
+    a
+  };
+}
+function HSLtoHSV(hsl) {
+  const {
+    h,
+    s,
+    l,
+    a
+  } = hsl;
+  const v = l + s * Math.min(l, 1 - l);
+  const sprime = v === 0 ? 0 : 2 - 2 * l / v;
+  return {
+    h,
+    s: sprime,
+    v,
+    a
+  };
+}
+function RGBtoCSS(_ref) {
+  let {
+    r,
+    g,
+    b,
+    a
+  } = _ref;
+  return a === undefined ? `rgb(${r}, ${g}, ${b})` : `rgba(${r}, ${g}, ${b}, ${a})`;
+}
+function HSVtoCSS(hsva) {
+  return RGBtoCSS(HSVtoRGB(hsva));
+}
+function toHex(v) {
+  const h = Math.round(v).toString(16);
+  return ('00'.substr(0, 2 - h.length) + h).toUpperCase();
+}
+function RGBtoHex(_ref2) {
+  let {
+    r,
+    g,
+    b,
+    a
+  } = _ref2;
+  return `#${[toHex(r), toHex(g), toHex(b), a !== undefined ? toHex(Math.round(a * 255)) : ''].join('')}`;
+}
+function HexToRGB(hex) {
+  hex = parseHex(hex);
+  let [r, g, b, a] = (0,_helpers_mjs__WEBPACK_IMPORTED_MODULE_1__.chunk)(hex, 2).map(c => parseInt(c, 16));
+  a = a === undefined ? a : a / 255;
+  return {
+    r,
+    g,
+    b,
+    a
+  };
+}
+function HexToHSV(hex) {
+  const rgb = HexToRGB(hex);
+  return RGBtoHSV(rgb);
+}
+function HSVtoHex(hsva) {
+  return RGBtoHex(HSVtoRGB(hsva));
+}
+function parseHex(hex) {
+  if (hex.startsWith('#')) {
+    hex = hex.slice(1);
+  }
+  hex = hex.replace(/([^0-9a-f])/gi, 'F');
+  if (hex.length === 3 || hex.length === 4) {
+    hex = hex.split('').map(x => x + x).join('');
+  }
+  if (hex.length !== 6) {
+    hex = (0,_helpers_mjs__WEBPACK_IMPORTED_MODULE_1__.padEnd)((0,_helpers_mjs__WEBPACK_IMPORTED_MODULE_1__.padEnd)(hex, 6), 8, 'F');
+  }
+  return hex;
+}
+function parseGradient(gradient, colors, currentTheme) {
+  return gradient.replace(/([a-z]+(\s[a-z]+-[1-5])?)(?=$|,)/gi, x => {
+    return classToHex(x, colors, currentTheme) || x;
+  }).replace(/(rgba\()#[0-9a-f]+(?=,)/gi, x => {
+    return 'rgba(' + Object.values(HexToRGB(parseHex(x.replace(/rgba\(/, '')))).slice(0, 3).join(',');
+  });
+}
+function lighten(value, amount) {
+  const lab = _color_transformCIELAB_mjs__WEBPACK_IMPORTED_MODULE_2__.fromXYZ(_color_transformSRGB_mjs__WEBPACK_IMPORTED_MODULE_3__.toXYZ(value));
+  lab[0] = lab[0] + amount * 10;
+  return _color_transformSRGB_mjs__WEBPACK_IMPORTED_MODULE_3__.fromXYZ(_color_transformCIELAB_mjs__WEBPACK_IMPORTED_MODULE_2__.toXYZ(lab));
+}
+function darken(value, amount) {
+  const lab = _color_transformCIELAB_mjs__WEBPACK_IMPORTED_MODULE_2__.fromXYZ(_color_transformSRGB_mjs__WEBPACK_IMPORTED_MODULE_3__.toXYZ(value));
+  lab[0] = lab[0] - amount * 10;
+  return _color_transformSRGB_mjs__WEBPACK_IMPORTED_MODULE_3__.fromXYZ(_color_transformCIELAB_mjs__WEBPACK_IMPORTED_MODULE_2__.toXYZ(lab));
+}
+
+/**
+ * Calculate the relative luminance of a given color
+ * @see https://www.w3.org/TR/WCAG20/#relativeluminancedef
+ */
+function getLuma(color) {
+  const rgb = parseColor(color);
+  return _color_transformSRGB_mjs__WEBPACK_IMPORTED_MODULE_3__.toXYZ(rgb)[1];
+}
+
+/**
+ * Returns the contrast ratio (1-21) between two colors.
+ * @see https://www.w3.org/TR/WCAG20/#contrast-ratiodef
+ */
+function getContrast(first, second) {
+  const l1 = getLuma(first);
+  const l2 = getLuma(second);
+  const light = Math.max(l1, l2);
+  const dark = Math.min(l1, l2);
+  return (light + 0.05) / (dark + 0.05);
+}
+function getForeground(color) {
+  const blackContrast = Math.abs((0,_color_APCA_mjs__WEBPACK_IMPORTED_MODULE_4__.APCAcontrast)(parseColor(0), parseColor(color)));
+  const whiteContrast = Math.abs((0,_color_APCA_mjs__WEBPACK_IMPORTED_MODULE_4__.APCAcontrast)(parseColor(0xffffff), parseColor(color)));
+
+  // TODO: warn about poor color selections
+  // const contrastAsText = Math.abs(APCAcontrast(colorVal, colorToInt(theme.colors.background)))
+  // const minContrast = Math.max(blackContrast, whiteContrast)
+  // if (minContrast < 60) {
+  //   consoleInfo(`${key} theme color ${color} has poor contrast (${minContrast.toFixed()}%)`)
+  // } else if (contrastAsText < 60 && !['background', 'surface'].includes(color)) {
+  //   consoleInfo(`${key} theme color ${color} has poor contrast as text (${contrastAsText.toFixed()}%)`)
+  // }
+
+  // Prefer white text if both have an acceptable contrast ratio
+  return whiteContrast > Math.min(blackContrast, 50) ? '#fff' : '#000';
+}
+//# sourceMappingURL=colorUtils.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/util/color/APCA.mjs":
+/*!******************************************************!*\
+  !*** ./node_modules/vuetify/lib/util/color/APCA.mjs ***!
+  \******************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   APCAcontrast: () => (/* binding */ APCAcontrast)
+/* harmony export */ });
+/**
+ * WCAG 3.0 APCA perceptual contrast algorithm from https://github.com/Myndex/SAPC-APCA
+ * @licence https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document
+ * @see https://www.w3.org/WAI/GL/task-forces/silver/wiki/Visual_Contrast_of_Text_Subgroup
+ */
+// Types
+
+// MAGICAL NUMBERS
+
+// sRGB Conversion to Relative Luminance (Y)
+
+// Transfer Curve (aka "Gamma") for sRGB linearization
+// Simple power curve vs piecewise described in docs
+// Essentially, 2.4 best models actual display
+// characteristics in combination with the total method
+const mainTRC = 2.4;
+const Rco = 0.2126729; // sRGB Red Coefficient (from matrix)
+const Gco = 0.7151522; // sRGB Green Coefficient (from matrix)
+const Bco = 0.0721750; // sRGB Blue Coefficient (from matrix)
+
+// For Finding Raw SAPC Contrast from Relative Luminance (Y)
+
+// Constants for SAPC Power Curve Exponents
+// One pair for normal text, and one for reverse
+// These are the "beating heart" of SAPC
+const normBG = 0.55;
+const normTXT = 0.58;
+const revTXT = 0.57;
+const revBG = 0.62;
+
+// For Clamping and Scaling Values
+
+const blkThrs = 0.03; // Level that triggers the soft black clamp
+const blkClmp = 1.45; // Exponent for the soft black clamp curve
+const deltaYmin = 0.0005; // Lint trap
+const scaleBoW = 1.25; // Scaling for dark text on light
+const scaleWoB = 1.25; // Scaling for light text on dark
+const loConThresh = 0.078; // Threshold for new simple offset scale
+const loConFactor = 12.82051282051282; // = 1/0.078,
+const loConOffset = 0.06; // The simple offset
+const loClip = 0.001; // Output clip (lint trap #2)
+
+function APCAcontrast(text, background) {
+  // Linearize sRGB
+  const Rtxt = (text.r / 255) ** mainTRC;
+  const Gtxt = (text.g / 255) ** mainTRC;
+  const Btxt = (text.b / 255) ** mainTRC;
+  const Rbg = (background.r / 255) ** mainTRC;
+  const Gbg = (background.g / 255) ** mainTRC;
+  const Bbg = (background.b / 255) ** mainTRC;
+
+  // Apply the standard coefficients and sum to Y
+  let Ytxt = Rtxt * Rco + Gtxt * Gco + Btxt * Bco;
+  let Ybg = Rbg * Rco + Gbg * Gco + Bbg * Bco;
+
+  // Soft clamp Y when near black.
+  // Now clamping all colors to prevent crossover errors
+  if (Ytxt <= blkThrs) Ytxt += (blkThrs - Ytxt) ** blkClmp;
+  if (Ybg <= blkThrs) Ybg += (blkThrs - Ybg) ** blkClmp;
+
+  // Return 0 Early for extremely low ∆Y (lint trap #1)
+  if (Math.abs(Ybg - Ytxt) < deltaYmin) return 0.0;
+
+  // SAPC CONTRAST
+
+  let outputContrast; // For weighted final values
+  if (Ybg > Ytxt) {
+    // For normal polarity, black text on white
+    // Calculate the SAPC contrast value and scale
+
+    const SAPC = (Ybg ** normBG - Ytxt ** normTXT) * scaleBoW;
+
+    // NEW! SAPC SmoothScale™
+    // Low Contrast Smooth Scale Rollout to prevent polarity reversal
+    // and also a low clip for very low contrasts (lint trap #2)
+    // much of this is for very low contrasts, less than 10
+    // therefore for most reversing needs, only loConOffset is important
+    outputContrast = SAPC < loClip ? 0.0 : SAPC < loConThresh ? SAPC - SAPC * loConFactor * loConOffset : SAPC - loConOffset;
+  } else {
+    // For reverse polarity, light text on dark
+    // WoB should always return negative value.
+
+    const SAPC = (Ybg ** revBG - Ytxt ** revTXT) * scaleWoB;
+    outputContrast = SAPC > -loClip ? 0.0 : SAPC > -loConThresh ? SAPC - SAPC * loConFactor * loConOffset : SAPC + loConOffset;
+  }
+  return outputContrast * 100;
+}
+//# sourceMappingURL=APCA.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/util/color/transformCIELAB.mjs":
+/*!*****************************************************************!*\
+  !*** ./node_modules/vuetify/lib/util/color/transformCIELAB.mjs ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   fromXYZ: () => (/* binding */ fromXYZ),
+/* harmony export */   toXYZ: () => (/* binding */ toXYZ)
+/* harmony export */ });
+// Types
+
+const delta = 0.20689655172413793; // 6÷29
+
+const cielabForwardTransform = t => t > delta ** 3 ? Math.cbrt(t) : t / (3 * delta ** 2) + 4 / 29;
+const cielabReverseTransform = t => t > delta ? t ** 3 : 3 * delta ** 2 * (t - 4 / 29);
+function fromXYZ(xyz) {
+  const transform = cielabForwardTransform;
+  const transformedY = transform(xyz[1]);
+  return [116 * transformedY - 16, 500 * (transform(xyz[0] / 0.95047) - transformedY), 200 * (transformedY - transform(xyz[2] / 1.08883))];
+}
+function toXYZ(lab) {
+  const transform = cielabReverseTransform;
+  const Ln = (lab[0] + 16) / 116;
+  return [transform(Ln + lab[1] / 500) * 0.95047, transform(Ln), transform(Ln - lab[2] / 200) * 1.08883];
+}
+//# sourceMappingURL=transformCIELAB.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/util/color/transformSRGB.mjs":
+/*!***************************************************************!*\
+  !*** ./node_modules/vuetify/lib/util/color/transformSRGB.mjs ***!
+  \***************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   fromXYZ: () => (/* binding */ fromXYZ),
+/* harmony export */   toXYZ: () => (/* binding */ toXYZ)
+/* harmony export */ });
+/* harmony import */ var _helpers_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../helpers.mjs */ "./node_modules/vuetify/lib/util/helpers.mjs");
+// Utilities
+ // Types
+// For converting XYZ to sRGB
+const srgbForwardMatrix = [[3.2406, -1.5372, -0.4986], [-0.9689, 1.8758, 0.0415], [0.0557, -0.2040, 1.0570]];
+
+// Forward gamma adjust
+const srgbForwardTransform = C => C <= 0.0031308 ? C * 12.92 : 1.055 * C ** (1 / 2.4) - 0.055;
+
+// For converting sRGB to XYZ
+const srgbReverseMatrix = [[0.4124, 0.3576, 0.1805], [0.2126, 0.7152, 0.0722], [0.0193, 0.1192, 0.9505]];
+
+// Reverse gamma adjust
+const srgbReverseTransform = C => C <= 0.04045 ? C / 12.92 : ((C + 0.055) / 1.055) ** 2.4;
+function fromXYZ(xyz) {
+  const rgb = Array(3);
+  const transform = srgbForwardTransform;
+  const matrix = srgbForwardMatrix;
+
+  // Matrix transform, then gamma adjustment
+  for (let i = 0; i < 3; ++i) {
+    // Rescale back to [0, 255]
+    rgb[i] = Math.round((0,_helpers_mjs__WEBPACK_IMPORTED_MODULE_0__.clamp)(transform(matrix[i][0] * xyz[0] + matrix[i][1] * xyz[1] + matrix[i][2] * xyz[2])) * 255);
+  }
+  return {
+    r: rgb[0],
+    g: rgb[1],
+    b: rgb[2]
+  };
+}
+function toXYZ(_ref) {
+  let {
+    r,
+    g,
+    b
+  } = _ref;
+  const xyz = [0, 0, 0];
+  const transform = srgbReverseTransform;
+  const matrix = srgbReverseMatrix;
+
+  // Rescale from [0, 255] to [0, 1] then adjust sRGB gamma to linear RGB
+  r = transform(r / 255);
+  g = transform(g / 255);
+  b = transform(b / 255);
+
+  // Matrix color space transform
+  for (let i = 0; i < 3; ++i) {
+    xyz[i] = matrix[i][0] * r + matrix[i][1] * g + matrix[i][2] * b;
+  }
+  return xyz;
+}
+//# sourceMappingURL=transformSRGB.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/util/console.mjs":
+/*!***************************************************!*\
+  !*** ./node_modules/vuetify/lib/util/console.mjs ***!
+  \***************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   breaking: () => (/* binding */ breaking),
+/* harmony export */   consoleError: () => (/* binding */ consoleError),
+/* harmony export */   consoleWarn: () => (/* binding */ consoleWarn),
+/* harmony export */   deprecate: () => (/* binding */ deprecate),
+/* harmony export */   removed: () => (/* binding */ removed)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* eslint-disable no-console */
+
+// Utilities
+
+function consoleWarn(message) {
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.warn)(`Vuetify: ${message}`);
+}
+function consoleError(message) {
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.warn)(`Vuetify error: ${message}`);
+}
+function deprecate(original, replacement) {
+  replacement = Array.isArray(replacement) ? replacement.slice(0, -1).map(s => `'${s}'`).join(', ') + ` or '${replacement.at(-1)}'` : `'${replacement}'`;
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.warn)(`[Vuetify UPGRADE] '${original}' is deprecated, use ${replacement} instead.`);
+}
+function breaking(original, replacement) {
+  // warn(`[Vuetify BREAKING] '${original}' has been removed, use '${replacement}' instead. For more information, see the upgrade guide https://github.com/vuetifyjs/vuetify/releases/tag/v2.0.0#user-content-upgrade-guide`)
+}
+function removed(original) {
+  // warn(`[Vuetify REMOVED] '${original}' has been removed. You can safely omit it.`)
+}
+//# sourceMappingURL=console.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/util/defineComponent.mjs":
+/*!***********************************************************!*\
+  !*** ./node_modules/vuetify/lib/util/defineComponent.mjs ***!
+  \***********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   defineComponent: () => (/* binding */ defineComponent),
+/* harmony export */   defineFunctionalComponent: () => (/* binding */ defineFunctionalComponent),
+/* harmony export */   genericComponent: () => (/* binding */ genericComponent)
+/* harmony export */ });
+/* harmony import */ var _composables_defaults_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../composables/defaults.mjs */ "./node_modules/vuetify/lib/composables/defaults.mjs");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _console_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./console.mjs */ "./node_modules/vuetify/lib/util/console.mjs");
+/* harmony import */ var _helpers_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./helpers.mjs */ "./node_modules/vuetify/lib/util/helpers.mjs");
+/* harmony import */ var _propsFactory_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./propsFactory.mjs */ "./node_modules/vuetify/lib/util/propsFactory.mjs");
+// Composables
+ // Utilities
+
+
+
+ // Types
+// No props
+// Object Props
+// Implementation
+function defineComponent(options) {
+  options._setup = options._setup ?? options.setup;
+  if (!options.name) {
+    (0,_console_mjs__WEBPACK_IMPORTED_MODULE_1__.consoleWarn)('The component is missing an explicit name, unable to generate default prop value');
+    return options;
+  }
+  if (options._setup) {
+    options.props = (0,_propsFactory_mjs__WEBPACK_IMPORTED_MODULE_2__.propsFactory)(options.props ?? {}, options.name)();
+    const propKeys = Object.keys(options.props).filter(key => key !== 'class' && key !== 'style');
+    options.filterProps = function filterProps(props) {
+      return (0,_helpers_mjs__WEBPACK_IMPORTED_MODULE_3__.pick)(props, propKeys);
+    };
+    options.props._as = String;
+    options.setup = function setup(props, ctx) {
+      const defaults = (0,_composables_defaults_mjs__WEBPACK_IMPORTED_MODULE_4__.injectDefaults)();
+
+      // Skip props proxy if defaults are not provided
+      if (!defaults.value) return options._setup(props, ctx);
+      const {
+        props: _props,
+        provideSubDefaults
+      } = (0,_composables_defaults_mjs__WEBPACK_IMPORTED_MODULE_4__.internalUseDefaults)(props, props._as ?? options.name, defaults);
+      const setupBindings = options._setup(_props, ctx);
+      provideSubDefaults();
+      return setupBindings;
+    };
+  }
+  return options;
+}
+
+// No argument - simple default slot
+
+// Generic constructor argument - generic props and slots
+
+// Slots argument - simple slots
+
+// Implementation
+function genericComponent() {
+  let exposeDefaults = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
+  return options => (exposeDefaults ? defineComponent : vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)(options);
+}
+function defineFunctionalComponent(props, render) {
+  render.props = props;
+  return render;
+}
+
+// Adds a filterProps method to the component options
+//# sourceMappingURL=defineComponent.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/util/getCurrentInstance.mjs":
+/*!**************************************************************!*\
+  !*** ./node_modules/vuetify/lib/util/getCurrentInstance.mjs ***!
+  \**************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   getCurrentInstance: () => (/* binding */ getCurrentInstance),
+/* harmony export */   getCurrentInstanceName: () => (/* binding */ getCurrentInstanceName),
+/* harmony export */   getUid: () => (/* binding */ getUid)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _helpers_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./helpers.mjs */ "./node_modules/vuetify/lib/util/helpers.mjs");
+// Utilities
+
+ // Types
+function getCurrentInstance(name, message) {
+  const vm = (0,vue__WEBPACK_IMPORTED_MODULE_0__.getCurrentInstance)();
+  if (!vm) {
+    throw new Error(`[Vuetify] ${name} ${message || 'must be called from inside a setup function'}`);
+  }
+  return vm;
+}
+function getCurrentInstanceName() {
+  let name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'composables';
+  const vm = getCurrentInstance(name).type;
+  return (0,_helpers_mjs__WEBPACK_IMPORTED_MODULE_1__.toKebabCase)(vm?.aliasName || vm?.name);
+}
+let _uid = 0;
+let _map = new WeakMap();
+function getUid() {
+  const vm = getCurrentInstance('getUid');
+  if (_map.has(vm)) return _map.get(vm);else {
+    const uid = _uid++;
+    _map.set(vm, uid);
+    return uid;
+  }
+}
+getUid.reset = () => {
+  _uid = 0;
+  _map = new WeakMap();
+};
+//# sourceMappingURL=getCurrentInstance.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/util/globals.mjs":
+/*!***************************************************!*\
+  !*** ./node_modules/vuetify/lib/util/globals.mjs ***!
+  \***************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   IN_BROWSER: () => (/* binding */ IN_BROWSER),
+/* harmony export */   SUPPORTS_EYE_DROPPER: () => (/* binding */ SUPPORTS_EYE_DROPPER),
+/* harmony export */   SUPPORTS_INTERSECTION: () => (/* binding */ SUPPORTS_INTERSECTION),
+/* harmony export */   SUPPORTS_TOUCH: () => (/* binding */ SUPPORTS_TOUCH)
+/* harmony export */ });
+const IN_BROWSER = typeof window !== 'undefined';
+const SUPPORTS_INTERSECTION = IN_BROWSER && 'IntersectionObserver' in window;
+const SUPPORTS_TOUCH = IN_BROWSER && ('ontouchstart' in window || window.navigator.maxTouchPoints > 0);
+const SUPPORTS_EYE_DROPPER = IN_BROWSER && 'EyeDropper' in window;
+//# sourceMappingURL=globals.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/util/helpers.mjs":
+/*!***************************************************!*\
+  !*** ./node_modules/vuetify/lib/util/helpers.mjs ***!
+  \***************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   CircularBuffer: () => (/* binding */ CircularBuffer),
+/* harmony export */   EventProp: () => (/* binding */ EventProp),
+/* harmony export */   arrayDiff: () => (/* binding */ arrayDiff),
+/* harmony export */   callEvent: () => (/* binding */ callEvent),
+/* harmony export */   camelizeObjectKeys: () => (/* binding */ camelizeObjectKeys),
+/* harmony export */   chunk: () => (/* binding */ chunk),
+/* harmony export */   chunkArray: () => (/* binding */ chunkArray),
+/* harmony export */   clamp: () => (/* binding */ clamp),
+/* harmony export */   convertToUnit: () => (/* binding */ convertToUnit),
+/* harmony export */   createRange: () => (/* binding */ createRange),
+/* harmony export */   debounce: () => (/* binding */ debounce),
+/* harmony export */   deepEqual: () => (/* binding */ deepEqual),
+/* harmony export */   defaultFilter: () => (/* binding */ defaultFilter),
+/* harmony export */   defer: () => (/* binding */ defer),
+/* harmony export */   destructComputed: () => (/* binding */ destructComputed),
+/* harmony export */   ensureValidVNode: () => (/* binding */ ensureValidVNode),
+/* harmony export */   eventName: () => (/* binding */ eventName),
+/* harmony export */   fillArray: () => (/* binding */ fillArray),
+/* harmony export */   filterInputAttrs: () => (/* binding */ filterInputAttrs),
+/* harmony export */   findChildren: () => (/* binding */ findChildren),
+/* harmony export */   findChildrenWithProvide: () => (/* binding */ findChildrenWithProvide),
+/* harmony export */   flattenFragments: () => (/* binding */ flattenFragments),
+/* harmony export */   focusChild: () => (/* binding */ focusChild),
+/* harmony export */   focusableChildren: () => (/* binding */ focusableChildren),
+/* harmony export */   getDecimals: () => (/* binding */ getDecimals),
+/* harmony export */   getEventCoordinates: () => (/* binding */ getEventCoordinates),
+/* harmony export */   getNestedValue: () => (/* binding */ getNestedValue),
+/* harmony export */   getNextElement: () => (/* binding */ getNextElement),
+/* harmony export */   getObjectValueByPath: () => (/* binding */ getObjectValueByPath),
+/* harmony export */   getPrefixedSlots: () => (/* binding */ getPrefixedSlots),
+/* harmony export */   getPropertyFromItem: () => (/* binding */ getPropertyFromItem),
+/* harmony export */   getZIndex: () => (/* binding */ getZIndex),
+/* harmony export */   has: () => (/* binding */ has),
+/* harmony export */   hasEvent: () => (/* binding */ hasEvent),
+/* harmony export */   humanReadableFileSize: () => (/* binding */ humanReadableFileSize),
+/* harmony export */   includes: () => (/* binding */ includes),
+/* harmony export */   isComposingIgnoreKey: () => (/* binding */ isComposingIgnoreKey),
+/* harmony export */   isEmpty: () => (/* binding */ isEmpty),
+/* harmony export */   isObject: () => (/* binding */ isObject),
+/* harmony export */   isOn: () => (/* binding */ isOn),
+/* harmony export */   keyCodes: () => (/* binding */ keyCodes),
+/* harmony export */   keyValues: () => (/* binding */ keyValues),
+/* harmony export */   keys: () => (/* binding */ keys),
+/* harmony export */   matchesSelector: () => (/* binding */ matchesSelector),
+/* harmony export */   mergeDeep: () => (/* binding */ mergeDeep),
+/* harmony export */   noop: () => (/* binding */ noop),
+/* harmony export */   omit: () => (/* binding */ omit),
+/* harmony export */   only: () => (/* binding */ only),
+/* harmony export */   padEnd: () => (/* binding */ padEnd),
+/* harmony export */   padStart: () => (/* binding */ padStart),
+/* harmony export */   pick: () => (/* binding */ pick),
+/* harmony export */   pickWithRest: () => (/* binding */ pickWithRest),
+/* harmony export */   randomHexColor: () => (/* binding */ randomHexColor),
+/* harmony export */   refElement: () => (/* binding */ refElement),
+/* harmony export */   searchItems: () => (/* binding */ searchItems),
+/* harmony export */   throttle: () => (/* binding */ throttle),
+/* harmony export */   toKebabCase: () => (/* binding */ toKebabCase),
+/* harmony export */   wrapInArray: () => (/* binding */ wrapInArray)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _globals_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./globals.mjs */ "./node_modules/vuetify/lib/util/globals.mjs");
+function _classPrivateFieldInitSpec(obj, privateMap, value) { _checkPrivateRedeclaration(obj, privateMap); privateMap.set(obj, value); }
+function _checkPrivateRedeclaration(obj, privateCollection) { if (privateCollection.has(obj)) { throw new TypeError("Cannot initialize the same private elements twice on an object"); } }
+function _classPrivateFieldSet(receiver, privateMap, value) { var descriptor = _classExtractFieldDescriptor(receiver, privateMap, "set"); _classApplyDescriptorSet(receiver, descriptor, value); return value; }
+function _classApplyDescriptorSet(receiver, descriptor, value) { if (descriptor.set) { descriptor.set.call(receiver, value); } else { if (!descriptor.writable) { throw new TypeError("attempted to set read only private field"); } descriptor.value = value; } }
+function _classPrivateFieldGet(receiver, privateMap) { var descriptor = _classExtractFieldDescriptor(receiver, privateMap, "get"); return _classApplyDescriptorGet(receiver, descriptor); }
+function _classExtractFieldDescriptor(receiver, privateMap, action) { if (!privateMap.has(receiver)) { throw new TypeError("attempted to " + action + " private field on non-instance"); } return privateMap.get(receiver); }
+function _classApplyDescriptorGet(receiver, descriptor) { if (descriptor.get) { return descriptor.get.call(receiver); } return descriptor.value; }
+// Utilities
+
+ // Types
+function getNestedValue(obj, path, fallback) {
+  const last = path.length - 1;
+  if (last < 0) return obj === undefined ? fallback : obj;
+  for (let i = 0; i < last; i++) {
+    if (obj == null) {
+      return fallback;
+    }
+    obj = obj[path[i]];
+  }
+  if (obj == null) return fallback;
+  return obj[path[last]] === undefined ? fallback : obj[path[last]];
+}
+function deepEqual(a, b) {
+  if (a === b) return true;
+  if (a instanceof Date && b instanceof Date && a.getTime() !== b.getTime()) {
+    // If the values are Date, compare them as timestamps
+    return false;
+  }
+  if (a !== Object(a) || b !== Object(b)) {
+    // If the values aren't objects, they were already checked for equality
+    return false;
+  }
+  const props = Object.keys(a);
+  if (props.length !== Object.keys(b).length) {
+    // Different number of props, don't bother to check
+    return false;
+  }
+  return props.every(p => deepEqual(a[p], b[p]));
+}
+function getObjectValueByPath(obj, path, fallback) {
+  // credit: http://stackoverflow.com/questions/6491463/accessing-nested-javascript-objects-with-string-key#comment55278413_6491621
+  if (obj == null || !path || typeof path !== 'string') return fallback;
+  if (obj[path] !== undefined) return obj[path];
+  path = path.replace(/\[(\w+)\]/g, '.$1'); // convert indexes to properties
+  path = path.replace(/^\./, ''); // strip a leading dot
+  return getNestedValue(obj, path.split('.'), fallback);
+}
+function getPropertyFromItem(item, property, fallback) {
+  if (property === true) return item === undefined ? fallback : item;
+  if (property == null || typeof property === 'boolean') return fallback;
+  if (item !== Object(item)) {
+    if (typeof property !== 'function') return fallback;
+    const value = property(item, fallback);
+    return typeof value === 'undefined' ? fallback : value;
+  }
+  if (typeof property === 'string') return getObjectValueByPath(item, property, fallback);
+  if (Array.isArray(property)) return getNestedValue(item, property, fallback);
+  if (typeof property !== 'function') return fallback;
+  const value = property(item, fallback);
+  return typeof value === 'undefined' ? fallback : value;
+}
+function createRange(length) {
+  let start = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+  return Array.from({
+    length
+  }, (v, k) => start + k);
+}
+function getZIndex(el) {
+  if (!el || el.nodeType !== Node.ELEMENT_NODE) return 0;
+  const index = +window.getComputedStyle(el).getPropertyValue('z-index');
+  if (!index) return getZIndex(el.parentNode);
+  return index;
+}
+function convertToUnit(str) {
+  let unit = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'px';
+  if (str == null || str === '') {
+    return undefined;
+  } else if (isNaN(+str)) {
+    return String(str);
+  } else if (!isFinite(+str)) {
+    return undefined;
+  } else {
+    return `${Number(str)}${unit}`;
+  }
+}
+function isObject(obj) {
+  return obj !== null && typeof obj === 'object' && !Array.isArray(obj);
+}
+function refElement(obj) {
+  if (obj && '$el' in obj) {
+    const el = obj.$el;
+    if (el?.nodeType === Node.TEXT_NODE) {
+      // Multi-root component, use the first element
+      return el.nextElementSibling;
+    }
+    return el;
+  }
+  return obj;
+}
+
+// KeyboardEvent.keyCode aliases
+const keyCodes = Object.freeze({
+  enter: 13,
+  tab: 9,
+  delete: 46,
+  esc: 27,
+  space: 32,
+  up: 38,
+  down: 40,
+  left: 37,
+  right: 39,
+  end: 35,
+  home: 36,
+  del: 46,
+  backspace: 8,
+  insert: 45,
+  pageup: 33,
+  pagedown: 34,
+  shift: 16
+});
+const keyValues = Object.freeze({
+  enter: 'Enter',
+  tab: 'Tab',
+  delete: 'Delete',
+  esc: 'Escape',
+  space: 'Space',
+  up: 'ArrowUp',
+  down: 'ArrowDown',
+  left: 'ArrowLeft',
+  right: 'ArrowRight',
+  end: 'End',
+  home: 'Home',
+  del: 'Delete',
+  backspace: 'Backspace',
+  insert: 'Insert',
+  pageup: 'PageUp',
+  pagedown: 'PageDown',
+  shift: 'Shift'
+});
+function keys(o) {
+  return Object.keys(o);
+}
+function has(obj, key) {
+  return key.every(k => obj.hasOwnProperty(k));
+}
+// Array of keys
+function pick(obj, paths) {
+  const found = {};
+  const keys = new Set(Object.keys(obj));
+  for (const path of paths) {
+    if (keys.has(path)) {
+      found[path] = obj[path];
+    }
+  }
+  return found;
+}
+
+// Array of keys
+
+// Array of keys or RegExp to test keys against
+
+function pickWithRest(obj, paths, exclude) {
+  const found = Object.create(null);
+  const rest = Object.create(null);
+  for (const key in obj) {
+    if (paths.some(path => path instanceof RegExp ? path.test(key) : path === key) && !exclude?.some(path => path === key)) {
+      found[key] = obj[key];
+    } else {
+      rest[key] = obj[key];
+    }
+  }
+  return [found, rest];
+}
+function omit(obj, exclude) {
+  const clone = {
+    ...obj
+  };
+  exclude.forEach(prop => delete clone[prop]);
+  return clone;
+}
+function only(obj, include) {
+  const clone = {};
+  include.forEach(prop => clone[prop] = obj[prop]);
+  return clone;
+}
+const onRE = /^on[^a-z]/;
+const isOn = key => onRE.test(key);
+const bubblingEvents = ['onAfterscriptexecute', 'onAnimationcancel', 'onAnimationend', 'onAnimationiteration', 'onAnimationstart', 'onAuxclick', 'onBeforeinput', 'onBeforescriptexecute', 'onChange', 'onClick', 'onCompositionend', 'onCompositionstart', 'onCompositionupdate', 'onContextmenu', 'onCopy', 'onCut', 'onDblclick', 'onFocusin', 'onFocusout', 'onFullscreenchange', 'onFullscreenerror', 'onGesturechange', 'onGestureend', 'onGesturestart', 'onGotpointercapture', 'onInput', 'onKeydown', 'onKeypress', 'onKeyup', 'onLostpointercapture', 'onMousedown', 'onMousemove', 'onMouseout', 'onMouseover', 'onMouseup', 'onMousewheel', 'onPaste', 'onPointercancel', 'onPointerdown', 'onPointerenter', 'onPointerleave', 'onPointermove', 'onPointerout', 'onPointerover', 'onPointerup', 'onReset', 'onSelect', 'onSubmit', 'onTouchcancel', 'onTouchend', 'onTouchmove', 'onTouchstart', 'onTransitioncancel', 'onTransitionend', 'onTransitionrun', 'onTransitionstart', 'onWheel'];
+const compositionIgnoreKeys = ['ArrowUp', 'ArrowDown', 'ArrowRight', 'ArrowLeft', 'Enter', 'Escape', 'Tab', ' '];
+function isComposingIgnoreKey(e) {
+  return e.isComposing && compositionIgnoreKeys.includes(e.key);
+}
+
+/**
+ * Filter attributes that should be applied to
+ * the root element of an input component. Remaining
+ * attributes should be passed to the <input> element inside.
+ */
+function filterInputAttrs(attrs) {
+  const [events, props] = pickWithRest(attrs, [onRE]);
+  const inputEvents = omit(events, bubblingEvents);
+  const [rootAttrs, inputAttrs] = pickWithRest(props, ['class', 'style', 'id', /^data-/]);
+  Object.assign(rootAttrs, events);
+  Object.assign(inputAttrs, inputEvents);
+  return [rootAttrs, inputAttrs];
+}
+
+/**
+ * Returns the set difference of B and A, i.e. the set of elements in B but not in A
+ */
+function arrayDiff(a, b) {
+  const diff = [];
+  for (let i = 0; i < b.length; i++) {
+    if (!a.includes(b[i])) diff.push(b[i]);
+  }
+  return diff;
+}
+function wrapInArray(v) {
+  return v == null ? [] : Array.isArray(v) ? v : [v];
+}
+function defaultFilter(value, search, item) {
+  return value != null && search != null && typeof value !== 'boolean' && value.toString().toLocaleLowerCase().indexOf(search.toLocaleLowerCase()) !== -1;
+}
+function searchItems(items, search) {
+  if (!search) return items;
+  search = search.toString().toLowerCase();
+  if (search.trim() === '') return items;
+  return items.filter(item => Object.keys(item).some(key => defaultFilter(getObjectValueByPath(item, key), search, item)));
+}
+function debounce(fn, delay) {
+  let timeoutId = 0;
+  const wrap = function () {
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), (0,vue__WEBPACK_IMPORTED_MODULE_0__.unref)(delay));
+  };
+  wrap.clear = () => {
+    clearTimeout(timeoutId);
+  };
+  wrap.immediate = fn;
+  return wrap;
+}
+function throttle(fn, limit) {
+  let throttling = false;
+  return function () {
+    if (!throttling) {
+      throttling = true;
+      setTimeout(() => throttling = false, limit);
+      return fn(...arguments);
+    }
+  };
+}
+/**
+ * Filters slots to only those starting with `prefix`, removing the prefix
+ */
+function getPrefixedSlots(prefix, slots) {
+  return Object.keys(slots).filter(k => k.startsWith(prefix)).reduce((obj, k) => {
+    obj[k.replace(prefix, '')] = slots[k];
+    return obj;
+  }, {});
+}
+function clamp(value) {
+  let min = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+  let max = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1;
+  return Math.max(min, Math.min(max, value));
+}
+function getDecimals(value) {
+  const trimmedStr = value.toString().trim();
+  return trimmedStr.includes('.') ? trimmedStr.length - trimmedStr.indexOf('.') - 1 : 0;
+}
+function padEnd(str, length) {
+  let char = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '0';
+  return str + char.repeat(Math.max(0, length - str.length));
+}
+function padStart(str, length) {
+  let char = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '0';
+  return char.repeat(Math.max(0, length - str.length)) + str;
+}
+function chunk(str) {
+  let size = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
+  const chunked = [];
+  let index = 0;
+  while (index < str.length) {
+    chunked.push(str.substr(index, size));
+    index += size;
+  }
+  return chunked;
+}
+function chunkArray(array) {
+  let size = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
+  return Array.from({
+    length: Math.ceil(array.length / size)
+  }, (v, i) => array.slice(i * size, i * size + size));
+}
+function humanReadableFileSize(bytes) {
+  let base = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1000;
+  if (bytes < base) {
+    return `${bytes} B`;
+  }
+  const prefix = base === 1024 ? ['Ki', 'Mi', 'Gi'] : ['k', 'M', 'G'];
+  let unit = -1;
+  while (Math.abs(bytes) >= base && unit < prefix.length - 1) {
+    bytes /= base;
+    ++unit;
+  }
+  return `${bytes.toFixed(1)} ${prefix[unit]}B`;
+}
+function camelizeObjectKeys(obj) {
+  if (!obj) return {};
+  return Object.keys(obj).reduce((o, key) => {
+    o[(0,vue__WEBPACK_IMPORTED_MODULE_0__.camelize)(key)] = obj[key];
+    return o;
+  }, {});
+}
+function mergeDeep() {
+  let source = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  let target = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  let arrayFn = arguments.length > 2 ? arguments[2] : undefined;
+  const out = {};
+  for (const key in source) {
+    out[key] = source[key];
+  }
+  for (const key in target) {
+    const sourceProperty = source[key];
+    const targetProperty = target[key];
+
+    // Only continue deep merging if
+    // both properties are objects
+    if (isObject(sourceProperty) && isObject(targetProperty)) {
+      out[key] = mergeDeep(sourceProperty, targetProperty, arrayFn);
+      continue;
+    }
+    if (Array.isArray(sourceProperty) && Array.isArray(targetProperty) && arrayFn) {
+      out[key] = arrayFn(sourceProperty, targetProperty);
+      continue;
+    }
+    out[key] = targetProperty;
+  }
+  return out;
+}
+function fillArray(length, obj) {
+  return Array(length).fill(obj);
+}
+function flattenFragments(nodes) {
+  return nodes.map(node => {
+    if (node.type === vue__WEBPACK_IMPORTED_MODULE_0__.Fragment) {
+      return flattenFragments(node.children);
+    } else {
+      return node;
+    }
+  }).flat();
+}
+const randomHexColor = () => {
+  const n = (Math.random() * 0xfffff * 1000000).toString(16);
+  return '#' + n.slice(0, 6);
+};
+function toKebabCase() {
+  let str = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+  if (toKebabCase.cache.has(str)) return toKebabCase.cache.get(str);
+  const kebab = str.replace(/[^a-z]/gi, '-').replace(/\B([A-Z])/g, '-$1').toLowerCase();
+  toKebabCase.cache.set(str, kebab);
+  return kebab;
+}
+toKebabCase.cache = new Map();
+function findChildren(vnode) {
+  if (!vnode || typeof vnode !== 'object') {
+    return [];
+  }
+  if (Array.isArray(vnode)) {
+    return vnode.map(child => findChildren(child)).filter(v => v).flat(1);
+  } else if (Array.isArray(vnode.children)) {
+    return vnode.children.map(child => findChildren(child)).filter(v => v).flat(1);
+  } else if (vnode.component) {
+    return [vnode.component, ...findChildren(vnode.component?.subTree)].filter(v => v).flat(1);
+  }
+  return [];
+}
+function findChildrenWithProvide(key, vnode) {
+  if (!vnode || typeof vnode !== 'object') return [];
+  if (Array.isArray(vnode)) {
+    return vnode.map(child => findChildrenWithProvide(key, child)).flat(1);
+  } else if (Array.isArray(vnode.children)) {
+    return vnode.children.map(child => findChildrenWithProvide(key, child)).flat(1);
+  } else if (vnode.component) {
+    if (Object.getOwnPropertySymbols(vnode.component.provides).includes(key)) {
+      return [vnode.component];
+    } else if (vnode.component.subTree) {
+      return findChildrenWithProvide(key, vnode.component.subTree).flat(1);
+    }
+  }
+  return [];
+}
+var _arr = /*#__PURE__*/new WeakMap();
+var _pointer = /*#__PURE__*/new WeakMap();
+class CircularBuffer {
+  constructor(size) {
+    _classPrivateFieldInitSpec(this, _arr, {
+      writable: true,
+      value: []
+    });
+    _classPrivateFieldInitSpec(this, _pointer, {
+      writable: true,
+      value: 0
+    });
+    this.size = size;
+  }
+  push(val) {
+    _classPrivateFieldGet(this, _arr)[_classPrivateFieldGet(this, _pointer)] = val;
+    _classPrivateFieldSet(this, _pointer, (_classPrivateFieldGet(this, _pointer) + 1) % this.size);
+  }
+  values() {
+    return _classPrivateFieldGet(this, _arr).slice(_classPrivateFieldGet(this, _pointer)).concat(_classPrivateFieldGet(this, _arr).slice(0, _classPrivateFieldGet(this, _pointer)));
+  }
+}
+function getEventCoordinates(e) {
+  if ('touches' in e) {
+    return {
+      clientX: e.touches[0].clientX,
+      clientY: e.touches[0].clientY
+    };
+  }
+  return {
+    clientX: e.clientX,
+    clientY: e.clientY
+  };
+}
+
+// Only allow a single return type
+
+/**
+ * Convert a computed ref to a record of refs.
+ * The getter function must always return an object with the same keys.
+ */
+
+function destructComputed(getter) {
+  const refs = (0,vue__WEBPACK_IMPORTED_MODULE_0__.reactive)({});
+  const base = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(getter);
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.watchEffect)(() => {
+    for (const key in base.value) {
+      refs[key] = base.value[key];
+    }
+  }, {
+    flush: 'sync'
+  });
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.toRefs)(refs);
+}
+
+/** Array.includes but value can be any type */
+function includes(arr, val) {
+  return arr.includes(val);
+}
+function eventName(propName) {
+  return propName[2].toLowerCase() + propName.slice(3);
+}
+const EventProp = () => [Function, Array];
+function hasEvent(props, name) {
+  name = 'on' + (0,vue__WEBPACK_IMPORTED_MODULE_0__.capitalize)(name);
+  return !!(props[name] || props[`${name}Once`] || props[`${name}Capture`] || props[`${name}OnceCapture`] || props[`${name}CaptureOnce`]);
+}
+function callEvent(handler) {
+  for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+    args[_key2 - 1] = arguments[_key2];
+  }
+  if (Array.isArray(handler)) {
+    for (const h of handler) {
+      h(...args);
+    }
+  } else if (typeof handler === 'function') {
+    handler(...args);
+  }
+}
+function focusableChildren(el) {
+  let filterByTabIndex = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+  const targets = ['button', '[href]', 'input:not([type="hidden"])', 'select', 'textarea', '[tabindex]'].map(s => `${s}${filterByTabIndex ? ':not([tabindex="-1"])' : ''}:not([disabled])`).join(', ');
+  return [...el.querySelectorAll(targets)];
+}
+function getNextElement(elements, location, condition) {
+  let _el;
+  let idx = elements.indexOf(document.activeElement);
+  const inc = location === 'next' ? 1 : -1;
+  do {
+    idx += inc;
+    _el = elements[idx];
+  } while ((!_el || _el.offsetParent == null || !(condition?.(_el) ?? true)) && idx < elements.length && idx >= 0);
+  return _el;
+}
+function focusChild(el, location) {
+  const focusable = focusableChildren(el);
+  if (!location) {
+    if (el === document.activeElement || !el.contains(document.activeElement)) {
+      focusable[0]?.focus();
+    }
+  } else if (location === 'first') {
+    focusable[0]?.focus();
+  } else if (location === 'last') {
+    focusable.at(-1)?.focus();
+  } else if (typeof location === 'number') {
+    focusable[location]?.focus();
+  } else {
+    const _el = getNextElement(focusable, location);
+    if (_el) _el.focus();else focusChild(el, location === 'next' ? 'first' : 'last');
+  }
+}
+function isEmpty(val) {
+  return val === null || val === undefined || typeof val === 'string' && val.trim() === '';
+}
+function noop() {}
+
+/** Returns null if the selector is not supported or we can't check */
+function matchesSelector(el, selector) {
+  const supportsSelector = _globals_mjs__WEBPACK_IMPORTED_MODULE_1__.IN_BROWSER && typeof CSS !== 'undefined' && typeof CSS.supports !== 'undefined' && CSS.supports(`selector(${selector})`);
+  if (!supportsSelector) return null;
+  try {
+    return !!el && el.matches(selector);
+  } catch (err) {
+    return null;
+  }
+}
+function ensureValidVNode(vnodes) {
+  return vnodes.some(child => {
+    if (!(0,vue__WEBPACK_IMPORTED_MODULE_0__.isVNode)(child)) return true;
+    if (child.type === vue__WEBPACK_IMPORTED_MODULE_0__.Comment) return false;
+    return child.type !== vue__WEBPACK_IMPORTED_MODULE_0__.Fragment || ensureValidVNode(child.children);
+  }) ? vnodes : null;
+}
+function defer(timeout, cb) {
+  if (!_globals_mjs__WEBPACK_IMPORTED_MODULE_1__.IN_BROWSER || timeout === 0) {
+    cb();
+    return () => {};
+  }
+  const timeoutId = window.setTimeout(cb, timeout);
+  return () => window.clearTimeout(timeoutId);
+}
+//# sourceMappingURL=helpers.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/util/injectSelf.mjs":
+/*!******************************************************!*\
+  !*** ./node_modules/vuetify/lib/util/injectSelf.mjs ***!
+  \******************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   injectSelf: () => (/* binding */ injectSelf)
+/* harmony export */ });
+/* harmony import */ var _getCurrentInstance_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getCurrentInstance.mjs */ "./node_modules/vuetify/lib/util/getCurrentInstance.mjs");
+// Utilities
+ // Types
+function injectSelf(key) {
+  let vm = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : (0,_getCurrentInstance_mjs__WEBPACK_IMPORTED_MODULE_0__.getCurrentInstance)('injectSelf');
+  const {
+    provides
+  } = vm;
+  if (provides && key in provides) {
+    // TS doesn't allow symbol as index type
+    return provides[key];
+  }
+  return undefined;
+}
+//# sourceMappingURL=injectSelf.mjs.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/util/propsFactory.mjs":
+/*!********************************************************!*\
+  !*** ./node_modules/vuetify/lib/util/propsFactory.mjs ***!
+  \********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   propsFactory: () => (/* binding */ propsFactory)
+/* harmony export */ });
+// Types
+// eslint-disable-line vue/prefer-import-from-vue
+
+/**
+ * Creates a factory function for props definitions.
+ * This is used to define props in a composable then override
+ * default values in an implementing component.
+ *
+ * @example Simplified signature
+ * (props: Props) => (defaults?: Record<keyof props, any>) => Props
+ *
+ * @example Usage
+ * const makeProps = propsFactory({
+ *   foo: String,
+ * })
+ *
+ * defineComponent({
+ *   props: {
+ *     ...makeProps({
+ *       foo: 'a',
+ *     }),
+ *   },
+ *   setup (props) {
+ *     // would be "string | undefined", now "string" because a default has been provided
+ *     props.foo
+ *   },
+ * }
+ */
+
+function propsFactory(props, source) {
+  return defaults => {
+    return Object.keys(props).reduce((obj, prop) => {
+      const isObjectDefinition = typeof props[prop] === 'object' && props[prop] != null && !Array.isArray(props[prop]);
+      const definition = isObjectDefinition ? props[prop] : {
+        type: props[prop]
+      };
+      if (defaults && prop in defaults) {
+        obj[prop] = {
+          ...definition,
+          default: defaults[prop]
+        };
+      } else {
+        obj[prop] = definition;
+      }
+      if (source && !obj[prop].source) {
+        obj[prop].source = source;
+      }
+      return obj;
+    }, {});
+  };
+}
+
+/**
+ * Like `Partial<T>` but doesn't care what the value is
+ */
+
+// Copied from Vue
+//# sourceMappingURL=propsFactory.mjs.map
 
 /***/ }),
 

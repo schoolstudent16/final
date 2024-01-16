@@ -19,8 +19,13 @@ Route::get('/', function () {
 
 Route::get('/top',"App\Http\Controllers\WordNoteController@transition");
 //Route::get('/account',function () {return view("final.account");});
-Route::get('/addition',function () {return view("final.word_add");});
+Route::get('/addition',"App\Http\Controllers\WordNoteController@create_note");
 Route::get('/show',"App\Http\Controllers\WordNoteController@sql_select");
+Route::post('/add',"App\Http\Controllers\WordNoteController@insert_db");
+Route::post('/delete',"App\Http\Controllers\WordNoteController@sql_delete");
+Route::post('/update',"App\Http\Controllers\WordNoteController@sql_update");
+Route::post('/confirm_update',"App\Http\Controllers\WordNoteController@update");
+Route::post('/confirm_delete',"App\Http\Controllers\WordNoteController@delete");
 //Route::post('/login',"App\Http\Controllers\WordNoteController@login");
 Auth::routes();
 

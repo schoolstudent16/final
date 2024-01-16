@@ -7,10 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <table>
+    <table border="1">
         <tr><th>単語</th><th>意味</th></tr>
         @foreach ($items as $item)
-            <tr><td>{{$item->word}}</td><td>{{$item->word_content}}</td></tr>
+            <tr><td>{{$item->word}}</td><td>{{$item->word_content}}</td><td><form action="/update" method="POST">@csrf<input type="hidden" name="word_id" value="{{$item->word_id}}"><button type="submit">更新</button></form></td><td><form action="/delete" method="POST">@csrf<input type="hidden" name="word_id" value="{{$item->word_id}}"><button type="submit">削除</button></form></td></tr>
         @endforeach
     </table>
 </body>
