@@ -15,7 +15,7 @@
         <p>単語：{{$items[0]['word']}}</p>
         <p>意味：{{$items[0]['word_content']}}</p>
         <input type="hidden" name="word_id" value="{{$items[0]['word_id']}}">
-        <button type="submit">削除</button>
+        <button type="submit">削除</button> <button onclick="location.href='/top_return'">戻る</button>
     </form>
 </body>
 </html>

@@ -9,9 +9,10 @@
 <body>
     <form action="/confirm_update" method="POST">
         @csrf
-        <input type="text" name="word_id" value="{{$items[0]['word_id']}}">
-        ファイル名：<input type="text" name="word" value="{{$items[0]['word']}}">
-        <button type="submit">変更</button>
+        <input type="hidden" name="word_id" value="{{$items[0]['word_id']}}">
+        <p>ファイル名：<input type="text" name="word" value="{{$items[0]['word']}}"></p>
+        <p><textarea name="word_content" cols="30" rows="10">{{$items[0]['word_content']}}</textarea></p>
+        <button type="submit">変更</button> <button onclick="location.href='/top_return'">戻る</button>
     </form>
 </body>
 </html>
